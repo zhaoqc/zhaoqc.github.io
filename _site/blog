@@ -2,4 +2,4 @@
 echo "Please enter a valid title."
 read title
 
-vim /tools/git/JekyllPure/_posts/$(date +%F)-$title.md
+vim /tools/git/zhaoqc.github.io/_posts/$(date +%F)-$title.md

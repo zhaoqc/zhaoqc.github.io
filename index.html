@@ -1,6 +1,6 @@
 ---
 layout: blog
-description: ""
+description: "恩赐姐脱，减轻自身烦恼，以备日后再战"
 tags : [ 博客,技术博文,web开发,J2EE开发者,恩赐姐脱 ]
 ---
 
@@ -22,7 +22,10 @@ tags : [ 博客,技术博文,web开发,J2EE开发者,恩赐姐脱 ]
         </header>
 
         <div class="post-description">
+            <!--
             {{ post.content | split:'<!-- more -->'| first }}
+            -->
+            {{ post.excerpt  }}
 
 
             <a href="{{ post.url }}" class="post-categorybut">阅读全文</a>
