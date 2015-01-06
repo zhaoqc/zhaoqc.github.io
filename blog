@@ -1,0 +1,5 @@
+#/bin/bash
+echo "Please enter a valid title."
+read title
+
+vim /tools/git/zhaoqc.github.io/_posts/$(date +%F)-$title.md

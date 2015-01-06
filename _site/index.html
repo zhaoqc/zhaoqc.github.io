@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" 博客技术博文web开发J2EE开发者恩赐姐脱 ">
+    <meta name="keywords" content="博客, 技术博文, web开发, J2EE开发者, 恩赐姐脱"/>
+    <meta name="author" content="ecjt.tk"> 
+    <meta property="st:title" content="" />
+    <meta property="st:published_at" content=""/>
+    <link rel="canonical" href="http://ecjtk.tk/index.html">
+    <link href="http://ecjt.tk/rss.xml" title="RSS 2.0" type="application/rss+xml" rel="alternate"/>
+    <link href="/img/icon.ico" rel="icon" type="image/x-icon">
+    <title>恩赐姐脱</title>
+    <link rel="stylesheet" href="/css/min/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/min/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/min/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/JekyllPure-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/JekyllPure.css">
+    <!--<![endif]-->
+
+    <link href="/css/min/font-awesome.min.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/min/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="/js/min/jquery-1.7.2.min.js"></script>
+
+</head>
+
+<body>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <div class="headerpic">
+                <a href="/">
+                    <img src="/img/ecjt.png" alt="Profile Picture" style="width: 140px;" title="返回首页">
+                </a>
+            </div>
+            <h1 class="brand-title">恩赐姐脱</h1>
+            <h2 class="brand-tagline">Write Less,Do More!</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="/Timing">时间轴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="/tag">标签库</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="pure-button" href="/type">博文类</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="/1">音乐屋</a>
+
+                </ul>
+            </nav>
+            <div class="search" >
+                <form action="/search">
+                    <input type="text" id="st-search-input" style="width:90px" class="search-query" placeholder="Search Blog" name="query" title="全站搜索-只支持英文">
+                </form>
+            </div>
+            <div id="toc"></div>
+            <nav id="nav">
+                <ul class="nav-list">
+                    <li class="nav-link">
+                    <a class="weibo "  href="http://weibo.com/localhost0000" ><i class="fa fa-weibo fa-2x"></i></a>
+                    </li>
+                    <li class="nav-link">
+                    <a class="github" href="https://github.com/zhaoqc"><i class="fa fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav-link">
+                    <a class="rss" href="/rss.xml" ><i class="fa fa-rss fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <!--[if lt IE 8]>
+        <i class="label label-danger">亲爱的用户，您的浏览器版本过低，建议您升级浏览器获得更好的用户体验</i>
+        <![endif]-->
+        <div>
+            <div class="posts" >
+
+                
+
+
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" height="48" width="48"
+                 src="/img/ecjt.png">
+
+            <h2 class="post-title">please install *libnss3-tools* package</h2>
+
+            <p class="post-meta">By 01月06日  2015  <a
+                    class="post-categorybut " href="/type/#linux">linux</a><a
+                    class="post-category " > nss</a><a
+                    class="post-category " >  libnss3</a>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <pre><code>Debian/Ubuntu: sudo apt-get install libnss3-tools
+Fedora: su -c "yum install nss-tools"
+Gentoo: su -c "echo 'dev-libs/nss utils' &gt;&gt; /etc/portage/package.use &amp;&amp; emerge dev-libs/nss" (You need to launch all commands below with the nss prefix, e.g., nsscertutil.)
+Opensuse: sudo zypper install mozilla-nss-tools
+</code></pre>
+
+
+
+            <a href="/linux/llibnss3-tools.html" class="post-categorybut">阅读全文</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" height="48" width="48"
+                 src="/img/ecjt.png">
+
+            <h2 class="post-title">Linux更新网络时间</h2>
+
+            <p class="post-meta">By 01月04日  2015  <a
+                    class="post-categorybut " href="/type/#java">java</a><a
+                    class="post-category " > time</a><a
+                    class="post-category " >  </a>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <h3>方法一、使用命令</h3>
+
+<pre><code>ntpdate time-a.nist.gov
+</code></pre>
+
+<h3>方法二、本地安装ntpdate客户端</h3>
+
+<pre><code>在本地安装ntpdate客户端，更新时用
+
+ntpdate cn.pool.ntp.org
+
+如果你的机子不支持域名，则可以用 ping cn.pool.ntp.org 得到该域名的IP地址。
+
+然后用 ntpdate IP 就可以更新时间了
+
+更新完后要用 clock -w 或 hwclock -w 实时间写入到BIOS中，这样下次启动时，时间就会自动更新了
+</code></pre>
+
+
+
+            <a href="/java/linux%E6%9B%B4%E6%96%B0%E7%BD%91%E7%BB%9C%E6%97%B6%E9%97%B4.html" class="post-categorybut">阅读全文</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" height="48" width="48"
+                 src="/img/ecjt.png">
+
+            <h2 class="post-title">花儿为啥那样红</h2>
+
+            <p class="post-meta">By 01月04日  2015  <a
+                    class="post-categorybut " href="/type/#java">java</a><a
+                    class="post-category " > date</a><a
+                    class="post-category " >  </a>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <p>不能说的秘密</p>
+
+
+
+            <a href="/java/%E8%8A%B1%E5%84%BF%E4%B8%BA%E5%95%A5%E9%82%A3%E6%A0%B7%E7%BA%A2.html" class="post-categorybut">阅读全文</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" height="48" width="48"
+                 src="/img/ecjt.png">
+
+            <h2 class="post-title">SSH+autoproxy+firefox方案</h2>
+
+            <p class="post-meta">By 01月03日  2015  <a
+                    class="post-categorybut " href="/type/#linux">linux</a><a
+                    class="post-category " > ssh</a><a
+                    class="post-category " >  </a>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <h3>1.首先要安装SSH,</h3>
+
+<pre><code> 终端运行   
+01.yaourt -S openssh
+</code></pre>
+
+<h3>2.安装autoproxy</h3>
+
+<pre><code>在firfox中搜索安装autoproxy这个扩展组件，安装完成之后，会自动打开一个设置页面，选择gfwlist 这个规则，然后在最下面选择默认代理，设置为ssh -D 这种方式，之后点完成，完成设置
+</code></pre>
+
+<h3>3.注册ssh</h3>
+
+<pre><code>本地的设置完毕之后，到http://www.cjb.n et/cgi-bin/shell.cgi?action=signup 注册一个免费的ssh的帐号，填上你的用户名, 邮箱, 设置密码就成了，邮箱最好是用gmail的邮箱，其他的邮箱我也没尝试过，然后cjb会给你发激活邮件, 收信点里边的激活链接，激活后会再发送一个邮件给你，告诉你帐号，密码，服务器之类的，有时候注册网站打不开，多尝试几次就好了
+</code></pre>
+
+<h3>4.建立ssh链接</h3>
+
+<pre><code>有了以上的准备工作后，在终端输入
+
+01.ssh -qTfnN -D 7070 user_name@216.194.70.6
+
+
+例如我自己的就是
+
+01.ssh -qTfnN -D 7070 shenhao0129@216.194.70.6
+
+
+其中@之前的user_name换成你刚才自己的申请的用户名就好了，本来@之后是主机名shell.cjb.n et的，但是据说是DNS污染，导致指向的不是正确的IP地址，所以直接用IP地址来代替
+然后第一次运行会有个小提示，你直接输入yes就好了，然后提示输入密码，输入你申请的帐号的密码就万事OK了
+</code></pre>
+
+<h3>5自动运行脚本</h3>
+
+<pre><code>如果认为每次输入这个东西比较麻烦的话，建议
+
+01.vim sshd
+
+建立一个sshd的文本文件，然后把刚才输入的内容粘贴到sshd文件中，并
+
+01.chmod 755 sshd  
+
+然后拷贝到/usr/bin目录下，以后要翻qiang的时候就执行
+
+01.sshd
+Linuxren.n et
+输入密码就好了，系统启动后，之需要输入一次就好了。
+
+以上内容来自网络。。。不代表本人意见。若有幸被和谐，请直接和谐我。。和我有关联的人通通没关系。
+</code></pre>
+
+
+
+            <a href="/linux/freessh.html" class="post-categorybut">阅读全文</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" height="48" width="48"
+                 src="/img/ecjt.png">
+
+            <h2 class="post-title">grep目录及子目录文件内容</h2>
+
+            <p class="post-meta">By 01月03日  2015  <a
+                    class="post-categorybut " href="/type/#linux">linux</a><a
+                    class="post-category " > grep</a><a
+                    class="post-category " >  </a>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <p>  grep搜寻文件及所有子目录下的文件里的内容:</p>
+
+<p>  例如搜寻当前目录及子目录下所有PHP原代码中的"echo"字符 (试试取消下行的 -q 参数):</p>
+
+<p>  find ./  -name *.php  -exec  grep -q -s echo {} \; -print</p>
+
+<p>  查找所有文件则可以用：</p>
+
+<p>  find . -type f -exec grep -s echo {} \; -print</p>
+
+<p>  如果喜欢图形界面，KDE带的kfind很不错。</p>
+
+<p>列出目录下的文件个数</p>
+
+<p>ls -l  | grep  "-" | wc -l  count files</p>
+
+<p>ls -l  | grep  "d" | wc -l  count diretcory</p>
+
+<p>查找当前目录下以及下面所有子目录里包含 clip 字符的文件 并打印所在行数:</p>
+
+<p>grep -n  "clip" -r --color ./</p>
+
+
+
+            <a href="/linux/grep.html" class="post-categorybut">阅读全文</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="post">
+        <header class="post-header">
+            <img class="post-avatar" height="48" width="48"
+                 src="/img/ecjt.png">
+
+            <h2 class="post-title">HelloWorld</h2>
+
+            <p class="post-meta">By 01月01日  2015  <a
+                    class="post-categorybut " href="/type/#helloworld">helloworld</a><a
+                    class="post-category " > </a><a
+                    class="post-category " >  </a>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <p>HelloWorld</p>
+
+
+
+            <a href="/helloworld/HelloWorld.html" class="post-categorybut">阅读全文</a>
+        </div>
+    </section>
+
+
+<div class="pure-g pagination">
+    
+    <span class=" pure-u-1-2 pagination-item"><p>Newer</p></span>
+    
+
+
+    
+    <span class=" pure-u-1-2 pagination-item"><p>Older</p></span>
+    
+</div>
+
+
+
+
+
+
+
+
+            </div>
+            </div>
+        <div class="footer">
+                <a href="/love/welcome-my-blog.html">About</a>
+                 <a href="/1">Collecting</a>
+                <a href="tencent://message/?uin=466484500">QQ</a>
+                <a href="https://github.com/zhaoqc">GitHub</a>
+            <script src="/js/min/nprogress.min.js"></script>
+            <script src="/js/index.js"></script>
+        </div>
+        <div class="topfade"><a href="javascript:;" title="返回顶部"></a></div>
+
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-58251919-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+
+</body>
+
+</html>
