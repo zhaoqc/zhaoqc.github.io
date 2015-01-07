@@ -296,6 +296,9 @@ blockquote ul li{
     text-align:center;
     color: #ccc;
 }
+a.pagination-item {
+    color: #666;
+}
 a.pagination-item:hover {
     background-color: #6a9fb5;
     color: #ffffff;
