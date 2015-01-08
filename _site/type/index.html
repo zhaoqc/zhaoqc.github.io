@@ -64,8 +64,12 @@
                 </ul>
             </nav>
             <div class="search" >
-                <form action="/search">
+                <!--<form action="/search">
                     <input type="text" id="st-search-input" style="width:90px" class="search-query" placeholder="Search Blog" name="query" title="全站搜索-只支持英文">
+                </form>
+                -->
+                <form>
+                    <input type="text" id="st-search-input" placeholder="Search Blog" />
                 </form>
             </div>
             <div id="toc"></div>
@@ -90,7 +94,7 @@
         <i class="label label-danger">亲爱的用户，您的浏览器版本过低，建议您升级浏览器获得更好的用户体验</i>
         <![endif]-->
         <div>
-            <div class="posts" >
+            <div class="posts" id="st-results-container">
 
                 <div class="f3">
     
@@ -123,6 +127,11 @@
     <div class="column fJqueryba">
         <h2 class="">linux</h2>
         <ul class="columnUl">
+            
+            <li>
+                <b><a href="/linux/standby-and-sleep.html" title="" class="gray_2" target="_blank">Linux下休眠/待机命令</a></b>
+                <span>08 Jan 2015</span>
+            </li>
             
             <li>
                 <b><a href="/linux/Gentoo-USE.html" title="" class="gray_2" target="_blank">Genoo全局USE标签</a></b>
@@ -201,7 +210,18 @@
     
       ga('create', 'UA-58251919-1', 'auto');
       ga('send', 'pageview');
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
     
+      _st('install','xXqQDdLTsx921KsbJUZD');
+    $("st-search-input").swiftypeSearch({
+       engineKey: '9x8Ysx-8pMrkJBY7yaGN',
+       fetchFields: {'page': ['title', 'url', 'published_at']},
+       facets: {'page': ['type']}
+    });
+   
     </script>
 
 </body>

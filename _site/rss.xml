@@ -4,13 +4,53 @@
     <title>恩赐姐脱</title>
     <link href="http://ecjt.tk/rss.xml" rel="self"/>
     <link href="http://ecjt.tk/"/>
-    <updated>2015-01-07T08:28:48+08:00</updated>
+    <updated>2015-01-08T15:45:46+08:00</updated>
     <id>http://ecjt.tk/</id>
     <author>
         <name>zhaoqc</name>
         <email>zhaoqc@139.com</email>
     </author>
 
+    
+    <entry>
+        <title>[&quot;Linux下休眠/待机命令&quot;]</title>
+        <link href="http://ecjt.tk/linux/standby-and-sleep.html"/>
+        <updated>2015-01-08T00:50:00+08:00</updated>
+        <id>http://liyouhai.com//linux/standby-and-sleep</id>
+        <summary type="html">&lt;p&gt;在作之前，先检查一下你的内核能支持哪些方式：&lt;/p&gt;
+</summary>
+        <content type="html">&lt;p&gt;在作之前，先检查一下你的内核能支持哪些方式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# cat /sys/power/state
+
+standby disk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;1. 睡眠 (sleep)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;睡眠可能有两种方式：mem和standby，这两种方式都是suspend to RAM，简称STR，只是standby耗电更多一些，返回到正常工作方式时间更短一些而已。
+
+只需要
+
+# echo standby &amp;gt; /sys/power/state
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2. 休眠 (hibernation)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;休眠也有两种方式：shutdown和platform。shutdown是通常的方式，比较可靠一些。如果你的系统上ACPI支持非常好，那就有机会支持platform方式。激活的方式稍有不同：
+
+# echo platform &amp;gt; /sys/power/disk; echo disk &amp;gt; /sys/power/state
+就可以了。
+or
+# echo shutdown &amp;gt; /sys/power/disk; echo disk &amp;gt; /sys/power/state
+就可以了。
+注意休眠有一个前提，就是在系统启动时需要指定resume设备，也就是休眠的镜像需要保存的分区。一般都用swap分区来做。
+指定方式是:
+kernel /boot/vmlinuz root=/dev/sda1 resume=/dev/sda2 vga=0×314 …
+这样在系统启动时，内核会检查resume中的内容，如果存在上次休眠的镜像，那内核便会将镜像读入内存，恢复正常工作状态。
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
     
     <entry>
         <title>[&quot;Genoo全局USE标签&quot;]</title>
