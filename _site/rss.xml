@@ -4,13 +4,326 @@
     <title>恩赐姐脱</title>
     <link href="http://ecjt.tk/rss.xml" rel="self"/>
     <link href="http://ecjt.tk/"/>
-    <updated>2015-01-08T15:52:25+08:00</updated>
+    <updated>2015-01-09T23:19:00+08:00</updated>
     <id>http://ecjt.tk/</id>
     <author>
         <name>zhaoqc</name>
         <email>zhaoqc@139.com</email>
     </author>
 
+    
+    <entry>
+        <title>[&quot;gentoo java 安装指南&quot;]</title>
+        <link href="http://ecjt.tk/linux/Gentoo-Java-Guide.html"/>
+        <updated>2015-01-09T21:03:00+08:00</updated>
+        <id>http://liyouhai.com//linux/Gentoo-Java-Guide</id>
+        <summary type="html">&lt;h3&gt;1.  什么是Java？&lt;/h3&gt;
+</summary>
+        <content type="html">&lt;h3&gt;1.  什么是Java？&lt;/h3&gt;
+
+&lt;p&gt;简介&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Java是Sun Microsystems开发的一门面向对象的程序语言，可以在不用重新编译的前提下运行在不同的平台上。虽然也可以被编译成原生程序，但良好的移植性和内存垃圾回收才是Java受欢迎的主要原因。Java编译器会将Java代码转换成Java字节码作为中间层在JRE（Java运行环境）上而不是直接在操作系统上运行，这就使平台无关成为了可能。
+
+为了运行Java字节码，必须首先安装JRE（Java运行环境）。JRE会提供核心库，一个独立平台的Java虚拟机和浏览器插件等等。JDK（Java开发工具）则集成了编程所开发需的工具，例如字节码编译器和调试器。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.  在你开始之前&lt;/h3&gt;
+
+&lt;p&gt;已经安装&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;如果已经安装过Java，不论是什么版本都请参照Java升级指南。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;全新安装&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;全新安装不需要其它准备工作。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;3.  安装虚拟机&lt;/h3&gt;
+
+&lt;p&gt;选择&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Gentoo提供了多种运行环境（JRE）和开发工具（JDK）。我们现有的选择是：
+提供商   JDK     JRE
+Sun Java Kit    dev-java/sun-jdk    dev-java/sun-jre-bin
+IBM Java Kit    dev-java/ibm-jdk-bin    dev-java/ibm-jre-bin
+BEA WebLogic J2SE Development Kit   dev-java/jrockit-jdk-bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装JRE／JDK&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;你可以使用emerge virtual/jdk来安装profile默认的JDK。或者，你可以使用emerge virtual/jre安装profile默认的JRE。
+
+Sun近期重新制作了一个更适合Linux的JDK／JRE许可认证。所以从Sun Java 1.5开始，用户可以在不做任何额外工作的前提下免费下载。
+
+注意: 如果你要安装JDK，就不用再安装JRE，因为JRE是JDK的一部分。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装不能通过命令行下载的虚拟机&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;在安装某些JDK和JRE前你需要多做一些步骤。你只需要照常emerge你需要的软件包，之后ebuild会告诉你在哪里可以下载所需的文件。
+
+把需要的软件包放在/usr/portage/distfiles。完成后重新emerge安装JRE／JDK。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;配置你的虚拟机&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;简介&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Gentoo支持安装多个JDK或者JRE并且不会造成任何冲突。
+
+使用java-config工具，你可以更改系统设置（需要root用户）。普通用户可以使用java-config改变个人设置。
+
+注意: 你也可以使用eselect来改变系统和用户的虚拟机。参照eselect java-vm help。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;设定默认虚拟机&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;运行java-config --list-available-vms会显示在你机器上现有的JRE和JDK。如下例：
+
+代码 4.1: 显示可用虚拟机
+
+# java-config --list-available-vms
+The following VMs are available for generation-2:
+1)      IcedTea6-bin 1.4.1 [icedtea6-bin]
+2)      Sun JDK 1.5.0.20 [sun-jdk-1.5] (Build Only)
+*)      Sun JDK 1.6.0.16 [sun-jdk-1.6]
+
+注意: 标记为Build Only的虚拟机可能包含安全漏洞或者产品生命周期已结束（EOL）。Gentoo不推荐把这样的虚拟机设为你的系统或者用户虚拟机。请阅读Build Only虚拟机以获取更多信息。
+
+*标志出了你现在正在使用的虚拟机（系统虚拟机或者用户虚拟机）。括号（[]）中的名字代表这个虚拟机的ID或者handle。你可以使用handle或ID来设置系统虚拟机：java-config --set-system-vm。下面是一个更改系统虚拟机的例子。
+
+代码 4.2: 设定系统虚拟机
+
+（通过handle（推荐））
+# java-config --set-system-vm sun-jdk-1.6
+Now using sun-jdk-1.6 as your generation-2 system JVM
+（通过ID）
+# java-config --set-system-vm 3
+Now using sun-jdk-1.6 as your generation-2 system JVM
+
+作为一个普通用户，你可以使用java-config --set-user-vm。
+
+注意: 你不必再执行source profile来使用户／系统虚拟机的改动起效。
+
+Build Only VM
+
+有些虚拟机被标记为buildonly，因为他们的生命周期已经结束或者包含安全漏洞。这些虚拟机并不会自动被Gentoo用来运行应用程序，但是我们仍然提供它因为有些包仍然需要它来构建。我们强烈建议不要把这些虚拟机设定为你的系统或者用户虚拟机，因为如果那样的话，运行/usr/bin/{java,javac,..}等可执行文件以及其他不使用Gentoo的java启动脚本的包的时候，这些虚拟机就会被用到了。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;首选虚拟机&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;当安装Java写成的软件的时候，虚拟机将会在需要时被切换。
+
+因为有很多的不同的虚拟机可以选择，我们没有足够的资源去测试和确认所有的软件包都能在上面正常工作。所以为确保所有的软件包都能成功安装，我们为每个平台都定制了一份默认的／受支持的虚拟机列表。此列表可以在/usr/share/java-config-2/config/jdk-defaults.conf文件中找到。当你在安装Java软件包时，如果系统检测到该列表中的某个虚拟机已经安装，它会自动使用该虚拟机，而不是system-vm。
+
+有时需要在安装软件时切换虚拟机。例如，system-vm设定为1.4，当你安装需要1.5版的软件包时，虚拟机会被临时切换。
+
+当然，Gentoo给予了用户充分的选择权利，你可以重写在/etc/java-config-2/build/jdk.conf中默认的配置，完全控制使用哪一个虚拟机。如下例：
+
+代码 4.3: /etc/java-config-2/build/jdk.conf实例
+
+我只想使用sun-jdk，例如1.4版使用sun-jdk-1.4、1.5版使用sun-jdk-1.5等等。
+*=sun-jdk
+
+代码 4.4: /etc/java-config-2/build/jdk.conf实例
+
+我只想使用sun-jdk-1.5，除了指明需要1.3或1.4版虚拟机的情况
+*=sun-jdk-1.5
+
+代码 4.5: /etc/java-config-2/build/jdk.conf实例
+
+# 对于1.3版优先使用sun-jdk 1.4。当sun-jdk 1.4不可用时，用ibm-jdk-bin替代
+# 对于1.5版, 使用sun-jdk 
+1.3=sun-jdk-1.4 ibm-jdk-bin
+1.5=sun-jdk
+
+警告: 你不一定要修改这个文件。如果你使用了一个不被支持的虚拟机，可能发生错误。而且这样产生的bug会在使用受支持的虚拟机时产生的bug被处理完之后才会被处理。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;5.  编译器&lt;/h3&gt;
+
+&lt;p&gt;对于任何的JDK，你可以使用javac来调用标准的编译器。在编译时，你除了可以设定虚拟机，也可以设定编译器。简单说，你可以在/etc/java-config-2/build/compilers.conf里定义你首选的编译器。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;代码 5.1: /etc/java-config-2/build/compilers.conf
+
+# 如果ebuild支持它
+# 它会从头到尾的检查COMPILERS变量里的值
+# 并且使用第一个已经安装的编译器
+
+COMPILERS=&quot;ecj-X.Y jikes javac&quot;
+
+部分编译器不支持所有可能的-target和-source参数。所以每一个在列表中的编译器都会被检测来确定它是否支持所需要的-source／-target。javac支持所有的参数，所以如果在列表中没有发现合适的编译器，javac会被调用。
+
+每个编译器的细节如下：
+名称  Handle  软件包   简介
+javac   javac   N/A     默认编译器，包含在JDK中。
+jikes   jikes   dev-java/jikes  jikes是IBM开发的。有趣的是，它的运行速度一般要比javac快。但是请注意，它的语法要求更严格，并且会出现一些在javac下不会出现的一些问题。它还不支持Java 1.5的句法。
+Eclipse Java编译器   ecj     =dev-java/eclipse-ecj   ECJ是Eclipse开发工具用的编译器。它的运行速度很快，并且支持Java 1.5句法。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;6.  设定默认CLASSPATH&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;警告: 下面的段落已被认为已经过时，很可能在以后被删除。我们强烈建议你不要使用它们，因为你的Java项目应该管理自己的CLASSPATH。如果你指定一个默认的CLASSPATH，部分程序可能因为发现未预期的class而产生错误。
+
+java-config也可以用来设定系统级别的CLASSPATH和用户级别的CLASSPATH。
+
+首先，你要列出所有在你系统上安装的Java库：
+
+代码 6.1: 列出class
+
+# java-config --list-available-packages
+[xerces-2] The next generation of high performance, fully compliant XML parsers in the Apache Xerces family (/usr/share/xerces-2/package.env)
+[junit] Simple framework to write repeatable tests (/usr/share/junit/package.env)
+[bsh] BeanShell: A small embeddable Java source interpreter (/usr/share/bsh/package.env)
+[bcel] The Byte Code Engineering Library: analyze, create, manipulate Java class files (/usr/share/bcel/package.env)
+[log4j] A low-overhead robust logging package for Java (/usr/share/log4j/package.env)
+...
+
+和前面一样，在括号（[]）中的名字代表你将传递给java-config --set-system-classpath的ID。如下例：
+
+代码 6.2: 设定classpath
+
+# java-config --set-system-classpath log4j,xerces-2
+
+注意: 当前文件夹（.）不会被添加到系统classpath，应该被添加到你的系统登录profile。
+
+你需要注销并重新登录或者source /etc/profile来更新你的环境变量。
+
+对于用户，java-config --set-user-classpath会建立~/.gentoo/java-env-classpath。之后你应该从你的shell的profile里source这个文件。
+
+代码 6.3: Source用户专有的classpath
+
+if [[ -f &quot;${HOME}/.gentoo/java-env-classpath&quot; ]]; then
+    source ${HOME}/.gentoo/java-env-classpath
+fi
+
+如果你真的想要设定一个系统级别或者用户指定的classpath，你可以添加下面的代码到你的shell profile，但是我们不建议你这么做。
+
+代码 6.4: 设定classpath
+
+# export CLASSPATH=&quot;${CLASSPATH}:$(java-config --classpath log4j,xerces-2)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;7.  Java浏览器插件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;安装插件
+
+你可以在启用nsplugin USE标记的情况下emerge Java虚拟机来安装Java浏览器插件。
+
+注意: nsplugin并不支持所有构架。在安装前请用emerge -pv &amp;lt;java-vm&amp;gt;来检查你的机器是否被支持。
+
+Portage允许你安装多个不同版本的Java插件，但是只有一个会被浏览器使用。你可以用以下指令查看可用的插件：
+
+代码 7.1: 查看可用插件
+
+# eselect java-nsplugin list
+   [1]   sun-jre-bin-1.6
+   [2]   icedtea6-bin
+
+在这个例子中sun-jre-bin被选择做为浏览器插件。
+
+代码 7.2: 选择一个插件
+
+# eselect java-nsplugin set sun-jre-bin-1.6
+
+确认选择了正确的插件：
+
+代码 7.3: 确认正确的插件
+
+# eselect java-nsplugin list
+   [1]   sun-jre-bin-1.6  current
+   [2]   icedtea6-bin
+
+Java.com也提供了一个链接来验证你已经安装的插件。如果你使用基于Mozilla的浏览器，你可以地址栏输入about:plugins来验证你的Java插件。
+
+multilib系统的插件
+
+如果你的系统包括了64位和32位multilib（例如AMD64），你能使用64位和32位Java插件。除非你有不可抗拒的理由要运行32位Java应用程序，否则我们推荐在64位浏览器上使用原生64位插件。
+
+我们提供了几个原生64位浏览器插件。默认的JDK/JRE，sun-jdk和sun-jre-bin，都包含浏览器插件。 只要以nsplugin USE标记emerge其中一个即可。
+
+代码 7.4: 安装64位插件
+
+# echo &quot;dev-java/sun-jre-bin nsplugin&quot; &amp;gt;&amp;gt; /etc/portage/package.use
+# emerge sun-jre-bin
+
+要在32位浏览器上使用32位插件，你可以使用nsplugin USE标记emerge emul-linux-x86-java。
+
+代码 7.5: 安装32位插件
+
+# echo &quot;app-emulation/emul-linux-x86-java nsplugin&quot; &amp;gt;&amp;gt; /etc/portage/package.use
+# emerge emul-linux-x86-java
+
+下一步，检查可用的插件：
+
+代码 7.6: 查看可用插件
+
+# eselect java-nsplugin list
+Available 32-bit Java browser plugins
+  [1]   emul-linux-x86-java-1.5
+  [2]   emul-linux-x86-java-1.6
+Available 64-bit Java browser plugins
+  [1]   icedtea6-bin
+  [2]   sun-jre-bin-1.6
+
+现在，选择适合你的浏览器的正确插件：
+
+代码 7.7: 选择插件
+
+(Choose the plugins for 32-bit and 64-bit browsers)
+# eselect java-nsplugin set 32bit emul-linux-x86-java-1.6
+# eselect java-nsplugin set 64bit sun-jre-bin-1.6
+
+核实选择了正确的插件：
+
+代码 7.8: 确认正确的插件
+
+# eselect java-nsplugin list
+Available 32-bit Java browser plugins
+  [1]   emul-linux-x86-java-1.5
+  [2]   emul-linux-x86-java-1.6  current
+Available 64-bit Java browser plugins
+  [1]   icedtea6-bin
+  [2]   sun-jre-bin-1.6  current
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;8.  Java的USE标记&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;设定USE标记
+
+更多关于USE标记的信息，参照Gentoo手册USE标记。
+
+标记
+
+    java标记可以让多种不同的程序支持Java
+    nsplugin标记让基于Mozilla的浏览器（包括Firefox）支持Java。你需要它来在基于Mozilla的浏览器上运行Java applet。
+    source标记会安装以zip形式安装软件包的源代码。这个一般是让IDE给你使用的库添加源代码。
+    jce标记添加了对Java加密引擎的支持
+    对于Java的软件包，doc标记将会使用javadoc建立API文档
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;9.  附加资料&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;离线资料
+
+    java-config man page
+    java-config --help
+
+在线资料
+
+    Gentoo的Java项目主页
+    Gentoo的gentoo-java, gentoo-user, and gentoo-dev邮件列表归档
+    #gentoo和#gentoo-java IRC频道
+    Wikipedia上的Java条目
+    如果你对于这篇文档有建议或问题，请发邮件到Gentoo Java团队：java@gentoo.org
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
     
     <entry>
         <title>[&quot;Linux下休眠/待机命令&quot;]</title>
@@ -928,9 +1241,149 @@ ntpdate cn.pool.ntp.org
         <link href="http://ecjt.tk/java/%E8%8A%B1%E5%84%BF%E4%B8%BA%E5%95%A5%E9%82%A3%E6%A0%B7%E7%BA%A2.html"/>
         <updated>2015-01-04T21:42:00+08:00</updated>
         <id>http://liyouhai.com//java/花儿为啥那样红</id>
-        <summary type="html">&lt;p&gt;不能说的秘密&lt;/p&gt;
+        <summary type="html">&lt;h3&gt;1、歌曲&lt;/h3&gt;
 </summary>
-        <content type="html">&lt;p&gt;不能说的秘密&lt;/p&gt;
+        <content type="html">&lt;h3&gt;1、歌曲&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;著名作曲家雷振邦为电影《冰山上的来客》创作的《花儿为什么这样红》，1963年影片公映后即在群众中普遍流传。
+
+《花儿为什么这样红》
+
+花儿为什么这样红为什么这样红
+哎红得好像红得好像燃烧的火
+它象征着纯洁的友谊和爱情
+
+花儿为什么这样鲜为什么这样鲜
+哎鲜得使人鲜得使人不忍离去
+它是用了青春的血液来浇灌
+
+哎鲜得使人鲜得使人不忍离去
+它是用了青春的血液来浇灌
+
+花儿为什么这样红为什么这样红
+哎红得好像红得好像燃烧的火
+它象征着纯洁的友谊和爱情
+它象征着纯洁的友谊和爱情
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2、文章&lt;/h3&gt;
+
+&lt;h4&gt;《花儿为什么这样红》&lt;/h4&gt;
+
+&lt;h5&gt;作者：贾祖璋&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;花朵的红色是热情的色彩，它强烈，奔放，激动，令人精神振奋。红紫烂漫的春天，活力充沛，生气蓬勃。花儿为什么这样红？人们一边赞叹，一边不免提出疑问，寻求科学的解释。
+
+花儿为什么这样红？首先有它的物质基础。不论是红花还是红叶，它们的细胞液里都含有由葡萄糖变成的花青素。当它是酸性的时候，呈现红色，酸性愈强，颜色愈红。当它是碱性的时候，呈现蓝色，碱性较强，成为蓝黑色，如墨菊、黑牡丹等是。而当它是中性的时候，则是紫色。万紫千红，红蓝交辉，都是花青素在不同的酸碱反应中所显示出来的。
+
+除了红花以外，还有黄色、橙色的花。橙色与柑橘，南瓜等果实的色彩相似，而最典型的是胡萝卜，所以表现这种色彩的色素，就被称为胡萝卜素。
+
+至于白花，那是因为细胞液里不含色素的缘故。有些白花，例如菊花，萎谢之前微染红色，表示它这时也含有少量的花青素了。变色的一个特殊例子是添色木芙蓉，早晨初开白色，中午淡红，下午深红，一日三变，愈开愈美丽。又如八仙花，初开白色微绿，经过几天，变成淡红，或带微蓝，它不像添色木芙蓉那样朝开暮落。至于一般的花，大都初开时浓艳，后渐淡褪。
+
+花儿为什么这样红？还需要用物理学原理来解释。太阳光经过三棱镜或水滴的折射，会分成红、橙、黄、绿、青、蓝、紫七种颜色。这七种颜色的光波长短不同，红光波长，紫光波短。酸性的花青素会把红色的长光波反射出来，送到我们的眼帘，我们便感觉到是鲜艳的红花。同样，中性的花青素反射紫色的光波，碱性的花青素反射蓝色的光波，胡萝卜素有不同的成分，便分别反射黄色光波或橙色光波。白花不含色素，但组织里面含有空气，会把光波全部反射出来。有的花瓣，表面有较多的细微而排列整齐的玻璃球似的突起，看起来好像丝绒，能够像金刚石那样强烈地反射光线，色彩就更为鲜艳，如某些月季花就是。
+
+花儿为什么这样红？还有它生理上的需要。光波长短不同，所含热量也不同：红、橙、黄光波长，含热量多；蓝、紫光波短，含热量少。花的组织，尤其是花瓣，一般都比较柔嫩。在野生状态，红、橙、黄花都生长在阳光强烈的地方，反射了含热量多的长光波，不致引起灼伤，有保护的作用。蓝花都生长在树林下、草丛间，反射短光波，吸收微弱的含热量多的长光波，对它的生理作用有利。白花也多阴性植物，有些夜间开放，反射了全部的光波，是另一种适应措施。自然界少有黑色的花，只有少数的花偶然有黑色的斑点，因为黑色吸收全部的光波，热量过多，容易受到伤害。
+花儿为什么这样红？从进化的观点来考察，它有一个发展的过程。裸子植物的花是原始的形态，都带绿色，而花药和花粉则呈黄色。在光谱里面，与绿色邻接的，长波一端是黄、橙和红，短波一端是青、蓝和紫。我们可以说，花色以绿色为起点，向长波一端发展，由黄而橙，最后出现红色；向短波一端发展，是蓝色和紫色。红色应是最晚出现的花色，在进化途程中居于项峰，最鲜艳，最耀眼。
+花儿为什么这样红？从达尔文的自然选择学说来看，昆虫起了到重要的作用。亿万年前，裸子植物在地球上出现的时候，昆虫还不多。花色素淡，传粉授精，依靠风力，全部是风媒花。后来出现了被子植物，昆虫也繁生起来。被子植物的花有了花被，更分化为萼和花冠（花被和花冠通称花瓣）。花瓣不再是绿色，而是比较显眼的黄色、白色或其他颜色。形状也大了，有的生有蜜腺，分泌蜜汁，有的散发芳香，这就成为虫媒花。“蜂争粉蕊蝶分香”，昆虫给花完成传粉授精的作用。
+昆虫采蜜传粉，有一特殊的习性，就是经常只采访同一种植物的花朵。这个习性有利于保证同一种植物间的异花传粉，繁殖后代。这样可以固定种的特征，包括花的颜色。我们可以设想，假如当初有一种植物，花色微红，由于其中红色比较显著的花朵，容易受到昆虫的注意，获得传粉的机会较多，经过无数代的选择，在悠长的岁月中，昆虫就给这种植物创造出纯一、显著、鲜艳的红色花朵。昆虫参与自然选择的作用，造成各种不同的植物，也造成各种不同的花色。
+花儿为什么这样红？最后要归功于人工选择。自然选择进程缓慢，需要很长时间才能显示它的作用。人工选择大大加快了它的进程，能够在较短时间内取得显著成果。例如牡丹，由自然选择费了亿万年造成野生原种，花是单瓣的，花色也只有粉红的一种。经过人工栽培，仅就北宋中叶（11世纪）那个时候来说吧，几十年功夫就有单瓣创造出多叶、千叶（重瓣）、楼子（花心突起）、并蒂等额中不同姿态；由粉红创造出深红、肉红、紫色、墨紫、黄色、白色等各种美丽色彩。再如大丽花，原产墨西哥，只有八个红色花瓣。人工栽培的历史仅仅二三百年，却已有千种形状、颜色不同的品种。又如虞美人，经过培养，已有红、黄、橙、白各种颜色却没有出现过蓝色。上一世纪末，美国的著名园艺育种家浦班克，发现一株花瓣上好似有一层迷雾的虞美人，特意培养，到本世纪初，便育成了各种深浅不同的蓝色虞美人，为花卉园艺添加了新的品种。   花儿这样红，是大自然的杰作，更加是人工培育的成果
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;3、教案&lt;/h3&gt;
+
+&lt;h4&gt;第一课时： 　　&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;教学目标 1． 理清说明顺序，感悟说明文中运用文学语言和方法的妙处。2． 通过查寻资料和做实验让学生理解课文知识。 　　
+教学重点 理清说明顺序，感悟说明文中运用文学语言和方法的妙处。 　　
+教学难点 如何找准说明文的语言特点 　　
+教学课类型 讲读课 教学方法 主要教具 实验材料 　　
+学法指导 探究合作式 　　
+板书设计 花儿为什么这样红 物理基础 物理学原理 生理需要 进化观点 自然选择 人工选择 　　课后反思 　　
+时间 阶段目标 教学内容 教师活动 学生活动 　　
+1．展示学生所知，引起对课文知识的兴趣。
+2、3．理清说明顺序，感悟说明文中运用文学语言和方法的妙处。
+4进一步把握课文内容，读懂课文，培养学生的概括力、表达力及动手实践能力。 
+    1． 导入：
+        （1）自然界中美丽娇艳的鲜花万紫千红，为什么会有那么多不同色彩的花朵呢？
+        （2）《花儿为什么这样红》一文像一把钥匙，为我们解开了这个奥秘。
+    2．朗读课文，说说花儿为什么这样红？明确：花红的原因有很多，课文从六个方面进行说明。即&quot;物理基础&quot;&quot;化学和物理学&quot;&quot;植物生物学&quot;&quot;进化理论&quot;&quot;自然选择&#39;&#39;及&quot;人工选择&quot;六个方面对&quot;花红&quot;的成因作了科学、生动、有趣的说明。
+    3． 发现课文的结构有什么特点？作者在课文中七次用&quot;花儿为什么这样红&quot;的句子，都以设问的形式出现，并形成七个排比段，在修辞上叫间隔反复。第一段中&quot;花儿为什么这样红&quot;第一次出现，起总提作用，后几段起提示说明角度和内容的作用，使文章层次清楚，中心突出，富有较强的节奏感和语言的美感，增强了说明文的文学色彩。
+    4．现在我们只了解了花红的因素，其中的真正奥妙谁能细致解释呢？那就看我们各小组的本事了，现在六小组分别承包一个方面，用语言、板书或实验等形式为大家解说花红原因。
+        （1） 试验一：把一朵红色的芍药花或其他的红色花泡在碱水或肥皂水中，观察颜色的变化，当红变蓝之后，再把变蓝的花朵泡在醋里，观察其由蓝变红的过程，以此验证花朵在酸碱反应中颜色的不同变化。
+        （2） 解说各种成因：
+    5．总结： 
+         1．提问
+         2．听读课文，学生回答后加以概括。
+         3．指导、提示、归纳
+         4．提出要求，对各小组进行指导，参与小组讨论。
+             (1)指导
+             (2)听评 
+                 1．回答
+                 2．朗读课文，思考回答。
+                 3．研究讨论
+                 4．读课文，讨论研究表述语言，准备实验。
+                     （1）做实验
+                     （2）解说各种成因 　　
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;第二课时： 　　&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;教学目标 1． 理清逻辑顺序。2． 学习运用巩固有关说明文的知识，进行语言积累，形成良好的语感，并注意词语表达的准确与生动。3．拓展学生的阅读视野。 　　
+教学重点 1．说明文语言的准确与生动性2．说明方法 　　
+教学难点 逻辑结构的分析 　　
+教学课类型 讲读课 教学方法 主要教具 电脑 　　
+学法指导 讨论探究式 　　
+板书设计 花儿为什么这样红 说明顺序： 花红的内部条件和因素（物质基础）--内、主 ｛ ↓ 花红的外在原因（自然选择、人工选择）--外、次 说明方法：举例子、分类别、列数字、做比较说明语言：准确 如&quot;只有、就、仅&quot; 　　
+课后反思 　　
+时间 阶段目标 教学内容 教师活动 学生活动 　　
+1．做好新旧知识的衔接。 　　
+2．理解其严谨的逻辑顺序。 　　
+3．巩固说明方法，理解课文内容及写作方法。 　　
+4．进行语言积累，形成良好的语感，并注意词语表达的准确与生动。 　　
+5．理解题目的作用。 　　
+1．导入：回忆上节课的内容 　　
+2．提问：分别从六个方面说明了花红的原因，它们能否颠倒顺序？为什么？ 　　
+明确：作者按由主到次，由内到外的顺序排列，可分为两层。 　　
+第一层（1-7段）说明花红的内部条件和因素，重要因素是&quot;物质基础&quot;。 　　
+第二层（8-10段）说明花红的外在原因。层层深入，准确严谨。 　　
+3．分析每段中的说明方法。思考：文章中都运用哪些说明方法？ 　　
+明确：
+（1）举例子、分类别：例如牡丹，又自然选择费了亿万年造成的野生原种，花是单瓣的，花色也只有粉红的一种。经过人工栽培，仅就北宋中叶那一个时期来说吧，几十年工夫，就由单瓣创造出多叶、千叶、楼子、并蒂等各种不同的姿态；由粉红创造出深红、肉红、紫色、墨紫、黄色、白色等各种不同的美丽色彩。举例子的句子还有很多…… 　　
+（2）列数字、举例子：再如大丽花，原产墨西哥，只有八个红色花瓣。人工栽培的历史仅二三百年，却已有上千种形状、颜色不同的品种。分析：运用三种说明方法，说明了人工选择大大加快了花红的进程，在较短的时间内取得了显著成果。 　　
+（3）作比较、分类别：在光谱里面，与绿色邻接的，长波一端是黄、橙、红，短波一端是青、蓝、紫。我们可以说，花色以绿色为起点，向长波一段发展，由黄而橙，由橙而红；向短波一端发展，是蓝色和紫色。红色的花最鲜艳，最耀眼，可以说在进化过程中是最成功的。分析：说明红花是进化过程中的佼佼者。 　　
+4．请体会一下其中加点词的表达准确性。明确：&quot;只有&quot;强调了仅限于粉红这个品种，&quot;就&quot;字，强调人工栽培在很短的时间内创造出了多姿多彩、争奇斗艳的不同花朵。三个程度副词&quot;最&quot;字强调了红花颜色鲜艳、耀眼和成功的程度。&quot;仅&quot;字极言时间之短，说明人工选择加快了花红的进程。
+5．课文标题借用了《冰山上的来客》中一首插曲的名字，你认为这样拟题好吗？为什么？明确：一是提示课文要说明的内容；二是引起读者的阅读兴趣和求知欲。 　　
+6．介绍有关花的知识或《十万个为什么》，请选择其中一个讲讲，让同学们分享你的快乐。
+7．作业： 1．导入2．提问总结3．提出问题，参与各小组的讨论。判断讲解。4．提示听评5．提问 1．回忆2．思考讨论后回答3．默读课文，圈点勾画，商量讨论。分析回答。4．思考回答5．思考讨论6．介绍花的或《十万个为什么》。 　　
+
+整体感知：
+1、文章题目原是一句歌词，用了什么修辞?用来做题目有哪些好处?
+明确：课文的标题“花儿为什么这样红”是个设问句，它起着三个方面的表达作用：一是抓住人们所熟知的花的特征（“红”）提出问题，有助于揭示文章的中心；二是以设疑激趣，富有吸引力；三是联系全文结构看，主体部分从六个方面说明花儿红的原因，每说明一个原因都用“花儿为什么这样红”开头，使文章脉络分明，具有明快的节奏感，增添了艺术情趣。
+具体研读课文：
+1、第2—6自然段、第7一l0自然段分别采用了什么样的说明顺序?是从哪几个方面说明花儿为什么这样红的?
+明确：第2—6自然段采用逻辑顺序。从物质基础、物理学原理、生理需要等角度说明“花儿为什么这样红”。
+第7一l0自然段采用时间顺序，从进化观点、自然选择、人工选择等角度说明“花儿为什么这样红”。
+2、文章中都运用哪些说明方法？
+明确：
+（1）举例子、分类别：例如“牡丹，……几十年工夫，就由单瓣创造出多叶、千叶、楼子、并蒂等各种不同的姿态；由粉红创造出深红、肉红、紫色、墨紫、黄色、白色等各种不同的美丽色彩。”…… 　
+（2）列数字、举例子：再如“大丽花，原产墨西哥，只有八个红色花瓣。人工栽培的历史仅二三百年，却已有上千种形状、颜色不同的品种。”
+分析：运用三种说明方法，说明了人工选择大大加快了花红的进程，在较短的时间内取得了显著成果。
+（3）作比较、分类别：“我们可以说，花色以绿色为起点，向长波一段发展，由黄而橙，由橙而红；向短波一端发展，是蓝色和紫色。红色的花最鲜艳，最耀眼，可以说在进化过程中是最成功的。”
+分析：说明红花是进化过程中的佼佼者。
+
+3、体会其中加粗词的表达准确性。
+（1）牡丹，由自然选择费了亿万年造成的野生原种，花是单瓣的，花色也只有粉红的一种。经过人工栽培，仅就北宋中叶那一个时期来说吧，几十年工夫，就由单瓣创造出多叶、千叶、楼子、并蒂等各种不同的姿态。
+明确：“只有”强调了仅限于粉红这个品种，“就”字，强调人工栽培在很短的时间内创造出了多姿多彩、争奇斗艳的不同花朵。
+（2）红色的花最鲜艳，最耀眼，可以说在进化过程中是最成功的。”
+明确：三个程度副词“最”字强调了红花颜色鲜艳、耀眼和成功的程度。“仅”字极言时间之短，说明人工选择加快了花红的进程。
+4、研读课文第十段：
+（1）本段列举牡丹、大丽花、虞美人三个典型事例，从哪几个方面将自然生成的花同人工培育的花进行比较，突出了选择的显著成就。
+明确：时间长短、形状色泽、品种优劣。
+（2）本段说明的中心是什么？
+明确：人工选择在加速花色变化过程中的作用。
+（3）本段的说明结构是怎样的？
+明确：总——分的结构。
+&lt;/code&gt;&lt;/pre&gt;
 </content>
     </entry>
     

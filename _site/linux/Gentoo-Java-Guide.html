@@ -1,0 +1,520 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gentoo Java 安装指南 gentoojava gentoo java 安装指南">
+    <meta name="keywords" content="gentoo, java"/>
+    <meta name="author" content="ecjt.tk"> 
+    <meta property="st:title" content="gentoo java 安装指南" />
+    <meta property="st:published_at" content="2015-01-09 21:03:00 +0800"/>
+    <meta name="baidu-site-verification" content="Bb11LoG0qB" />
+    <link rel="canonical" href="http://ecjtk.tk/linux/Gentoo-Java-Guide.html">
+    <link href="http://ecjt.tk/rss.xml" title="RSS 2.0" type="application/rss+xml" rel="alternate"/>
+    <link href="/img/icon.ico" rel="icon" type="image/x-icon">
+    <title>gentoo java 安装指南 - 恩赐姐脱</title>
+    <link rel="stylesheet" href="/css/min/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/min/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/min/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/JekyllPure-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/JekyllPure.css">
+    <!--<![endif]-->
+
+    <link href="/css/min/font-awesome.min.css" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/min/font-awesome-ie7.min.css">
+    <![endif]-->
+    <script src="/js/min/jquery-1.7.2.min.js"></script>
+
+</head>
+
+<body>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <div class="headerpic">
+                <a href="/">
+                    <img src="/img/ecjt.png" alt="Profile Picture" style="width: 140px;" title="返回首页">
+                </a>
+            </div>
+            <h1 class="brand-title">恩赐姐脱</h1>
+            <h2 class="brand-tagline">Don't write code.</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="/Timing">时间轴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="/tag">标签库</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="pure-button" href="/type">博文类</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="/1">音乐屋</a>
+
+                </ul>
+            </nav>
+            <div class="search" >
+                <!--<form action="/search">
+                    <input type="text" id="st-search-input" style="width:90px" class="search-query" placeholder="Search Blog" name="query" title="全站搜索-只支持英文">
+                </form>
+                -->
+                <form>
+                    <input type="text" id="st-search-input" placeholder="Search Blog" />
+                </form>
+            </div>
+            <div id="toc"></div>
+            <nav id="nav">
+                <ul class="nav-list">
+                    <li class="nav-link">
+                    <a class="weibo "  href="http://weibo.com/localhost0000" ><i class="fa fa-weibo fa-2x"></i></a>
+                    </li>
+                    <li class="nav-link">
+                    <a class="github" href="https://github.com/zhaoqc"><i class="fa fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav-link">
+                    <a class="rss" href="/rss.xml" ><i class="fa fa-rss fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <!--[if lt IE 8]>
+        <i class="label label-danger">亲爱的用户，您的浏览器版本过低，建议您升级浏览器获得更好的用户体验</i>
+        <![endif]-->
+        <div>
+            <div class="posts" id="st-results-container">
+
+                <div class="qrcodeTable"></div>
+<header class="post-header">
+    <img class="post-avatar" height="48" width="48"
+         src="/img/ecjt.png">
+
+    <h2 class="post-title">gentoo java 安装指南</h2>
+
+    <p class="post-meta">By 01月09日  2015  <a
+            class="post-categorybut " href="/type/#">linux</a><a
+            class="post-category " href="/tag/#gentoo"> gentoo</a><a
+            class="post-category " href="/tag/#java">  java</a>
+    </p>
+</header>
+<div class="article pure-u-22-24">
+    <h3>1.  什么是Java？</h3>
+
+<p>简介</p>
+
+<pre><code>Java是Sun Microsystems开发的一门面向对象的程序语言，可以在不用重新编译的前提下运行在不同的平台上。虽然也可以被编译成原生程序，但良好的移植性和内存垃圾回收才是Java受欢迎的主要原因。Java编译器会将Java代码转换成Java字节码作为中间层在JRE（Java运行环境）上而不是直接在操作系统上运行，这就使平台无关成为了可能。
+
+为了运行Java字节码，必须首先安装JRE（Java运行环境）。JRE会提供核心库，一个独立平台的Java虚拟机和浏览器插件等等。JDK（Java开发工具）则集成了编程所开发需的工具，例如字节码编译器和调试器。
+</code></pre>
+
+<h3>2.  在你开始之前</h3>
+
+<p>已经安装</p>
+
+<pre><code>如果已经安装过Java，不论是什么版本都请参照Java升级指南。
+</code></pre>
+
+<p>全新安装</p>
+
+<pre><code>全新安装不需要其它准备工作。
+</code></pre>
+
+<h3>3.  安装虚拟机</h3>
+
+<p>选择</p>
+
+<pre><code>Gentoo提供了多种运行环境（JRE）和开发工具（JDK）。我们现有的选择是：
+提供商   JDK     JRE
+Sun Java Kit    dev-java/sun-jdk    dev-java/sun-jre-bin
+IBM Java Kit    dev-java/ibm-jdk-bin    dev-java/ibm-jre-bin
+BEA WebLogic J2SE Development Kit   dev-java/jrockit-jdk-bin
+</code></pre>
+
+<p>安装JRE／JDK</p>
+
+<pre><code>你可以使用emerge virtual/jdk来安装profile默认的JDK。或者，你可以使用emerge virtual/jre安装profile默认的JRE。
+
+Sun近期重新制作了一个更适合Linux的JDK／JRE许可认证。所以从Sun Java 1.5开始，用户可以在不做任何额外工作的前提下免费下载。
+
+注意: 如果你要安装JDK，就不用再安装JRE，因为JRE是JDK的一部分。
+</code></pre>
+
+<p>安装不能通过命令行下载的虚拟机</p>
+
+<pre><code>在安装某些JDK和JRE前你需要多做一些步骤。你只需要照常emerge你需要的软件包，之后ebuild会告诉你在哪里可以下载所需的文件。
+
+把需要的软件包放在/usr/portage/distfiles。完成后重新emerge安装JRE／JDK。
+</code></pre>
+
+<ol>
+<li>配置你的虚拟机</li>
+</ol>
+
+
+<p>简介</p>
+
+<pre><code>Gentoo支持安装多个JDK或者JRE并且不会造成任何冲突。
+
+使用java-config工具，你可以更改系统设置（需要root用户）。普通用户可以使用java-config改变个人设置。
+
+注意: 你也可以使用eselect来改变系统和用户的虚拟机。参照eselect java-vm help。
+</code></pre>
+
+<p>设定默认虚拟机</p>
+
+<pre><code>运行java-config --list-available-vms会显示在你机器上现有的JRE和JDK。如下例：
+
+代码 4.1: 显示可用虚拟机
+
+# java-config --list-available-vms
+The following VMs are available for generation-2:
+1)      IcedTea6-bin 1.4.1 [icedtea6-bin]
+2)      Sun JDK 1.5.0.20 [sun-jdk-1.5] (Build Only)
+*)      Sun JDK 1.6.0.16 [sun-jdk-1.6]
+
+注意: 标记为Build Only的虚拟机可能包含安全漏洞或者产品生命周期已结束（EOL）。Gentoo不推荐把这样的虚拟机设为你的系统或者用户虚拟机。请阅读Build Only虚拟机以获取更多信息。
+
+*标志出了你现在正在使用的虚拟机（系统虚拟机或者用户虚拟机）。括号（[]）中的名字代表这个虚拟机的ID或者handle。你可以使用handle或ID来设置系统虚拟机：java-config --set-system-vm。下面是一个更改系统虚拟机的例子。
+
+代码 4.2: 设定系统虚拟机
+
+（通过handle（推荐））
+# java-config --set-system-vm sun-jdk-1.6
+Now using sun-jdk-1.6 as your generation-2 system JVM
+（通过ID）
+# java-config --set-system-vm 3
+Now using sun-jdk-1.6 as your generation-2 system JVM
+
+作为一个普通用户，你可以使用java-config --set-user-vm。
+
+注意: 你不必再执行source profile来使用户／系统虚拟机的改动起效。
+
+Build Only VM
+
+有些虚拟机被标记为buildonly，因为他们的生命周期已经结束或者包含安全漏洞。这些虚拟机并不会自动被Gentoo用来运行应用程序，但是我们仍然提供它因为有些包仍然需要它来构建。我们强烈建议不要把这些虚拟机设定为你的系统或者用户虚拟机，因为如果那样的话，运行/usr/bin/{java,javac,..}等可执行文件以及其他不使用Gentoo的java启动脚本的包的时候，这些虚拟机就会被用到了。
+</code></pre>
+
+<p>首选虚拟机</p>
+
+<pre><code>当安装Java写成的软件的时候，虚拟机将会在需要时被切换。
+
+因为有很多的不同的虚拟机可以选择，我们没有足够的资源去测试和确认所有的软件包都能在上面正常工作。所以为确保所有的软件包都能成功安装，我们为每个平台都定制了一份默认的／受支持的虚拟机列表。此列表可以在/usr/share/java-config-2/config/jdk-defaults.conf文件中找到。当你在安装Java软件包时，如果系统检测到该列表中的某个虚拟机已经安装，它会自动使用该虚拟机，而不是system-vm。
+
+有时需要在安装软件时切换虚拟机。例如，system-vm设定为1.4，当你安装需要1.5版的软件包时，虚拟机会被临时切换。
+
+当然，Gentoo给予了用户充分的选择权利，你可以重写在/etc/java-config-2/build/jdk.conf中默认的配置，完全控制使用哪一个虚拟机。如下例：
+
+代码 4.3: /etc/java-config-2/build/jdk.conf实例
+
+我只想使用sun-jdk，例如1.4版使用sun-jdk-1.4、1.5版使用sun-jdk-1.5等等。
+*=sun-jdk
+
+代码 4.4: /etc/java-config-2/build/jdk.conf实例
+
+我只想使用sun-jdk-1.5，除了指明需要1.3或1.4版虚拟机的情况
+*=sun-jdk-1.5
+
+代码 4.5: /etc/java-config-2/build/jdk.conf实例
+
+# 对于1.3版优先使用sun-jdk 1.4。当sun-jdk 1.4不可用时，用ibm-jdk-bin替代
+# 对于1.5版, 使用sun-jdk 
+1.3=sun-jdk-1.4 ibm-jdk-bin
+1.5=sun-jdk
+
+警告: 你不一定要修改这个文件。如果你使用了一个不被支持的虚拟机，可能发生错误。而且这样产生的bug会在使用受支持的虚拟机时产生的bug被处理完之后才会被处理。
+</code></pre>
+
+<h3>5.  编译器</h3>
+
+<p>对于任何的JDK，你可以使用javac来调用标准的编译器。在编译时，你除了可以设定虚拟机，也可以设定编译器。简单说，你可以在/etc/java-config-2/build/compilers.conf里定义你首选的编译器。</p>
+
+<pre><code>代码 5.1: /etc/java-config-2/build/compilers.conf
+
+# 如果ebuild支持它
+# 它会从头到尾的检查COMPILERS变量里的值
+# 并且使用第一个已经安装的编译器
+
+COMPILERS="ecj-X.Y jikes javac"
+
+部分编译器不支持所有可能的-target和-source参数。所以每一个在列表中的编译器都会被检测来确定它是否支持所需要的-source／-target。javac支持所有的参数，所以如果在列表中没有发现合适的编译器，javac会被调用。
+
+每个编译器的细节如下：
+名称  Handle  软件包   简介
+javac   javac   N/A     默认编译器，包含在JDK中。
+jikes   jikes   dev-java/jikes  jikes是IBM开发的。有趣的是，它的运行速度一般要比javac快。但是请注意，它的语法要求更严格，并且会出现一些在javac下不会出现的一些问题。它还不支持Java 1.5的句法。
+Eclipse Java编译器   ecj     =dev-java/eclipse-ecj   ECJ是Eclipse开发工具用的编译器。它的运行速度很快，并且支持Java 1.5句法。
+</code></pre>
+
+<h3>6.  设定默认CLASSPATH</h3>
+
+<pre><code>警告: 下面的段落已被认为已经过时，很可能在以后被删除。我们强烈建议你不要使用它们，因为你的Java项目应该管理自己的CLASSPATH。如果你指定一个默认的CLASSPATH，部分程序可能因为发现未预期的class而产生错误。
+
+java-config也可以用来设定系统级别的CLASSPATH和用户级别的CLASSPATH。
+
+首先，你要列出所有在你系统上安装的Java库：
+
+代码 6.1: 列出class
+
+# java-config --list-available-packages
+[xerces-2] The next generation of high performance, fully compliant XML parsers in the Apache Xerces family (/usr/share/xerces-2/package.env)
+[junit] Simple framework to write repeatable tests (/usr/share/junit/package.env)
+[bsh] BeanShell: A small embeddable Java source interpreter (/usr/share/bsh/package.env)
+[bcel] The Byte Code Engineering Library: analyze, create, manipulate Java class files (/usr/share/bcel/package.env)
+[log4j] A low-overhead robust logging package for Java (/usr/share/log4j/package.env)
+...
+
+和前面一样，在括号（[]）中的名字代表你将传递给java-config --set-system-classpath的ID。如下例：
+
+代码 6.2: 设定classpath
+
+# java-config --set-system-classpath log4j,xerces-2
+
+注意: 当前文件夹（.）不会被添加到系统classpath，应该被添加到你的系统登录profile。
+
+你需要注销并重新登录或者source /etc/profile来更新你的环境变量。
+
+对于用户，java-config --set-user-classpath会建立~/.gentoo/java-env-classpath。之后你应该从你的shell的profile里source这个文件。
+
+代码 6.3: Source用户专有的classpath
+
+if [[ -f "${HOME}/.gentoo/java-env-classpath" ]]; then
+    source ${HOME}/.gentoo/java-env-classpath
+fi
+
+如果你真的想要设定一个系统级别或者用户指定的classpath，你可以添加下面的代码到你的shell profile，但是我们不建议你这么做。
+
+代码 6.4: 设定classpath
+
+# export CLASSPATH="${CLASSPATH}:$(java-config --classpath log4j,xerces-2)"
+</code></pre>
+
+<h3>7.  Java浏览器插件</h3>
+
+<pre><code>安装插件
+
+你可以在启用nsplugin USE标记的情况下emerge Java虚拟机来安装Java浏览器插件。
+
+注意: nsplugin并不支持所有构架。在安装前请用emerge -pv &lt;java-vm&gt;来检查你的机器是否被支持。
+
+Portage允许你安装多个不同版本的Java插件，但是只有一个会被浏览器使用。你可以用以下指令查看可用的插件：
+
+代码 7.1: 查看可用插件
+
+# eselect java-nsplugin list
+   [1]   sun-jre-bin-1.6
+   [2]   icedtea6-bin
+
+在这个例子中sun-jre-bin被选择做为浏览器插件。
+
+代码 7.2: 选择一个插件
+
+# eselect java-nsplugin set sun-jre-bin-1.6
+
+确认选择了正确的插件：
+
+代码 7.3: 确认正确的插件
+
+# eselect java-nsplugin list
+   [1]   sun-jre-bin-1.6  current
+   [2]   icedtea6-bin
+
+Java.com也提供了一个链接来验证你已经安装的插件。如果你使用基于Mozilla的浏览器，你可以地址栏输入about:plugins来验证你的Java插件。
+
+multilib系统的插件
+
+如果你的系统包括了64位和32位multilib（例如AMD64），你能使用64位和32位Java插件。除非你有不可抗拒的理由要运行32位Java应用程序，否则我们推荐在64位浏览器上使用原生64位插件。
+
+我们提供了几个原生64位浏览器插件。默认的JDK/JRE，sun-jdk和sun-jre-bin，都包含浏览器插件。 只要以nsplugin USE标记emerge其中一个即可。
+
+代码 7.4: 安装64位插件
+
+# echo "dev-java/sun-jre-bin nsplugin" &gt;&gt; /etc/portage/package.use
+# emerge sun-jre-bin
+
+要在32位浏览器上使用32位插件，你可以使用nsplugin USE标记emerge emul-linux-x86-java。
+
+代码 7.5: 安装32位插件
+
+# echo "app-emulation/emul-linux-x86-java nsplugin" &gt;&gt; /etc/portage/package.use
+# emerge emul-linux-x86-java
+
+下一步，检查可用的插件：
+
+代码 7.6: 查看可用插件
+
+# eselect java-nsplugin list
+Available 32-bit Java browser plugins
+  [1]   emul-linux-x86-java-1.5
+  [2]   emul-linux-x86-java-1.6
+Available 64-bit Java browser plugins
+  [1]   icedtea6-bin
+  [2]   sun-jre-bin-1.6
+
+现在，选择适合你的浏览器的正确插件：
+
+代码 7.7: 选择插件
+
+(Choose the plugins for 32-bit and 64-bit browsers)
+# eselect java-nsplugin set 32bit emul-linux-x86-java-1.6
+# eselect java-nsplugin set 64bit sun-jre-bin-1.6
+
+核实选择了正确的插件：
+
+代码 7.8: 确认正确的插件
+
+# eselect java-nsplugin list
+Available 32-bit Java browser plugins
+  [1]   emul-linux-x86-java-1.5
+  [2]   emul-linux-x86-java-1.6  current
+Available 64-bit Java browser plugins
+  [1]   icedtea6-bin
+  [2]   sun-jre-bin-1.6  current
+</code></pre>
+
+<h3>8.  Java的USE标记</h3>
+
+<pre><code>设定USE标记
+
+更多关于USE标记的信息，参照Gentoo手册USE标记。
+
+标记
+
+    java标记可以让多种不同的程序支持Java
+    nsplugin标记让基于Mozilla的浏览器（包括Firefox）支持Java。你需要它来在基于Mozilla的浏览器上运行Java applet。
+    source标记会安装以zip形式安装软件包的源代码。这个一般是让IDE给你使用的库添加源代码。
+    jce标记添加了对Java加密引擎的支持
+    对于Java的软件包，doc标记将会使用javadoc建立API文档
+</code></pre>
+
+<h3>9.  附加资料</h3>
+
+<pre><code>离线资料
+
+    java-config man page
+    java-config --help
+
+在线资料
+
+    Gentoo的Java项目主页
+    Gentoo的gentoo-java, gentoo-user, and gentoo-dev邮件列表归档
+    #gentoo和#gentoo-java IRC频道
+    Wikipedia上的Java条目
+    如果你对于这篇文档有建议或问题，请发邮件到Gentoo Java团队：java@gentoo.org
+</code></pre>
+
+</div>
+    <div class="pure-g pagination">
+        
+        <a class="pure-u-1-2 pagination-item " href="/linux/standby-and-sleep.html" title="Linux下休眠/待机命令 "><p> <i class="fa fa-mail-reply"></i>&nbsp;Linux下休眠/待机命令</p></a>
+        
+        
+        <span class="pure-u-1-2 pagination-item "><p>下一篇&nbsp;<i class="fa fa-chain-broken"></i></p></span>
+        
+    </div>
+    <link href="/css/code.css" rel="stylesheet">
+    <link href="/css/min/fancybox.css" rel="stylesheet">
+    <script src="/js/min/jquery.toc.min.js" ></script>
+    <script src="/js/min/jquery.qrcode.min.js" ></script>
+    <script src="/js/min/jquery.fancybox.pack.js" ></script>
+    <script src="/js/page.js" ></script>
+
+    
+    
+
+    
+    
+    <!--<a name="comments"> </a>
+<div id="comment">
+    <div class="ds-thread" data-title="gentoo java 安装指南"></div>
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:""};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = '../js/min/duoshuo.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+</div>
+-->
+<!-- 多说评论框 start -->
+<div class="ds-thread"  data-title="gentoo java 安装指南" data-url=""></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"ecjt"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+    
+
+
+
+
+
+
+            </div>
+            </div>
+        <div class="footer">
+                <a href="/love/welcome-my-blog.html">About</a>
+                 <a href="/1">Collecting</a>
+                <a href="tencent://message/?uin=466484500">QQ</a>
+                <a href="https://github.com/zhaoqc">GitHub</a>
+            <script src="/js/min/nprogress.min.js"></script>
+            <script src="/js/index.js"></script>
+        </div>
+        <div class="topfade"><a href="javascript:;" title="返回顶部"></a></div>
+
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-58251919-1', 'auto');
+      ga('send', 'pageview');
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+    
+      _st('install','xXqQDdLTsx921KsbJUZD');
+    $("st-search-input").swiftypeSearch({
+       engineKey: '9x8Ysx-8pMrkJBY7yaGN',
+       fetchFields: {'page': ['title', 'url', 'published_at']},
+       facets: {'page': ['type']}
+    });
+   
+    </script>
+
+</body>
+
+</html>

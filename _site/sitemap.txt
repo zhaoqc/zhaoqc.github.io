@@ -8,6 +8,7 @@ http://ecjt.tk/tag/
 http://ecjt.tk/type/
 http://ecjt.tk/page/2/index.html
 
+http://ecjt.tk/linux/Gentoo-Java-Guide.html
 http://ecjt.tk/linux/standby-and-sleep.html
 http://ecjt.tk/linux/Gentoo-USE.html
 http://ecjt.tk/linux/llibnss3-tools.html
