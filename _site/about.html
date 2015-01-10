@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Linux下休眠/待机命令 command Linux下休眠/待机命令">
-    <meta name="keywords" content="command"/>
+    <meta name="description" content="恩赐姐脱  About">
+    <meta name="keywords" content=""/>
     <meta name="author" content="ecjt.tk"> 
     <meta name="baidu-site-verification" content="Bb11LoG0qB" />
-    <link rel="canonical" href="http://ecjtk.tk/linux/standby-and-sleep.html">
+    <link rel="canonical" href="http://ecjtk.tk/about.html">
     <link href="http://ecjt.tk/rss.xml" title="RSS 2.0" type="application/rss+xml" rel="alternate"/>
     <link href="/img/icon.ico" rel="icon" type="image/x-icon">
-    <title>Linux下休眠/待机命令 - 恩赐姐脱</title>
+    <title>About - 恩赐姐脱</title>
     <link rel="stylesheet" href="/css/min/pure-min.css">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="/css/min/grids-responsive-old-ie-min.css">
@@ -91,110 +91,7 @@
         <div>
             <div class="posts" id="st-results-container">
 
-                <div class="qrcodeTable"></div>
-<header class="post-header">
-    <img class="post-avatar" height="48" width="48"
-         src="/img/ecjt.png">
-
-    <h2 class="post-title">Linux下休眠/待机命令</h2>
-
-    <p class="post-meta">By 01月08日  2015  <a
-            class="post-categorybut " href="/type/#">linux</a><a
-            class="post-category " href="/tag/#command"> command</a><a
-            class="post-category " href="/tag/#">  </a>
-    </p>
-</header>
-<div class="article pure-u-22-24">
-    <p>在作之前，先检查一下你的内核能支持哪些方式：</p>
-
-<pre><code># cat /sys/power/state
-
-standby disk
-</code></pre>
-
-<h3>1. 睡眠 (sleep)</h3>
-
-<pre><code>睡眠可能有两种方式：mem和standby，这两种方式都是suspend to RAM，简称STR，只是standby耗电更多一些，返回到正常工作方式时间更短一些而已。
-
-只需要
-
-# echo standby &gt; /sys/power/state
-</code></pre>
-
-<h3>2. 休眠 (hibernation)</h3>
-
-<pre><code>休眠也有两种方式：shutdown和platform。shutdown是通常的方式，比较可靠一些。如果你的系统上ACPI支持非常好，那就有机会支持platform方式。激活的方式稍有不同：
-
-# echo platform &gt; /sys/power/disk; echo disk &gt; /sys/power/state
-就可以了。
-or
-# echo shutdown &gt; /sys/power/disk; echo disk &gt; /sys/power/state
-就可以了。
-注意休眠有一个前提，就是在系统启动时需要指定resume设备，也就是休眠的镜像需要保存的分区。一般都用swap分区来做。
-指定方式是:
-kernel /boot/vmlinuz root=/dev/sda1 resume=/dev/sda2 vga=0×314 …
-这样在系统启动时，内核会检查resume中的内容，如果存在上次休眠的镜像，那内核便会将镜像读入内存，恢复正常工作状态。
-</code></pre>
-
-</div>
-    <div class="pure-g pagination">
-        
-        <a class="pure-u-1-2 pagination-item " href="/linux/Gentoo-USE.html" title="Genoo全局USE标签 "><p> <i class="fa fa-mail-reply"></i>&nbsp;Genoo全局USE标签</p></a>
-        
-        
-        <a class="pure-u-1-2 pagination-item " href="/linux/Gentoo-Java-Guide.html" title="gentoo java 安装指南"><p>gentoo java 安装指南&nbsp;<i class="fa fa-mail-forward"></i></p></a>
-        
-    </div>
-    <link href="/css/code.css" rel="stylesheet">
-    <link href="/css/min/fancybox.css" rel="stylesheet">
-    <script src="/js/min/jquery.toc.min.js" ></script>
-    <script src="/js/min/jquery.qrcode.min.js" ></script>
-    <script src="/js/min/jquery.fancybox.pack.js" ></script>
-    <script src="/js/page.js" ></script>
-
-    
-    
-
-    
-    
-    <!--<a name="comments"> </a>
-<div id="comment">
-    <div class="ds-thread" data-title="Linux下休眠/待机命令"></div>
-    <script type="text/javascript">
-        var duoshuoQuery = {short_name:""};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = '../js/min/duoshuo.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0]
-                    || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-    </script>
-</div>
--->
-<!-- 多说评论框 start -->
-<div class="ds-thread"  data-title="Linux下休眠/待机命令" data-url=""></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"ecjt"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-
-
-    
-
-
-
+                本站所有文章来源于网络或原创，如侵犯了你的权益，请及时与我联系。
 
 
 
