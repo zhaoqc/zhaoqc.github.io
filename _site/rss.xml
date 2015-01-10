@@ -4,7 +4,7 @@
     <title>恩赐姐脱</title>
     <link href="http://ecjt.tk/rss.xml" rel="self"/>
     <link href="http://ecjt.tk/"/>
-    <updated>2015-01-09T23:19:00+08:00</updated>
+    <updated>2015-01-10T10:47:30+08:00</updated>
     <id>http://ecjt.tk/</id>
     <author>
         <name>zhaoqc</name>
@@ -16,7 +16,7 @@
         <title>[&quot;gentoo java 安装指南&quot;]</title>
         <link href="http://ecjt.tk/linux/Gentoo-Java-Guide.html"/>
         <updated>2015-01-09T21:03:00+08:00</updated>
-        <id>http://liyouhai.com//linux/Gentoo-Java-Guide</id>
+        <id>http://ecjt.tk//linux/Gentoo-Java-Guide</id>
         <summary type="html">&lt;h3&gt;1.  什么是Java？&lt;/h3&gt;
 </summary>
         <content type="html">&lt;h3&gt;1.  什么是Java？&lt;/h3&gt;
@@ -329,7 +329,7 @@ Available 64-bit Java browser plugins
         <title>[&quot;Linux下休眠/待机命令&quot;]</title>
         <link href="http://ecjt.tk/linux/standby-and-sleep.html"/>
         <updated>2015-01-08T00:50:00+08:00</updated>
-        <id>http://liyouhai.com//linux/standby-and-sleep</id>
+        <id>http://ecjt.tk//linux/standby-and-sleep</id>
         <summary type="html">&lt;p&gt;在作之前，先检查一下你的内核能支持哪些方式：&lt;/p&gt;
 </summary>
         <content type="html">&lt;p&gt;在作之前，先检查一下你的内核能支持哪些方式：&lt;/p&gt;
@@ -369,7 +369,7 @@ kernel /boot/vmlinuz root=/dev/sda1 resume=/dev/sda2 vga=0×314 …
         <title>[&quot;Genoo全局USE标签&quot;]</title>
         <link href="http://ecjt.tk/linux/Gentoo-USE.html"/>
         <updated>2015-01-07T00:00:00+08:00</updated>
-        <id>http://liyouhai.com//linux/Gentoo-USE</id>
+        <id>http://ecjt.tk//linux/Gentoo-USE</id>
         <summary type="html">&lt;h3&gt;Gentoo USE简介&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;控制软件安装等。
@@ -1194,7 +1194,7 @@ zsh-completion
         <title>[&quot;please install *libnss3-tools* package&quot;]</title>
         <link href="http://ecjt.tk/linux/llibnss3-tools.html"/>
         <updated>2015-01-06T20:00:00+08:00</updated>
-        <id>http://liyouhai.com//linux/llibnss3-tools</id>
+        <id>http://ecjt.tk//linux/llibnss3-tools</id>
         <summary type="html">&lt;pre&gt;&lt;code&gt;Debian/Ubuntu: sudo apt-get install libnss3-tools
 Fedora: su -c &quot;yum install nss-tools&quot;
 Gentoo: su -c &quot;echo &#39;dev-libs/nss utils&#39; &amp;gt;&amp;gt; /etc/portage/package.use &amp;amp;&amp;amp; emerge dev-libs/nss&quot; (You need to launch all commands below with the nss prefix, e.g., nsscertutil.)
@@ -1213,7 +1213,7 @@ Opensuse: sudo zypper install mozilla-nss-tools
         <title>Linux更新网络时间</title>
         <link href="http://ecjt.tk/java/linux%E6%9B%B4%E6%96%B0%E7%BD%91%E7%BB%9C%E6%97%B6%E9%97%B4.html"/>
         <updated>2015-01-04T21:44:00+08:00</updated>
-        <id>http://liyouhai.com//java/linux更新网络时间</id>
+        <id>http://ecjt.tk//java/linux更新网络时间</id>
         <summary type="html">&lt;h3&gt;方法一、使用命令&lt;/h3&gt;
 </summary>
         <content type="html">&lt;h3&gt;方法一、使用命令&lt;/h3&gt;
@@ -1240,7 +1240,7 @@ ntpdate cn.pool.ntp.org
         <title>花儿为啥那样红</title>
         <link href="http://ecjt.tk/java/%E8%8A%B1%E5%84%BF%E4%B8%BA%E5%95%A5%E9%82%A3%E6%A0%B7%E7%BA%A2.html"/>
         <updated>2015-01-04T21:42:00+08:00</updated>
-        <id>http://liyouhai.com//java/花儿为啥那样红</id>
+        <id>http://ecjt.tk//java/花儿为啥那样红</id>
         <summary type="html">&lt;h3&gt;1、歌曲&lt;/h3&gt;
 </summary>
         <content type="html">&lt;h3&gt;1、歌曲&lt;/h3&gt;
@@ -1391,7 +1391,7 @@ ntpdate cn.pool.ntp.org
         <title>SSH+autoproxy+firefox方案</title>
         <link href="http://ecjt.tk/linux/freessh.html"/>
         <updated>2015-01-03T20:09:21+08:00</updated>
-        <id>http://liyouhai.com//linux/freessh</id>
+        <id>http://ecjt.tk//linux/freessh</id>
         <summary type="html">&lt;h3&gt;1.首先要安装SSH,&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt; 终端运行   
@@ -1455,7 +1455,7 @@ Linuxren.n et
         <title>grep目录及子目录文件内容</title>
         <link href="http://ecjt.tk/linux/grep.html"/>
         <updated>2015-01-03T00:00:00+08:00</updated>
-        <id>http://liyouhai.com//linux/grep</id>
+        <id>http://ecjt.tk//linux/grep</id>
         <summary type="html">&lt;p&gt;  grep搜寻文件及所有子目录下的文件里的内容:&lt;/p&gt;
 </summary>
         <content type="html">&lt;p&gt;  grep搜寻文件及所有子目录下的文件里的内容:&lt;/p&gt;
@@ -1486,7 +1486,7 @@ Linuxren.n et
         <title>[&quot;jekyll 官网文档部分翻译&quot;]</title>
         <link href="http://ecjt.tk/jekyll/Jekyll.html"/>
         <updated>2015-01-01T20:00:00+08:00</updated>
-        <id>http://liyouhai.com//jekyll/Jekyll</id>
+        <id>http://ecjt.tk//jekyll/Jekyll</id>
         <summary type="html">&lt;h3&gt;什么是jekyll??&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;简单说：它是静态网页生成器。
@@ -1870,7 +1870,7 @@ members:
         <title>[&quot;HelloWorld&quot;]</title>
         <link href="http://ecjt.tk/helloworld/HelloWorld.html"/>
         <updated>2015-01-01T00:00:00+08:00</updated>
-        <id>http://liyouhai.com//helloworld/HelloWorld</id>
+        <id>http://ecjt.tk//helloworld/HelloWorld</id>
         <summary type="html">&lt;h3&gt;HelloWorld&lt;/h3&gt;
 </summary>
         <content type="html">&lt;h3&gt;HelloWorld&lt;/h3&gt;

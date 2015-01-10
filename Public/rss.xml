@@ -20,7 +20,7 @@ permalink: rss.xml
         <title>{{ post.title | xml_escape }}</title>
         <link href="http://ecjt.tk{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>http://liyouhai.com/{{ post.id }}</id>
+        <id>http://ecjt.tk/{{ post.id }}</id>
         <summary type="html">{{ post.excerpt | xml_escape }}</summary>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
