@@ -7,7 +7,7 @@
             http://ecjt.tk/Timing/
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -18,7 +18,7 @@
             http://ecjt.tk/index.html
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -29,7 +29,7 @@
             http://ecjt.tk/rss.xml
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -40,7 +40,18 @@
             http://ecjt.tk/search/
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
+        </lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>
+            http://ecjt.tk/sitemap.txt
+        </loc>
+        <lastmod>
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -51,7 +62,7 @@
             http://ecjt.tk/sitemap.xml
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -62,7 +73,7 @@
             http://ecjt.tk/tag/
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -73,7 +84,7 @@
             http://ecjt.tk/type/
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -84,7 +95,7 @@
             http://ecjt.tk/page/2/index.html
         </loc>
         <lastmod>
-            2015-01-10T10:47:30+08:00
+            2015-01-10T11:21:24+08:00
         </lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>

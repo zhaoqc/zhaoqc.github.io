@@ -1,0 +1,14 @@
+---
+permalink: sitemap.txt
+---
+
+
+    {% for page in site.pages %}
+            {{site.production_url}}{{ page.url }}
+            {{ site.time | date_to_xmlschema }}
+    {% endfor %}
+    {% for post in site.posts %}
+            {{site.production_url}}{{ post.id }}
+            {{ post.date | date_to_xmlschema }}
+    {% endfor %}
+
