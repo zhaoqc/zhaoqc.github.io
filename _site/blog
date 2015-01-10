@@ -1,5 +1,0 @@
-#/bin/bash
-echo "Please enter a valid title."
-read title
-
-vim ./_posts/$(date +%F)-$title.md
