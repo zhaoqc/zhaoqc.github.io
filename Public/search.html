@@ -3,18 +3,19 @@ layout: blog
 title: 全站搜索
 permalink: search/
 ---
-<script type="text/javascript">
-    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-      })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
-    
-      _st('install','xXqQDdLTsx921KsbJUZD');
-    $("st-search-input").swiftypeSearch({
-       engineKey: '9x8Ysx-8pMrkJBY7yaGN',
-       fetchFields: {'page': ['title', 'url', 'published_at']},
-       facets: {'page': ['type']}
-    });
+<script>
+  (function() {
+    var cx = '011452919930789814982:k4pexrhzpec';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<div id="st-results-container"></div>
+<gcse:searchresults-only></gcse:searchresults-only>
+<div class="gcse:searchresults-only"></dev>
+<gcse:searchresults-only></gcse:searchresults-only>
 
