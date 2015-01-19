@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [ Genoo全局USE标签 ]
+title: [ Gentoo全局USE标签 ]
 date: 2015-01-07 00:00 AM 
 description: "gentoo全局USE标签"
 category: Linux
