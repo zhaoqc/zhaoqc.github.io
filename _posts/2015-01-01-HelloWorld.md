@@ -19,3 +19,9 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
+{% highlight sql %}
+
+select * from user;
+
+{% endhighlight %}
+
