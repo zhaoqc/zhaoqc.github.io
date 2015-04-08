@@ -3,11 +3,7 @@ $(function () {
     $(".brand-title,.brand-tagline,nav").remove();
     $(".headerpic img").css("width", "140px")
     $(".headerpic").append('<div class="grcode"><i class="fa fa-qrcode"></i></div>');
-    $('#toc')
-    .append('<input type="button" id="btnNext" value="Next"/>')
-    .toc({'container': '.article', 'selectors': 'h1,h2,h3', prefix: 'top'})
-   
-    ;
+    $('#toc').toc({'container': '.article', 'selectors': 'h1,h2,h3', prefix: 'top'});
     $('.article').each(function (i) {
         $(this).find('img').each(function () {
             if ($(this).parent().hasClass('fancybox')) return;
@@ -64,7 +60,7 @@ function grcode() {
 $(document).ready( function() {
     var sum = $("ul li").length;
     if (sum > 10) {
-        $("#toc") .append('<div id="pageTurning"><input type="button" id="btnPrev" value="Prev"/><input type="button" id="btnNext" value="Next"/></div>');
+        $("#toc").css("height","400px") .append('<div id="pageTurning"><input type="button" id="btnPrev" value="Prev"/><input type="button" id="btnNext" value="Next"/></div>');
     };
     var total = Math.ceil((sum) / 10);
     var current = 1;
