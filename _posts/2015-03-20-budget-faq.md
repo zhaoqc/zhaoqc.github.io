@@ -8,15 +8,15 @@ tags : [ budget ]
 duoshuo: true
 ---
 ###Q:如何添加或者更改预算归口部门
-A:--归口 
-{% highlight sql %}
+>A:--归口 
+>>{% highlight sql %}
 select * from B_project_level_line_mapping where PROJECT_LEVEL3_NAME LIKE '%业务招待%'
 {% endhighlight %}
 ###Q:归口部门预算管理员提交无可选路径
 A:有可能是归口不对
 ###Q:预算编制
-
-
+这是`javascript`
+__粗__
 ###Q:两个部门合并应该修改哪些数据？
 
 A:改所有关于部门的数据
@@ -29,7 +29,7 @@ A:重新提交
 ###Q:查看部门资源
 
 A:--报账部门历史表
-select * from B_DPROJ_DEPT_HIST where DPROJ_HIST_ID='2013050209353913055223i'
+`select * from B_DPROJ_DEPT_HIST where DPROJ_HIST_ID='2.013050209353913e+21i'`
 
 --报账部门表
 select * from B_DPROJ_DEPT_LIST where  DPROJ_ID='2013042215321442536961i'
@@ -53,3 +53,19 @@ A:因为是分摊项目
 
 A:预算状态 0草稿 1流程中 2正常 3流程中撤销 4退回 6调整中 02关闭
 
+###Q:要求让往年项目的资源调整到本年使用
+A:往年项目不能调整到本来使用。
+###Q:aaaaaa
+1
+###Q:aaaaaa
+1
+###Q:aaaaaa
+1
+###Q:aaaaaa
+1
+###Q:aaaaaa
+1
+###Q:aaaaaa
+1
+###Q:aaaaaa
+1

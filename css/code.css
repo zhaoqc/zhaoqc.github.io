@@ -176,10 +176,15 @@ pre .err {
     width: 250px;
     margin: 0 auto;
     line-height:30px;
+    overflow: hidden;
+    white-space: nowrap; 
 }
 #toc ul{
     list-style-type:none;
     text-align:center;
+    height:50%;
+    text-overflow: ellipsis;
+    text-align:left;
 }
 #toc a {
     font-size: 12px;
@@ -193,6 +198,9 @@ pre .err {
 }
 #toc .top-h3 {
     padding-left: 4px;
+}
+#pageTurning {
+    margin-bottom:100px;
 }
 .grcode{
     float: right;
