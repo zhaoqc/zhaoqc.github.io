@@ -1,9 +1,20 @@
+var sum ;
+var total ;
+var current = 1;
 $(function () {
     $(".article a").attr("target", "_blank");
     $(".brand-title,.brand-tagline,nav").remove();
-    $(".headerpic img").css("width", "140px")
+    $(".headerpic img").css("width", "140px");
     $(".headerpic").append('<div class="grcode"><i class="fa fa-qrcode"></i></div>');
-    $('#toc').toc({'container': '.article', 'selectors': 'h1,h2,h3', prefix: 'top'});
+    $('#toc').toc({'container': '.article', 'selectors': 'h1,h2,h3', prefix: 'top'}); 
+        sum = $("ul li").length;
+        if (sum > 10) {
+            $("#toc").css("height","400px") 
+            .append('<div id="pageTurning"><a id="prev" >Prev</a> <a id="next" href="javascript:;" onclick="mnext()">Next</a>');
+            $("ul li:gt(9)").hide();
+            total = Math.ceil(sum / 10);
+        }
+
     $('.article').each(function (i) {
         $(this).find('img').each(function () {
             if ($(this).parent().hasClass('fancybox')) return;
@@ -30,10 +41,8 @@ $(function () {
                     }
                 }
             }
-
         });
     }
-    ;
     $(".grcode").mouseover(function () {
         grcode();
     }).mouseout(function () {
@@ -57,31 +66,33 @@ function grcode() {
         }
     });
 }
-$(document).ready( function() {
-    var sum = $("ul li").length;
-    if (sum > 10) {
-        $("#toc").css("height","400px") .append('<div id="pageTurning"><input type="button" id="btnPrev" value="Prev"/><input type="button" id="btnNext" value="Next"/></div>');
-    };
-    var total = Math.ceil((sum) / 10);
-    var current = 1;
-    $("ul li:gt(9)").hide();
-    $("#btnPrev").attr("disabled", "disabled").click( function() {
-        $("#btnNext").removeAttr("disabled");
+
+function mprev(){
+        
+        $("#next").attr("onclick","mnext()").attr("href","javascript:;");
         current -= 1;
         $("ul li").show();
         var indexStart = (current - 1) * 10;
         var indexEnd = indexStart + 9;
         $("li:lt(" + indexStart + "), li:gt(" + indexEnd + ")", $("ul")).hide();
-        if (current == 1) $(this).attr("disabled", "disabled");
-    });
-    $("#btnNext").click( function() {
-        $("#btnPrev").removeAttr("disabled");
+        if (current == 1) {
+            $("#prev").attr("onclick", "null").removeAttr("href");
+            
+        }
+        
+}
+
+function mnext(){
+    
+        $("#prev").attr("onclick","mprev()").attr("href","javascript:;");
         current += 1;
         $("ul li").show();
         var indexStart = (current - 1) * 10;
         var indexEnd = current * 10 - 1 > $("ul li").length - 1 ? $("ul li").length - 1 : current * 10 - 1;
         $("li:lt(" + indexStart + "), li:gt(" + indexEnd +")", $("ul")).hide();
-        if (current == total) $(this).attr("disabled", "disabled");
-    });
-    
-})
+        if (current == total) {
+           $("#next").attr("onclick", "null").removeAttr("href");
+
+        }
+        
+}

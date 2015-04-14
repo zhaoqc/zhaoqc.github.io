@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 预算FAQ
+title: 预算运维常见问题
 description: ""
 category: budget
 avatarimg: "/img/ecjt.png"
@@ -57,14 +57,61 @@ select * from B_DPROJ_DEPT_LIST where  DPROJ_ID=''
 >>--分摊项目
 
 ###Q:预算系统现在出现一个问题，在提交给省归口预算管理员时，提示ERROR：所选省本部归口预算管理员不在用户列表中。
+
 >A:需要调整该表
 {% highlight sql %}
 select * from EBPM_APPROVAL_CONFIG where BUSINESS_ID='2015033013455335562751i'
 {% endhighlight %}
 
-###Q：预算状态分别代表什么
->A:预算状态 
->>0草稿 1流程中 2正常 3流程中撤销 4退回 6调整中 02关闭
+###Q:在提交给省本部预算管理员时，提示ERROR：所选省本部归口预算管理员不在用户列表中。
+
+    `PROV_LINE_MANAGER` 省公司归口
+    `COMP_LINE_MANAGER` 公司归口
+    应该是代码有问题，`COMP_LINE_MANAGER` 居然是空的
+
+###Q:预算状态分别代表什么
+    
+>>0草稿
+    
+>>1流程中 
+
+>>2正常 
+
+>>3流程中撤销 
+
+>>4退回 
+
+>>6调整中
+
+>>>预算在调整后提交并在流程流程中。
+    
+>>7目前不明
+
+>>02关闭
 
 ###Q:要求让往年项目的资源调整到本年使用
+
 >A:往年项目不能调整到本来使用。
+
+###Q:合同在报销时没有可用资源
+
+>A:检查预算资源
+
+###Q:新成立部门需要那些东西？
+
+>A:部门ID，部门经理、副经理、预算管理员
+
+###Q:部门科目资源有重复的，一个总资源为0，一个总资源为14000万，且可用资源为负数？
+
+>A: 在页面获取index_id ，执行SQL语句
+{% highlight sql %}
+SELECT * FROM B_BUDGET_INDEX where  index_id = ‘’
+{% endhighlight %}
+
+###Q:如何冻结一个项目的资源？
+
+>A:copy control表的数据到freezing表
+
+###Q:年度表是哪个表呢？
+
+>A:
