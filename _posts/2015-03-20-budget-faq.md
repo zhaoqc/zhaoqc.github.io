@@ -4,8 +4,8 @@ title: 预算运维常见问题
 description: ""
 category: budget
 avatarimg: "/img/ecjt.png"
-tags : [ budget ]
-duoshuo: true
+tags : [ FQA ]
+duoshuo: false
 ---
 ###Q:如何添加或者更改预算归口部门
 >A:--归口 
@@ -115,3 +115,6 @@ SELECT * FROM B_BUDGET_INDEX where  index_id = ‘’
 ###Q:年度表是哪个表呢？
 
 >A:
+
+###Q:新成立部门的成本中心ID是有谁提供？或者在哪里可以取道？
+>A:由经办人提供，部门成立应该先找分公司提供部门代码，然后又财务提供成本中心段ID。
