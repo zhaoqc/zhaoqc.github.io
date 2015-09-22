@@ -10,7 +10,7 @@ $(function () {
         sum = $("ul li").length;
         if (sum > 10) {
             $("#toc").css("height","400px") 
-            .append('<div id="pageTurning"><a id="prev" >Prev</a> <a id="next" href="javascript:;" onclick="mnext()">Next</a>');
+            .append('<div id="pageTurning"><a id="prev" >Prev</a> <a id="next" href="javascript:;" onclick="mnext()">Next</a></div>');
             $("ul li:gt(9)").hide();
             total = Math.ceil(sum / 10);
         }

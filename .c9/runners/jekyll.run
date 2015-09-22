@@ -1,0 +1,12 @@
+// Create a custom Cloud9 runner - similar to the Sublime build system
+// For more information see https://docs.c9.io/custom_runners.html
+
+// This file overrides the built-in Apache httpd (PHP, HTML) runner
+// For more information see http://docs.c9.io:8080/#!/api/run-method-run
+{
+  "cmd": [
+    "jekyll server --host $IP --port $PORT"
+  ],
+  
+  "info": "Starting jekyll httpd, serving \\033[01;34m$hostname_path\\033[00m."
+}
