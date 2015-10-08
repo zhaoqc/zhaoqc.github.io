@@ -9,13 +9,13 @@ duoshuo: true
 ---
 ###查询语句
 {% highlight sql %}
-select b.display_name as 名字,a.normalized_number as 号码  from 
-(
-select raw_contact_id,normalized_number from phone_lookup
-)a left join 
-(
-select _id,display_name from raw_contacts
-)b 
-on a.raw_contact_id=b._id
-group by 名字
+SELECT
+    b.display_name AS 姓名,
+    a.normalized_number AS 号码
+FROM
+    phone_lookup a
+INNER JOIN
+    raw_contacts b
+ON
+    a.raw_contact_id=b._id
 {% endhighlight %}
