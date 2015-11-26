@@ -6,10 +6,10 @@ permalink: rss.xml
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>恩赐姐脱</title>
-    <link href="http://ecjt.tk/rss.xml" rel="self"/>
-    <link href="http://ecjt.tk/"/>
+    <link href="http://zhaoqc.github.io/rss.xml" rel="self"/>
+    <link href="http://zhaoqc.github.io/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://ecjt.tk/</id>
+    <id>http://zhaoqc.github.io/</id>
     <author>
         <name>zhaoqc</name>
         <email>zhaoqc@139.com</email>
@@ -18,9 +18,9 @@ permalink: rss.xml
     {% for post in site.posts %}
     <entry>
         <title>{{ post.title | xml_escape }}</title>
-        <link href="http://ecjt.tk{{ post.url }}"/>
+        <link href="http://zhaoqc.github.io{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>http://ecjt.tk/{{ post.id }}</id>
+        <id>http://zhaoqc.github.io/{{ post.id }}</id>
         <summary type="html">{{ post.excerpt | xml_escape }}</summary>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>

@@ -67,7 +67,7 @@ function grcode() {
     });
 }
 
-function mprev(){
+function mprev() {
         
         $("#next").attr("onclick","mnext()").attr("href","javascript:;");
         current -= 1;
@@ -95,4 +95,8 @@ function mnext(){
 
         }
         
+}
+
+window.onload = function () {
+    
 }

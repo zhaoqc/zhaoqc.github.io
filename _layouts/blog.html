@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">{% capture description %}{% if page.description %}{{ page.description }}{% else %}恩赐姐脱{% endif %}{% endcapture %}
     <meta name="description" content="{{ description }} {{ page.tags }} {{ page.title }}">{% capture tags %}{% if page.tags %}{{ page.tags }}{% else %}恩赐姐脱{% endif %}{% endcapture %}
     <meta name="keywords" content="{{ page.tags | join: ', ' }}"/>
-    <meta name="author" content="ecjt.tk"> {% capture canonical %}http://ecjt.tk{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+    <meta name="author" content="zhaoqc.github.io"> {% capture canonical %}http://zhaoqc.github.io{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
     <meta name="baidu-site-verification" content="Bb11LoG0qB" />
     <link rel="canonical" href="{{ canonical }}">
-    <link href="http://ecjt.tk/rss.xml" title="RSS 2.0" type="application/rss+xml" rel="alternate"/>
+    <link href="http://zhaoqc.github.io/rss.xml" title="RSS 2.0" type="application/rss+xml" rel="alternate"/>
     <link href="/img/icon.ico" rel="icon" type="image/x-icon">
     <title>{% if page.title %}{{ page.title }} - {% endif %}恩赐姐脱</title>
     <link rel="stylesheet" href="/css/min/pure-min.css">
