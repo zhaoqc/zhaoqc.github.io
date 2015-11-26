@@ -1,0 +1,2264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>恩赐姐脱</title>
+    <link href="http://zhaoqc.github.io/rss.xml" rel="self"/>
+    <link href="http://zhaoqc.github.io/"/>
+    <updated>2015-11-26T17:00:33+00:00</updated>
+    <id>http://zhaoqc.github.io/</id>
+    <author>
+        <name>zhaoqc</name>
+        <email>zhaoqc@139.com</email>
+    </author>
+
+    
+    <entry>
+        <title>SolarisMD5校验</title>
+        <link href="http://zhaoqc.github.io/linux/Solaris.html"/>
+        <updated>2015-09-25T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/Solaris</id>
+        <summary type="html">&lt;pre&gt;&lt;code&gt;solaris 10下的digest命令可以实现此功能:
+
+# digest
+digest: usage: digest -l | [-v] -a  [file…]
+
+# digest -v -a md5 a_13000_TBM_01001_201508_21_002.dat.gz 
+md5 (a_13000_TBM_01001_201508_21_002.dat.gz) = 85cfaab180523083e6144130bc7decb5
+
+# digest -l
+sha1
+md5 
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+        <content type="html">&lt;pre&gt;&lt;code&gt;solaris 10下的digest命令可以实现此功能:
+
+# digest
+digest: usage: digest -l | [-v] -a  [file…]
+
+# digest -v -a md5 a_13000_TBM_01001_201508_21_002.dat.gz 
+md5 (a_13000_TBM_01001_201508_21_002.dat.gz) = 85cfaab180523083e6144130bc7decb5
+
+# digest -l
+sha1
+md5 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt; jekyll server --host $IP --port $PORT&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>JAVA递归</title>
+        <link href="http://zhaoqc.github.io/budget/Recursive.html"/>
+        <updated>2015-06-14T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//budget/Recursive</id>
+        <summary type="html">&lt;p&gt;暗示保密&lt;/p&gt;
+</summary>
+        <content type="html">&lt;p&gt;暗示保密&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>系统维护日志</title>
+        <link href="http://zhaoqc.github.io/budget/budget-maintain-log.html"/>
+        <updated>2015-05-13T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//budget/budget-maintain-log</id>
+        <summary type="html">&lt;h3&gt;2015-5-29 18:00&lt;/h3&gt;
+</summary>
+        <content type="html">&lt;h3&gt;2015-5-29 18:00&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;系统进行重启
+数据库进行重启&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>获取安卓手机通讯录</title>
+        <link href="http://zhaoqc.github.io/andriod/andriod-contacts.html"/>
+        <updated>2015-05-06T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//andriod/andriod-contacts</id>
+        <summary type="html">&lt;h3&gt;查询语句&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;姓名&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalized_number&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;号码&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;phone_lookup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;raw_contacts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw_contact_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_id&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</summary>
+        <content type="html">&lt;h3&gt;查询语句&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;姓名&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalized_number&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;号码&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;phone_lookup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;raw_contacts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw_contact_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_id&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</content>
+    </entry>
+    
+    <entry>
+        <title>Linux里如何查找文件内容</title>
+        <link href="http://zhaoqc.github.io/linux/linux-find-grep.html"/>
+        <updated>2015-04-28T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/linux-find-grep</id>
+        <summary type="html">&lt;h3&gt;Linux查找文件内容的常用命令方法。&lt;/h3&gt;
+</summary>
+        <content type="html">&lt;h3&gt;Linux查找文件内容的常用命令方法。&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;从文件内容查找匹配指定字符串的行：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;$ grep &quot;被查找的字符串&quot; 文件名&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;例子：在当前目录里第一级文件夹中寻找包含指定字符串的.in文件&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;grep &quot;thermcontact&quot; &lt;em&gt;/&lt;/em&gt;.in&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;从文件内容查找与正则表达式匹配的行：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;$ grep –e “正则表达式” 文件名&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;查找时不区分大小写：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;$ grep –i &quot;被查找的字符串&quot; 文件名&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;查找匹配的行数：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;$ grep -c &quot;被查找的字符串&quot; 文件名&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;从文件内容查找不匹配指定字符串的行：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;$ grep –v &quot;被查找的字符串&quot; 文件名&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;find / -type f -name &quot;*.log&quot; | xargs grep &quot;ERROR&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;例子：从当前目录开始查找所有扩展名为.in的文本文件，并找出包含”thermcontact”的行&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;find . -name &quot;*.in&quot; | xargs grep &quot;thermcontact&quot;&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>预算系统的问题</title>
+        <link href="http://zhaoqc.github.io/budget/budget-bug.html"/>
+        <updated>2015-04-21T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//budget/budget-bug</id>
+        <summary type="html">&lt;p&gt;用户在立分摊项目的时候，点击保存之后就无法修改或者增加部门；&lt;/p&gt;
+</summary>
+        <content type="html">&lt;p&gt;用户在立分摊项目的时候，点击保存之后就无法修改或者增加部门；&lt;/p&gt;
+
+&lt;p&gt;跨年预算立项审批结束的时候，提示越界，看了代码是把所有年度一起处理，这样就出现问题，在&lt;code&gt;B_DPROJ_PERIOD_TAX&lt;/code&gt;可能会没有未来年度的数据，
+这样就会出错，只有手动将该项目的&lt;code&gt;B_dproj_period&lt;/code&gt;数据插入到前表&lt;/p&gt;
+
+&lt;p&gt;在提交添加报账部门的时候，该预算的部门是存在的，但是在浏览器JS验证时没有提示该报账部门存在&lt;/p&gt;
+
+&lt;p&gt;在报销的时候关联省分摊预算时，提示效验失败，却没有返回任何信息，经过检查是预算的纬度出现了问题， 有些部门没有传递报账部门，只能手动在数据库里面增加报账部门，这样就没有问题了。&lt;/p&gt;
+
+&lt;p&gt;最近分摊项目总是没有拆分，不知道是为什么。&lt;/p&gt;
+
+&lt;p&gt;删除项目数据时一定 检查清楚&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>预算运维常见问题</title>
+        <link href="http://zhaoqc.github.io/budget/budget-faq.html"/>
+        <updated>2015-03-20T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//budget/budget-faq</id>
+        <summary type="html">&lt;h3&gt;Q:如何添加或者更改预算归口部门&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:--归口&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B_project_level_line_mapping&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PROJECT_LEVEL3_NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;%业务招待%&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</summary>
+        <content type="html">&lt;h3&gt;Q:如何添加或者更改预算归口部门&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:--归口&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B_project_level_line_mapping&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PROJECT_LEVEL3_NAME&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;%业务招待%&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Q:归口部门预算管理员提交无可选路径&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:有可能是归口不对&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:预算编制&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;blockquote&gt;&lt;p&gt;这是&lt;code&gt;javascript&lt;/code&gt;&lt;strong&gt;粗&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:两个部门合并应该修改哪些数据？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:改所有关于部门的数据&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;吧year dept表里面的数据增加到要合并到的部门。&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:项目在调整中？应该怎么提交呢？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:不需要，调整中说明已经在审核了&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:查看部门资源&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:--报账部门历史表&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B_DPROJ_DEPT_HIST&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DPROJ_HIST_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;A:--报账部门表&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B_DPROJ_DEPT_LIST&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;DPROJ_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Q:一个合同是5年的，但是第一年就要给二分之一，然后在第三年付清剩余，应该如何立项呢？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:第一年立一般，第三年立一半，其他年份为0&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:查看待办是，流程信息不能显示，这是什么原因（该预算有派审流程）？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:暂时还不知道是什么原因;感觉是没有填写审批意见。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:预算的流程走完了，但是它的状态还是为1，control表里面也没有分配资源？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:因为是分摊项目&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;--admin&lt;/p&gt;
+
+&lt;p&gt;--接口管理&lt;/p&gt;
+
+&lt;p&gt;--分摊项目&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:预算系统现在出现一个问题，在提交给省归口预算管理员时，提示ERROR：所选省本部归口预算管理员不在用户列表中。&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:需要调整该表&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EBPM_APPROVAL_CONFIG&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BUSINESS_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;2015033013455335562751i&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Q:在提交给省本部预算管理员时，提示ERROR：所选省本部归口预算管理员不在用户列表中。&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;`PROV_LINE_MANAGER` 省公司归口
+`COMP_LINE_MANAGER` 公司归口
+应该是代码有问题，`COMP_LINE_MANAGER` 居然是空的
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Q:预算状态分别代表什么&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;blockquote&gt;&lt;p&gt;0草稿&lt;/p&gt;
+
+&lt;p&gt;1流程中&lt;/p&gt;
+
+&lt;p&gt;2正常&lt;/p&gt;
+
+&lt;p&gt;3流程中撤销&lt;/p&gt;
+
+&lt;p&gt;4退回&lt;/p&gt;
+
+&lt;p&gt;6调整中&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;预算在调整后提交并在流程流程中。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;7目前不明&lt;/p&gt;
+
+&lt;p&gt;02关闭&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:要求让往年项目的资源调整到本年使用&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:往年项目不能调整到本来使用。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:合同在报销时没有可用资源&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:检查预算资源&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:新成立部门需要那些东西？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:部门ID，部门经理、副经理、预算管理员&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:部门科目资源有重复的，一个总资源为0，一个总资源为14000万，且可用资源为负数？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A: 在页面获取index_id ，执行SQL语句&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B_BUDGET_INDEX&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;index_id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘’&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Q:如何冻结一个项目的资源？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:copy control表的数据到freezing表&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:年度表是哪个表呢？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A: &lt;code&gt;B_BUDGET_YEAR_DEPT&lt;/code&gt; 部门科目资源下达明细 &lt;code&gt;B_BUDGET_INDEX&lt;/code&gt;部门总资源 &lt;code&gt;B_BUDGET_MAIN&lt;/code&gt;分公司资源下达到部门&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:新成立部门的成本中心ID是有谁提供？或者在哪里可以取道？&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:由经办人提供，部门成立应该先找分公司提供部门代码，然后又财务提供成本中心段ID。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Q:起草人预算提交时不经过部门预算管理员，直接提交给了部门领导&lt;/h3&gt;
+
+&lt;blockquote&gt;&lt;p&gt;A:原因是起草人以前是预算管理员，在角色管理中删除该帐号的预算管理员权限就可以了&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Input+S3: extra keycodes forgotten after suspend </title>
+        <link href="http://zhaoqc.github.io/linux/keycodes.html"/>
+        <updated>2015-01-15T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/keycodes</id>
+        <summary type="html">&lt;p&gt;On my Acer TravelMate 660 I lose keycodes for the extra keys (dritek
+extensions) after resume.&lt;/p&gt;
+</summary>
+        <content type="html">&lt;p&gt;On my Acer TravelMate 660 I lose keycodes for the extra keys (dritek
+extensions) after resume.&lt;/p&gt;
+
+&lt;p&gt;The system runs setkeycodes during boot sequence to initialize key codes
+for the extra keys as below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/bin/setkeycodes KEYCODES=&quot;e025 138 e026 141 e027 171 e074 148 e073 149 e055 229 e056 230 e057 227 e058 228&quot;
+# Fn + F1   ~ e025  =&amp;gt; 138 [KEY_HELP] (Help)
+# Fn + F2   ~ e026  =&amp;gt; 141 [KEY_SETUP] (Notebook Manager)
+# Fn + F3   ~ e027  =&amp;gt; 171 [KEY_CONFIG] (Power Options)
+# Mail      ~ e06c  =&amp;gt; 155 [KEY_MAIL] (EMail)
+# WWW       ~ e032  =&amp;gt; 150 [KEY_WWW] (Browser)
+# P1        ~ e074  =&amp;gt; 148 [KEY_PROG1] (P1)
+# P2        ~ e073  =&amp;gt; 149 [KEY_PROG2] (P2)
+# Bluetooth ~ e058  =&amp;gt; 228 [KEY_BLUETOOTH_DISABLE] (Disable Bluetooth)
+# Bluetooth ~ e057  =&amp;gt; 227 [KEY_BLUETOOTH_ENABLE] (Enable Bluetooth)
+# Wireless  ~ e056  =&amp;gt; 230 [KEY_WLAN_DISABLE] (Disable WLAN)
+# Wireless  ~ e055  =&amp;gt; 229 [KEY_WLAN_ENABLE] (Enable WLAN)
+# Vol UP    ~ e030  =&amp;gt; 115 [KEY_VOLUMEUP] (Increase Volume)
+# Vol DOWN  ~ e02e  =&amp;gt; 114 [KEY_VOLUMEDOWN] (Decrease Volume)
+# Vol Mute  ~ e020  =&amp;gt; 113 [KEY_MUTE] (Mute volume)
+
+After resume I end up with the following messages when pressing the keys:
+[  779.695675] atkbd.c: Unknown key pressed (translated set 2, code 0xd6 on isa0060/serio0).
+[  779.695675] atkbd.c: Use &#39;setkeycodes e056 &amp;lt;keycode&amp;gt;&#39; to make it known.
+[  779.705218] atkbd.c: Unknown key released (translated set 2, code 0xd6 on isa0060/serio0).
+[  779.705218] atkbd.c: Use &#39;setkeycodes e056 &amp;lt;keycode&amp;gt;&#39; to make it known.
+[  781.603912] atkbd.c: Unknown key pressed (translated set 2, code 0xd5 on isa0060/serio0).
+[  781.603912] atkbd.c: Use &#39;setkeycodes e055 &amp;lt;keycode&amp;gt;&#39; to make it known.
+[  781.613564] atkbd.c: Unknown key released (translated set 2, code 0xd5 on isa0060/serio0).
+[  781.613564] atkbd.c: Use &#39;setkeycodes e055 &amp;lt;keycode&amp;gt;&#39; to make it known.
+[  782.772662] atkbd.c: Unknown key pressed (translated set 2, code 0xd7 on isa0060/serio0).
+[  782.772662] atkbd.c: Use &#39;setkeycodes e057 &amp;lt;keycode&amp;gt;&#39; to make it known.
+[  782.782390] atkbd.c: Unknown key released (translated set 2, code 0xd7 on isa0060/serio0).
+[  782.782390] atkbd.c: Use &#39;setkeycodes e057 &amp;lt;keycode&amp;gt;&#39; to make it known.
+[  783.461807] atkbd.c: Unknown key pressed (translated set 2, code 0xd8 on isa0060/serio0).
+[  783.461807] atkbd.c: Use &#39;setkeycodes e058 &amp;lt;keycode&amp;gt;&#39; to make it known.
+[  783.471544] atkbd.c: Unknown key released (translated set 2, code 0xd8 on isa0060/serio0).
+[  783.471544] atkbd.c: Use &#39;setkeycodes e058 &amp;lt;keycode&amp;gt;&#39; to make it known.
+
+
+Is this kind of issue known, what are the options to get kernel to remember the
+keycode mappings after s2ram?
+
+System details:
+  uname: Linux neptune 2.6.25.4 #8 Fri May 16 20:15:52 CEST 2008 i686 Intel(R)
+            Pentium(R) M processor 1500MHz GenuineIntel GNU/Linux
+  distro: Gentoo
+  suspending with: echo mem &amp;gt; /sys/power/state
+
+Bruno
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>[&quot;gentoo java 安装指南&quot;]</title>
+        <link href="http://zhaoqc.github.io/linux/Gentoo-Java-Guide.html"/>
+        <updated>2015-01-09T21:03:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/Gentoo-Java-Guide</id>
+        <summary type="html">&lt;h3&gt;1.  什么是Java？&lt;/h3&gt;
+</summary>
+        <content type="html">&lt;h3&gt;1.  什么是Java？&lt;/h3&gt;
+
+&lt;p&gt;简介&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Java是Sun Microsystems开发的一门面向对象的程序语言，可以在不用重新编译的前提下运行在不同的平台上。虽然也可以被编译成原生程序，但良好的移植性和内存垃圾回收才是Java受欢迎的主要原因。Java编译器会将Java代码转换成Java字节码作为中间层在JRE（Java运行环境）上而不是直接在操作系统上运行，这就使平台无关成为了可能。
+
+为了运行Java字节码，必须首先安装JRE（Java运行环境）。JRE会提供核心库，一个独立平台的Java虚拟机和浏览器插件等等。JDK（Java开发工具）则集成了编程所开发需的工具，例如字节码编译器和调试器。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.  在你开始之前&lt;/h3&gt;
+
+&lt;p&gt;已经安装&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;如果已经安装过Java，不论是什么版本都请参照Java升级指南。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;全新安装&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;全新安装不需要其它准备工作。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;3.  安装虚拟机&lt;/h3&gt;
+
+&lt;p&gt;选择&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Gentoo提供了多种运行环境（JRE）和开发工具（JDK）。我们现有的选择是：
+提供商   JDK     JRE
+Sun Java Kit    dev-java/sun-jdk    dev-java/sun-jre-bin
+IBM Java Kit    dev-java/ibm-jdk-bin    dev-java/ibm-jre-bin
+BEA WebLogic J2SE Development Kit   dev-java/jrockit-jdk-bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装JRE／JDK&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;你可以使用emerge virtual/jdk来安装profile默认的JDK。或者，你可以使用emerge virtual/jre安装profile默认的JRE。
+
+Sun近期重新制作了一个更适合Linux的JDK／JRE许可认证。所以从Sun Java 1.5开始，用户可以在不做任何额外工作的前提下免费下载。
+
+注意: 如果你要安装JDK，就不用再安装JRE，因为JRE是JDK的一部分。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安装不能通过命令行下载的虚拟机&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;在安装某些JDK和JRE前你需要多做一些步骤。你只需要照常emerge你需要的软件包，之后ebuild会告诉你在哪里可以下载所需的文件。
+
+把需要的软件包放在/usr/portage/distfiles。完成后重新emerge安装JRE／JDK。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;配置你的虚拟机&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;简介&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Gentoo支持安装多个JDK或者JRE并且不会造成任何冲突。
+
+使用java-config工具，你可以更改系统设置（需要root用户）。普通用户可以使用java-config改变个人设置。
+
+注意: 你也可以使用eselect来改变系统和用户的虚拟机。参照eselect java-vm help。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;设定默认虚拟机&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;运行java-config --list-available-vms会显示在你机器上现有的JRE和JDK。如下例：
+
+代码 4.1: 显示可用虚拟机
+
+# java-config --list-available-vms
+The following VMs are available for generation-2:
+1)      IcedTea6-bin 1.4.1 [icedtea6-bin]
+2)      Sun JDK 1.5.0.20 [sun-jdk-1.5] (Build Only)
+*)      Sun JDK 1.6.0.16 [sun-jdk-1.6]
+
+注意: 标记为Build Only的虚拟机可能包含安全漏洞或者产品生命周期已结束（EOL）。Gentoo不推荐把这样的虚拟机设为你的系统或者用户虚拟机。请阅读Build Only虚拟机以获取更多信息。
+
+*标志出了你现在正在使用的虚拟机（系统虚拟机或者用户虚拟机）。括号（[]）中的名字代表这个虚拟机的ID或者handle。你可以使用handle或ID来设置系统虚拟机：java-config --set-system-vm。下面是一个更改系统虚拟机的例子。
+
+代码 4.2: 设定系统虚拟机
+
+（通过handle（推荐））
+# java-config --set-system-vm sun-jdk-1.6
+Now using sun-jdk-1.6 as your generation-2 system JVM
+（通过ID）
+# java-config --set-system-vm 3
+Now using sun-jdk-1.6 as your generation-2 system JVM
+
+作为一个普通用户，你可以使用java-config --set-user-vm。
+
+注意: 你不必再执行source profile来使用户／系统虚拟机的改动起效。
+
+Build Only VM
+
+有些虚拟机被标记为buildonly，因为他们的生命周期已经结束或者包含安全漏洞。这些虚拟机并不会自动被Gentoo用来运行应用程序，但是我们仍然提供它因为有些包仍然需要它来构建。我们强烈建议不要把这些虚拟机设定为你的系统或者用户虚拟机，因为如果那样的话，运行/usr/bin/{java,javac,..}等可执行文件以及其他不使用Gentoo的java启动脚本的包的时候，这些虚拟机就会被用到了。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;首选虚拟机&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;当安装Java写成的软件的时候，虚拟机将会在需要时被切换。
+
+因为有很多的不同的虚拟机可以选择，我们没有足够的资源去测试和确认所有的软件包都能在上面正常工作。所以为确保所有的软件包都能成功安装，我们为每个平台都定制了一份默认的／受支持的虚拟机列表。此列表可以在/usr/share/java-config-2/config/jdk-defaults.conf文件中找到。当你在安装Java软件包时，如果系统检测到该列表中的某个虚拟机已经安装，它会自动使用该虚拟机，而不是system-vm。
+
+有时需要在安装软件时切换虚拟机。例如，system-vm设定为1.4，当你安装需要1.5版的软件包时，虚拟机会被临时切换。
+
+当然，Gentoo给予了用户充分的选择权利，你可以重写在/etc/java-config-2/build/jdk.conf中默认的配置，完全控制使用哪一个虚拟机。如下例：
+
+代码 4.3: /etc/java-config-2/build/jdk.conf实例
+
+我只想使用sun-jdk，例如1.4版使用sun-jdk-1.4、1.5版使用sun-jdk-1.5等等。
+*=sun-jdk
+
+代码 4.4: /etc/java-config-2/build/jdk.conf实例
+
+我只想使用sun-jdk-1.5，除了指明需要1.3或1.4版虚拟机的情况
+*=sun-jdk-1.5
+
+代码 4.5: /etc/java-config-2/build/jdk.conf实例
+
+# 对于1.3版优先使用sun-jdk 1.4。当sun-jdk 1.4不可用时，用ibm-jdk-bin替代
+# 对于1.5版, 使用sun-jdk 
+1.3=sun-jdk-1.4 ibm-jdk-bin
+1.5=sun-jdk
+
+警告: 你不一定要修改这个文件。如果你使用了一个不被支持的虚拟机，可能发生错误。而且这样产生的bug会在使用受支持的虚拟机时产生的bug被处理完之后才会被处理。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;5.  编译器&lt;/h3&gt;
+
+&lt;p&gt;对于任何的JDK，你可以使用javac来调用标准的编译器。在编译时，你除了可以设定虚拟机，也可以设定编译器。简单说，你可以在/etc/java-config-2/build/compilers.conf里定义你首选的编译器。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;代码 5.1: /etc/java-config-2/build/compilers.conf
+
+# 如果ebuild支持它
+# 它会从头到尾的检查COMPILERS变量里的值
+# 并且使用第一个已经安装的编译器
+
+COMPILERS=&quot;ecj-X.Y jikes javac&quot;
+
+部分编译器不支持所有可能的-target和-source参数。所以每一个在列表中的编译器都会被检测来确定它是否支持所需要的-source／-target。javac支持所有的参数，所以如果在列表中没有发现合适的编译器，javac会被调用。
+
+每个编译器的细节如下：
+名称  Handle  软件包   简介
+javac   javac   N/A     默认编译器，包含在JDK中。
+jikes   jikes   dev-java/jikes  jikes是IBM开发的。有趣的是，它的运行速度一般要比javac快。但是请注意，它的语法要求更严格，并且会出现一些在javac下不会出现的一些问题。它还不支持Java 1.5的句法。
+Eclipse Java编译器   ecj     =dev-java/eclipse-ecj   ECJ是Eclipse开发工具用的编译器。它的运行速度很快，并且支持Java 1.5句法。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;6.  设定默认CLASSPATH&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;警告: 下面的段落已被认为已经过时，很可能在以后被删除。我们强烈建议你不要使用它们，因为你的Java项目应该管理自己的CLASSPATH。如果你指定一个默认的CLASSPATH，部分程序可能因为发现未预期的class而产生错误。
+
+java-config也可以用来设定系统级别的CLASSPATH和用户级别的CLASSPATH。
+
+首先，你要列出所有在你系统上安装的Java库：
+
+代码 6.1: 列出class
+
+# java-config --list-available-packages
+[xerces-2] The next generation of high performance, fully compliant XML parsers in the Apache Xerces family (/usr/share/xerces-2/package.env)
+[junit] Simple framework to write repeatable tests (/usr/share/junit/package.env)
+[bsh] BeanShell: A small embeddable Java source interpreter (/usr/share/bsh/package.env)
+[bcel] The Byte Code Engineering Library: analyze, create, manipulate Java class files (/usr/share/bcel/package.env)
+[log4j] A low-overhead robust logging package for Java (/usr/share/log4j/package.env)
+...
+
+和前面一样，在括号（[]）中的名字代表你将传递给java-config --set-system-classpath的ID。如下例：
+
+代码 6.2: 设定classpath
+
+# java-config --set-system-classpath log4j,xerces-2
+
+注意: 当前文件夹（.）不会被添加到系统classpath，应该被添加到你的系统登录profile。
+
+你需要注销并重新登录或者source /etc/profile来更新你的环境变量。
+
+对于用户，java-config --set-user-classpath会建立~/.gentoo/java-env-classpath。之后你应该从你的shell的profile里source这个文件。
+
+代码 6.3: Source用户专有的classpath
+
+if [[ -f &quot;${HOME}/.gentoo/java-env-classpath&quot; ]]; then
+    source ${HOME}/.gentoo/java-env-classpath
+fi
+
+如果你真的想要设定一个系统级别或者用户指定的classpath，你可以添加下面的代码到你的shell profile，但是我们不建议你这么做。
+
+代码 6.4: 设定classpath
+
+# export CLASSPATH=&quot;${CLASSPATH}:$(java-config --classpath log4j,xerces-2)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;7.  Java浏览器插件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;安装插件
+
+你可以在启用nsplugin USE标记的情况下emerge Java虚拟机来安装Java浏览器插件。
+
+注意: nsplugin并不支持所有构架。在安装前请用emerge -pv &amp;lt;java-vm&amp;gt;来检查你的机器是否被支持。
+
+Portage允许你安装多个不同版本的Java插件，但是只有一个会被浏览器使用。你可以用以下指令查看可用的插件：
+
+代码 7.1: 查看可用插件
+
+# eselect java-nsplugin list
+   [1]   sun-jre-bin-1.6
+   [2]   icedtea6-bin
+
+在这个例子中sun-jre-bin被选择做为浏览器插件。
+
+代码 7.2: 选择一个插件
+
+# eselect java-nsplugin set sun-jre-bin-1.6
+
+确认选择了正确的插件：
+
+代码 7.3: 确认正确的插件
+
+# eselect java-nsplugin list
+   [1]   sun-jre-bin-1.6  current
+   [2]   icedtea6-bin
+
+Java.com也提供了一个链接来验证你已经安装的插件。如果你使用基于Mozilla的浏览器，你可以地址栏输入about:plugins来验证你的Java插件。
+
+multilib系统的插件
+
+如果你的系统包括了64位和32位multilib（例如AMD64），你能使用64位和32位Java插件。除非你有不可抗拒的理由要运行32位Java应用程序，否则我们推荐在64位浏览器上使用原生64位插件。
+
+我们提供了几个原生64位浏览器插件。默认的JDK/JRE，sun-jdk和sun-jre-bin，都包含浏览器插件。 只要以nsplugin USE标记emerge其中一个即可。
+
+代码 7.4: 安装64位插件
+
+# echo &quot;dev-java/sun-jre-bin nsplugin&quot; &amp;gt;&amp;gt; /etc/portage/package.use
+# emerge sun-jre-bin
+
+要在32位浏览器上使用32位插件，你可以使用nsplugin USE标记emerge emul-linux-x86-java。
+
+代码 7.5: 安装32位插件
+
+# echo &quot;app-emulation/emul-linux-x86-java nsplugin&quot; &amp;gt;&amp;gt; /etc/portage/package.use
+# emerge emul-linux-x86-java
+
+下一步，检查可用的插件：
+
+代码 7.6: 查看可用插件
+
+# eselect java-nsplugin list
+Available 32-bit Java browser plugins
+  [1]   emul-linux-x86-java-1.5
+  [2]   emul-linux-x86-java-1.6
+Available 64-bit Java browser plugins
+  [1]   icedtea6-bin
+  [2]   sun-jre-bin-1.6
+
+现在，选择适合你的浏览器的正确插件：
+
+代码 7.7: 选择插件
+
+(Choose the plugins for 32-bit and 64-bit browsers)
+# eselect java-nsplugin set 32bit emul-linux-x86-java-1.6
+# eselect java-nsplugin set 64bit sun-jre-bin-1.6
+
+核实选择了正确的插件：
+
+代码 7.8: 确认正确的插件
+
+# eselect java-nsplugin list
+Available 32-bit Java browser plugins
+  [1]   emul-linux-x86-java-1.5
+  [2]   emul-linux-x86-java-1.6  current
+Available 64-bit Java browser plugins
+  [1]   icedtea6-bin
+  [2]   sun-jre-bin-1.6  current
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;8.  Java的USE标记&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;设定USE标记
+
+更多关于USE标记的信息，参照Gentoo手册USE标记。
+
+标记
+
+    java标记可以让多种不同的程序支持Java
+    nsplugin标记让基于Mozilla的浏览器（包括Firefox）支持Java。你需要它来在基于Mozilla的浏览器上运行Java applet。
+    source标记会安装以zip形式安装软件包的源代码。这个一般是让IDE给你使用的库添加源代码。
+    jce标记添加了对Java加密引擎的支持
+    对于Java的软件包，doc标记将会使用javadoc建立API文档
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;9.  附加资料&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;离线资料
+
+    java-config man page
+    java-config --help
+
+在线资料
+
+    Gentoo的Java项目主页
+    Gentoo的gentoo-java, gentoo-user, and gentoo-dev邮件列表归档
+    #gentoo和#gentoo-java IRC频道
+    Wikipedia上的Java条目
+    如果你对于这篇文档有建议或问题，请发邮件到Gentoo Java团队：java@gentoo.org
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>[&quot;Linux下休眠/待机命令&quot;]</title>
+        <link href="http://zhaoqc.github.io/linux/standby-and-sleep.html"/>
+        <updated>2015-01-08T00:50:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/standby-and-sleep</id>
+        <summary type="html">&lt;p&gt;在作之前，先检查一下你的内核能支持哪些方式：&lt;/p&gt;
+</summary>
+        <content type="html">&lt;p&gt;在作之前，先检查一下你的内核能支持哪些方式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# cat /sys/power/state
+
+standby disk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;1. 睡眠 (sleep)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;睡眠可能有两种方式：mem和standby，这两种方式都是suspend to RAM，简称STR，只是standby耗电更多一些，返回到正常工作方式时间更短一些而已。
+
+只需要
+
+# echo standby &amp;gt; /sys/power/state
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2. 休眠 (hibernation)&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;休眠也有两种方式：shutdown和platform。shutdown是通常的方式，比较可靠一些。如果你的系统上ACPI支持非常好，那就有机会支持platform方式。激活的方式稍有不同：
+
+# echo platform &amp;gt; /sys/power/disk; echo disk &amp;gt; /sys/power/state
+就可以了。
+or
+# echo shutdown &amp;gt; /sys/power/disk; echo disk &amp;gt; /sys/power/state
+就可以了。
+注意休眠有一个前提，就是在系统启动时需要指定resume设备，也就是休眠的镜像需要保存的分区。一般都用swap分区来做。
+指定方式是:
+kernel /boot/vmlinuz root=/dev/sda1 resume=/dev/sda2 vga=0×314 …
+这样在系统启动时，内核会检查resume中的内容，如果存在上次休眠的镜像，那内核便会将镜像读入内存，恢复正常工作状态。
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>[&quot;Gentoo全局USE标签&quot;]</title>
+        <link href="http://zhaoqc.github.io/linux/Gentoo-USE.html"/>
+        <updated>2015-01-07T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/Gentoo-USE</id>
+        <summary type="html">&lt;h3&gt;Gentoo USE简介&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;控制软件安装等。
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+        <content type="html">&lt;h3&gt;Gentoo USE简介&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;控制软件安装等。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;USE介绍&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;3dfx 
+添加Xorg下的3dfx显卡支持 (参见: voodoo3) 
+3dnow 
+添加AMD处理器的3dnow!多媒体指令集支持 
+X 
+添加X11支持 
+Xaw3d 
+添加Xaw3d(X athena widgets in 3d)支持。Xaw3d是MIT Athena Widget set for X Windows的增强版本，可以在几乎不修改源代码的情况下为应用程序添加3D视觉效果。 
+a52 
+添加用于DVD的ATSC A/52解码支持 
+aac 
+添加MPEG-4 AAC音频支持 
+aalib 
+添加media-libs/aalib支持 (ASCII-Graphics库) (用于将图形转换成ASCII字符的”ascii艺术”) 
+accessibility 
+添加辅助功能支持(方便残疾人使用计算机的技术，比如’at-spi’库) 
+acl 
+添加文件访问控制列表支持［参考文档：文件访问控制列表］ 
+acpi 
+添加ACPI(高级配置与电源接口)支持［参考文档：高级电源管理常见问题解答］ 
+adabas 
+添加Adabas数据库引擎支持 
+adns 
+添加adns DNS客户端库(一个用于C/C++的异步DNS解析库)支持［主页：http://www.gnu.org/software/adns/］ 
+afs 
+添加OpenAFS支持 (一个分布式文件系统)［参考文档：OpenAFS帮助聚集分布式数据］ 
+aim 
+添加AIM即时通信协议支持 (AOL.com的即时消息工具) 
+alsa 
+添加media-libs/alsa-lib支持 (高级Linux音效架构)［参考文档：ALSA研究笔记］ 
+altivec 
+添加G4/G5/ppc970处理器优化支持 
+ao 
+在音频回放(sound playback)时使用libao音频库(一个跨平台音频库，对于在多个平台上输出音频很有用) 
+apache2 
+当一个程序包同时支持Apache1和Apache2时，选择支持Apache2 
+apm 
+添加APM电源管理支持［参考文档：高级电源管理常见问题解答］ 
+arts 
+添加aRts支持 (给KDE提供音频支持，主要是给KDE库提供必要的库文件) 
+atm 
+添加ATM(异步传输模式)协议支持 
+audiofile 
+添加libaudiofile(音频文件库)支持 
+avahi 
+添加avahi/Zeroconf支持。avahi是利用mDNS协议的，实现本地网内服务发现的软件，如寻找局域网内的在线用户、打印机等。 
+aqua 
+添加Aqua/Carbon GUI支持。Aqua是苹果Mac OS X的图形界面，Carbon是其编程接口。 
+bash-completion 
+添加bash-completiton支持 (改进了bash的命令补全功能) 
+bcmath 
+添加libbcmath支持 (bcmath是一个任意精度数学函数库) 
+berkdb 
+添加sys-libs/db支持 (MySQL的Berkeley DB表类型支持) 
+bidi 
+添加双向语言支持 (支持由右而左的语言，如：阿拉伯语和希伯来语) 
+bindist 
+启用或禁止可选的预编译包(GRP)支持 (比如由于发行许可导致的) 
+birdstep 
+添加Birdstep数据库服务器支持 
+blas 
+添加virtual/blas库支持 (BLAS是著名的基本线性代数子程序包，被许多实际应用问题和几乎所有有关矩阵计算的软件所采用，可应用于科学和工程设计的矩阵计算问题，也可应用于生产基本线性代数计算的高水平程序库，是数学应用软件的基本核心库。) 
+bluetooth 
+添加蓝牙支持 
+bootstrap 
+!!仅供内部使用，请不要设置此参数!!在原始系统的引导过程中使用[make stage2] 
+boundschecking 
+添加Haj Ten Brugge边界检查补丁，这将禁用固有的PIE+SSP补丁 (边界检查用于防止缓冲区溢出漏洞攻击)
+branding 
+启用Gentoo特定的标识，比如添加此标记后可以获得一个漂亮的”Gentoo牌”Gnome启动画面，取代默认的Gnome启动画面。 
+bsf 
+添加Apache BSF(Bean Scripting Framework) (dev-java/bsf)支持。BSF支持在Java应用程序内调用脚步语言(Script)，并且支持脚步语言直接访问Java对象和方法。它提供了完整的API实现通过Java访问脚本语言的引擎。 
+build 
+!!仅供内部使用，请不要设置此参数!! 用于建立引导过程前半部分的镜像构建[make stage1] 
+bzip2 
+使用bzlib压缩库 
+cairo 
+添加cairo图形库支持。Cairo是一个支持多种输出设备的跨平台2D图形库。［参考文档：用cairo实现跨平台图形］ 
+calendar 
+添加日历支持(不是用mcal!) 
+canna 
+添加Canna支持 (Canna是一个将日文假名转换到日文汉字的转换引擎) 
+caps 
+使用Linux capabilities库(POSIX.1e capabilities)来控制权限［参考文档：Linux安全模块简介；利用capability特征加强Linux系统安全］ 
+cdb 
+添加qmail作者编写的CDB数据库引擎支持 
+cdda 
+添加Compact Disk Digital Audio(数字式激光唱盘,简称CD-DA)支持。CD-DA又称”Audio CD”，直径为12cm，容量为74分钟，以恒线速度(CLV)播放，也就是用于激光唱机和diskman的音乐CD。 
+cddb 
+添加CDDB支持。CDDB即Internet Compact Disc Database，是一组分布于互联网的各个镜像上的大型CD特征数据库，不过它现在已被商业团体安加了一些版权限制，因此存在后来的freedb.org和MusiaBrainz一类开放替代方案。 
+cdinstall 
+直接从CD复制文件而不要求用户来操作，主要用于游戏。 
+cdparanoia 
+添加cdparanoia支持。CDParanoia可以直接从CD光盘上抓取音轨，并转换成其它格式的声音文件。另外它还可以能够读取已经被破坏的光盘内容。libparanoia 是KDE和GNOME默认的抓音轨库。 
+cdr 
+添加CD刻录硬件支持 
+cgi 
+添加CGI脚本支持 
+chasen 
+添加chasen支持 (一个日语分词标注系统) 
+cjk 
+添加多字节字符语言支持 (中日韩) 
+clamav 
+添加Clam防病毒软件支持(通常是额外添加一个插件) 
+coreaudio 
+在Mac OS X系统上编译CoreAudio驱动程序 
+cracklib 
+使用cracklib来进行密码强度检查 
+crypt 
+添加加密支持 (使用基于私钥的mcrypt或基于公钥的gpg) 
+cscope 
+添加cscope接口支持 (比如用于vim和emacs)(cscope具有开发支持功能，极大地方便了对源代码库的浏览和查询，vim中内置的ctags支持提供了类似的功能，但cscope的功能更为强大) 
+css 
+允许抓取加密DVD上的数据 
+ctype 
+启用ctype函数支持 (ANSI C标准库中的字符类型头文件) 
+cups 
+添加CUPS(通用UNIX打印系统)支持 
+curl 
+添加客户端URL传输库支持 (curl是一个可以使用URL语法传输文件的库，支持HTTP/HTTPS/FTP/FTPS/DICT/TELNET/LDAP/FILE和GOPHER等协议) 
+curlwrappers 
+在传输流中使用curl包装 
+custom-cflags 
+使用自定义的CFLAGS编译(unsupported) 
+custom-cxxflags 
+使用自定义的CXXFLAGS编译(unsupported) 
+cvs 
+启用CVS(Concurrent Versions System)集成 
+cxx 
+编译C++支持(绑定,额外的库,代码生成, …) 
+db2 
+添加IBM DB2数据库支持 
+dbase 
+添加dbase文件格式(Dbase数据库文件.DBF的文件格式)支持 
+dbm 
+添加DBM数据库支持 (DBM是柏克莱大学发展的文件/文本型数据库) 
+dbmaker 
+添加dbmaker数据库支持 
+dbus 
+为需要dbus的程序添加支持 (gpsd,gnomemeeting …)(dbus是一个消息总线系统，用于在应用程序中发送消息，多用于桌面环境)［主页：http://www.freedesktop.org/Software/dbus］ 
+dbx 
+添加数据库抽象层支持 (目的是提供给用户一种访问数据库的通用方式) 
+debug 
+让configure和makefiles使用调试模式编译 
+dedicated 
+添加专属游戏服务器支持(一些程序包并不同时支持服务端和客户端) 
+dga 
+添加Xorg下的DGA(直接图形存取)支持 
+directfb 
+添加DirectFB支持。［参考文档：DirectFB的学习］ 
+djvu 
+添加DjVu支持。一个类似于PDF的文档格式，特别适合于扫描文档。 
+doc 
+添加额外的文档资料(API/java文档等) 
+dri 
+支持DRI硬件3D加速。直接渲染架构(DRI)是一个允许在安全和高效的方式下直接访问显卡硬件的架构。它包括对X服务器的改动，以及对几个客户端库和内核的改动。DRI的第一个重要应用是创建快速的OpenGL实现。 
+dts 
+启用DTS声音解码器支持。 
+dv 
+添加一种被许多便携式摄象机使用的编解码器支持 
+dvb 
+添加DVB支持 (DVB: 数字视频广播) 
+dvd 
+添加DVD支持 
+dvdr 
+添加DVD刻录硬件支持 (比如：xcdroast) 
+eds 
+添加Evolution-Data-Server支持。我们可以简单地把Evolution看作是Linux下的OutLook，一个易用的电子邮件客户端。但它的定位是Linux/Unix下的个人/工作组信息管理整套解决方案，包括电子邮件、日历、会议计划、联系人管理与任务列表等。 
+emacs 
+添加GNU Emacs支持 
+emboss 
+添加EMBOSS支持 (EMBOSS:欧洲分子生物学开放软件包，能很好的处理分子生物学研究中的各种问题) 
+empress 
+添加Empress数据库支持 
+empress-bcs 
+添加Empress数据库本地存取支持 
+encode 
+添加视频和音频文件的多媒体编码器支持 
+enscript 
+添加enscript支持。Enscript可将ASCII文件转换为PostScript,HTML,RTF,ANSI格式。 
+esd 
+添加media-sound/esound支持 (一种KDE的音效合成器) 
+esoob 
+添加Easysoft OOD数据库支持 
+evo 
+添加mail-client/evolution支持 (Evolution类似微软的Outlook，将电子邮件、日历、联系人管理和任务集成到一个易用的应用程序中) 
+examples 
+安装示例源代码 
+exif 
+添加读取JPEG和TIFF图片EXIF头信息的支持 (EXIF: 可交换图像文件，实际是一种JPEG文件，是专门为数码相机的照片设定的，可以记录数字照片的属性信息和拍摄数据) 
+expat 
+允许使用dev-libs/expat (EXPAT是一个XML解析器，可用于PHP,Perl,Python等) 
+fam 
+添加FAM支持 (FAM: 文件变更监视模块，能实时地观察文件系统的变化情况，并做出及时的适当的反应)［参考文档：Linux下的实时数据镜像］ 
+fastcgi 
+添加FastCGI接口支持 (CGI: 公共网关接口) 
+fbcon 
+在内核中为控制台添加framebuffer支持 (FrameBuffer: 帧缓冲，是把显存抽象后的一种设备，可以通过这个设备的读写直接对显存进行操作) 
+ffmpeg 
+添加ffmpeg多媒体解码器支持 
+fftw 
+使用FFTW库进行傅立叶变换计算 (FFTW: 快速傅立叶变换，用于一维和多维实数或复数的离散傅里叶变换，有些多媒体音效需要fftw) 
+firebird 
+添加Firebird数据库支持 
+firefox 
+基于Firefox编译，而不是基于Seamonkey/Mozilla编译 
+flac 
+添加FLAC音频编码支持 (FLAC是一个类似APE的无损编码方案，但容错性能要优于APE) 
+flatfile 
+为平面文件(flat file)添加dbm支持［参考文档：平面文件］ 
+fltk 
+为FLTK库提供支持。FLTK(Fast Light Toolkit)是一个基于OpenGL的跨平台C++图形化用户界面工具集。 
+fontconfig 
+允许通过media-libs/fontconfig工具配置和定制字体 
+foomaticdb 
+支持foomatic打印机驱动程序数据库 
+fortran 
+添加fortran(f77)支持 
+freetds 
+允许使用TDS协议连接MSSQL/Sybase数据库 
+freewnn 
+添加FreeWnn支持 (FreeWnn是一个将日文假名转换到日文汉字的转换引擎) 
+frontbase 
+添加frontbase数据库支持 
+ftp 
+添加FTP(文件传输协议)支持 
+gcj 
+添加GCJ支持 (GCC中的JAVA编译器) 
+gd 
+添加media-libs/gd支持 (gd库用于动态生成图片) 
+gd-external 
+使用外部的gd版本取代内置的版本(可能有些危险) 
+gdbm 
+添加sys-libs/gdbm支持 (GNU数据库函数库) 
+geoip 
+添加GeoIP支持 (GeoIP一个识别你Web网站访问者的所在国家的工具) 
+ggi 
+添加media-libs/libggi支持 (非X窗口的视频api/drivers) 
+gif 
+添加GIF图片格式支持 
+gimp 
+为GIMP额外编译一个插件 
+ginac 
+添加sci-mathematics/ginac(符号数学)支持(GiNaC是一个C++数学计算函数库，主要用于编写科学和工程上使用的计算器) 
+glut 
+使用GLUT库编译一个OpenGL插件 
+gmp 
+添加dev-libs/gmp支持 (GUN MP库允许你使用任意长度的整数) 
+gnome 
+添加GNOME支持 
+gnome-keyring 
+支持通过gnome-keyring保存密码 
+gnuplot 
+添加gnuplot支持。Gnuplot是一个数学绘图工具，它可以将数据和函数转换为专业的可视化图表。 
+gnustep 
+添加GNUstep开发环境支持 (GNUstep是一个免费/面向对象/图形化/跨平台的开发环境) 
+gnutls 
+添加net-libs/gnutls支持(GnuTLS是一款提供TLS 1.0 和 SSL 3.0 加密支持的库) 
+gphoto2 
+添加数码相机支持 
+gpm 
+添加sys-libs/gpm支持 (GPM是通用鼠标协议，为控制台下提供鼠标支持，提供了通用的剪切和粘贴支持) 
+gps 
+添加全球定位系统(GPS)支持 
+graphviz 
+添加Graphviz库支持。Graphviz是一个绘图工具集，通过绘制直观的图表，往往能够清晰地表现各种结构之间的关系，从而使复杂的问题简单化。 
+gzip 
+添加gzip压缩支持 
+gsl 
+使用GSL科学计算函数库进行计算。GNU科学计算函数库GSL(GNU Scientific Library)是一个强大的C/C++数值计算函数库。 
+gsm 
+支持GSM有损语音压缩编码/解码器。GSM俗称”全球通”，是一种起源于欧洲的第二代移动通信技术标准。 
+gstreamer 
+添加media-libs/gstreamer支持 (GStreamer是GNOME下构建流媒体应用的编程框架，目标是简化音/视频应用程序的开发) 
+gtk 
+添加x11-libs/gtk+支持 (GTK: GIMP工具包，GIMP: 通用图像处理程序)(GTK+是应用程序图形界面编程工具)
+gtkhtml 
+添加gnome-extra/gtkhtml支持 (GtkHTML是一个HTML分析/编辑库) 
+guile 
+添加dev-util/guile支持 (Scheme语言解释程序)(Guile是GNU工程的扩展语言库，是一个Scheme语言的实现版本，把这个库链接到你的应用中就为你的应用增加了一种扩展语言) 
+hal 
+添加硬件抽象层(HAL)支持 (硬件抽象层完全把系统软件和硬件部分隔离开来，这样就使得系统的设备驱动程序与硬件设备无关，从而大大提高了系统的可移植性) 
+handbook 
+允许为KDE4生成参考手册 
+hardened 
+默认为工具链(gcc/glibc/binutils)启用安全增强特性 
+hddtemp 
+启用硬盘驱动器温度监控(app-admin/hddtemp) 
+hdf5 
+启用HDF5(Hierarchical Data Format v5)支持。HDF5是一个层次型的数据存储格式，包含了数据定义和支持接口，支持并行I/O。HDF5比较适合用于那些无法用一般的格式存放的复杂科学数据。目前很多遥感存储采用HDF5格式来实现。 
+ibm 
+添加IBM ppc64体系结构支持 
+iconv 
+添加iconv字符集转换函数库支持 
+icq 
+添加ICQ通信协议支持 
+icu 
+添加ICU(Internationalization Components for Unicode)支持(使用dev-libs/icu)。是一个C/C++的Unicode库，可以根据各地的习俗约定格式化数字、日期、时间和货币，以及对这些格式中的文本进行语法分析。 
+idn 
+添加IDN(Internationalized Domain Names,国际化域名)支持 
+ieee1394 
+添加IEEE1394火线支持(数码相机,数码摄像机等) 
+imagemagick 
+添加Imagemagick支持(ImageMagick类似于GD但效果比GD好) 
+imap 
+添加IMAP支持 (IMAP: 网际网络信息存取协议，是一种比POP3更好的协议，可取代POP3协议) 
+imlib 
+添加media-libs/imlib支持 (imlib: 一个图片加载和显示库，用于Gnome图形用户环境) 
+inifile 
+为.ini文件添加dbm数据库支持 
+innodb 
+为mySQL添加innodb表类型支持 (innoDB表类型可以支持事务处理，且性能优秀) 
+interbase 
+添加Interbase数据库支持 
+iodbc 
+添加iODBC驱动程序库支持 (ODBC: 开放数据库连接) 
+ipod 
+允许访问iPod设备 
+ipv6 
+添加IPv6支持 
+jabber 
+添加jabber即时通信协议支持 (jabber是一款即时消息软件) 
+jack 
+添加JACK音频连接工具包 (低延迟、高性能的中间过程音频连接，以及音频设备共享，适合于专业音频应用程序) 
+java 
+添加Java支持 
+java5 
+使用Java 1.5编译JAVA支持 
+java6 
+使用Java 1.6编译JAVA支持 
+javascript 
+添加javascript支持 
+jbig 
+为tiff,Hylafax,ImageMagick等添加jbig-kit支持。jbig-kit是一种高压缩率且不失真的影像压缩函数库，适用於传真或扫描影像。 
+jingle 
+允许jabber使用语音进行通信。Jabber是一种开放式架构的即时通讯系统，可以和AOL、ICQ以及YAHOO通兼容。 
+joystick 
+在所有软件包里添加joysticks(游戏操纵杆)支持 
+jpeg 
+添加JPEG图片格式支持 
+jpeg2k 
+添加JPEG 2000图片格式支持 
+kontact 
+添加KDE个人信息管理支持(kde-base/kdepim*) 
+kde 
+添加kde-base/kde支持 (KDE桌面环境) 
+kdeenablefinal 
+[试验]使用enable-final标志建立kde的ebuilds，可以加速编译，但是要占用大量内存。官方反对使用此标记。 
+kdehiddenvisibility 
+编译KDE时默认隐藏符号(使用GCC -fvisibility=hidden 命令行选项)，必须使用GCC4.1以上版本。 
+kdeprefix 
+在KDE的安装目录中添加SLOT前缀(/usr/kde/$SLOT)，否则将直接安装到FHS兼容的位置(/usr) 
+kerberos 
+添加kerberos支持(Kerberos是一个基于对称密码的认证协议，该协议能够提供强安全的认证服务)［参考文档：Kerberos认证协议］ 
+kolab 
+添加Kolab Groupware Server支持。Kolab是提供EMAIL、日历、任务计划、通知联系等功能的集成服务程序。 
+krb4 
+添加可选的kerberos4兼容支持 (Kerberos 4协议实现中存在多个加密漏洞，目前为版本5) 
+ladspa 
+添加LADSPA(Linux Audio Developer’s Simple Plugin API)支持 
+lame 
+使用LAME库作为MP3编码器。LAME据说是目前最好的MP3编码器，是编码高品质MP3的最佳选择。 
+lapack 
+添加virtual/lapack数值计算库支持(lapack是一个用于线性代数计算的子程序包) 
+lash 
+添加LASH支持。LASH是一个用于Linux音频应用程序的会话管理系统，它允许你保存和恢复由多个相互关联的应用程序组成的音频会话状态。 
+latex 
+添加LaTeX支持。LaTeX是一种基于TeX的排版系统，即使使用者没有排版和程序设计的知识也可以充分发挥由TeX所提供的强大功能。 
+lcms 
+添加lcms支持。lcms库可以提供色彩管理功能。 
+ldap 
+添加LDAP(轻量级目录访问协议)支持。 
+libcaca 
+添加彩色ASCII艺术图形支持 
+libedit 
+使用libedit库代替Readline库。libedit是一个非GPL的与GNU Readline库兼容的替代品。 
+libgda 
+添加GDA(GNOME Data Access)支持。GDA提供了一种访问多种不同类型的数据源的统一架构，既包括传统的关系型数据库也包括任何可以想象的邮件服务器数据以及LDAP数据等。 
+libnotify 
+添加桌面通知机制(desktop notification)支持。 
+libsamplerate 
+添加libsamplerate支持。libsamplerate(Secret Rabbit Code)是一个音频重采样库，比如将44.1kHz的CD音频转换为48kHz的DVD音频。 
+libwww 
+添加libwww库(通用WEB应用程序编程接口)支持 
+lirc 
+添加lirc支持 (lirc: Linux红外端口控制工具) 
+livecd 
+!!仅供内部使用，请不要设置此参数!! 在livecd构建中使用 
+lm_sensors 
+添加lm_sensors支持 (硬件监测软件，提供电压，温度，风扇转速等的实时监测) 
+lua 
+添加Lua脚本支持。Lua是一种小型的脚本语言，设计目的是为了嵌入其他应用程序中，从而为应用程序提供灵活的扩展和定制功能。 
+lzo 
+添加lzo压缩支持。lzo的压缩率并不高，但它是最快速的压缩和解压的算法，主要用于实时性较高的场合。 
+m17n-lib 
+添加m17n-lib支持 (“m17n”是”多语言化”的缩写。m17n-lib是一个C语言的多语言文本处理库，可让应用程序实现多语言支持) 
+mad 
+添加mad(一个高质量的mp3解码库/命令行前端)支持 
+maildir 
+添加maildir风格(~/.maildir)的邮件缓冲池支持 
+mailwrapper 
+添加mailwrapper支持，允许使用其他的MTA(如postfix)取代sendmail 
+matroska 
+添加matroska多媒体容器格式(.mkv .mka .mks)支持。Matroska是一种新的多媒体封装格式，它可将多种不同编码的视频及16条以上不同格式的音频和不同语言的字幕流封装到同一个文件当中。 
+matrox 
+添加Matrox MGA系列显卡支持 
+mbox 
+添加mbox风格(/var/spool/mail)的邮件缓冲池支持 
+mcve 
+添加MCVE信用卡支付系统支持 
+memlimit 
+对于支持内存限制的程序启用内存限制支持 
+mhash 
+添加mhash库支持。mhash是一种线程安全的哈希算法库。 
+migemo 
+为日语添加migemo支持 
+mikmod 
+添加libmikmod支持来播放音轨格式的音频文件 
+milter 
+为sendmail添加milter邮件过滤器支持 
+mime 
+添加MIME支持。MIME是描述消息内容类型的因特网标准，MIME消息能包含文本、图像、音频、视频以及其他应用程序专用的数据。 
+minimal 
+安装一个最小化的build(比如禁止插件/字体/大多数驱动程序/非关键的特性) 
+mmap 
+添加mmap(自内存映射)支持［参考文档：内存映射mmap］ 
+mmx 
+为Pentium MMX和Athlon等级的处理器添加最佳化优化支持 
+mng 
+添加libmng库以支持MNG格式的图片 
+modplug 
+添加libmodplug支持。Libmodplug是一款用于mod类音乐格式(.mod .s3m .it .xm 等后缀)播放和转换的函数库。 
+mono 
+添加Mono支持。Mono是一个Linux上的.NET平台。 
+motif 
+添加motif工具集支持。［参考文档：GNOME与KDE的战争］ 
+mozilla 
+添加Mozilla web浏览器支持 
+mp3 
+添加读取mp3文件支持 
+mp4 
+添加读取mp4文件支持。mp4并不是一种编码格式，它实际上只是一种容器 
+mpeg 
+添加libmpeg3库支持(libmpeg3是一个处理mpeg编码的库) 
+mpi 
+添加MPI(Message Passing Interface)支持 (MPI: 消息传递接口，是一套可用于Linux高性能计算集群系统上的数据传送模型，目标是创建一套和程序语言、计算机种类无关的标准，用以撰写收送讯息的程序码) 
+mplayer 
+添加mplayer播放/编码支持 
+msn 
+添加MSN Messenger通信协议支持 
+msql 
+添加MSQL数据库支持 
+mssql 
+添加Microsoft SQL Server数据库支持 
+mtp 
+添加MTP(Media Transfer Protocol,媒体传输协议)支持。［参考文档：媒体传输协议］ 
+mule 
+为XEmacs添加多语言支持 
+multilib 
+让64bit系统可以同时编译32bit和64bit二进制文件 
+musepack 
+添加musepack音频编码支持。musepack据说是比Lame MP3更优秀的有损压缩方案，是目前最适合用于音乐欣赏的有损编码。 
+musicbrainz 
+使用MusicBrainz(musicbrainz.org)社区服务查找音频文件的元数据 
+mysql 
+添加MySQL数据库支持 
+mysqli 
+添加mySQLi库支持(改进版本的MySQL库，用于MySQL4.1以上版本) 
+nas 
+添加网络音频(network audio)支持 
+ncurses 
+添加ncurses支持添加ncurses控制台显示库支持 (ncurses是curses的改良版本，是一个能提供快捷键、彩色界面、提供鼠标支持的基于文本终端窗口功能的动态库) 
+neXt 
+添加neXt工具集支持(??什么玩意??与NeXT软件公司推出的NEXTSTEP操作系统有关吗??) 
+netboot 
+添加网络启动支持 
+netcdf 
+启用NetCDF数据格式支持 (NetCDF是大气研究大学协会(UCAR)开发的。由于NetCDF是一种灵活的，自描述的，并能表达大量数组数据的格式，因此NetCDF在地球、海洋、大气科学中得到了广泛的应用) 
+networkmanager 
+添加net-misc/networkmanager支持 
+nis 
+启用NIS/YP服务支持 (NIS/YP: 网络信息服务) 
+nls 
+使用GNU gettext启用本地化语言支持 (GNU gettext是一个本地化/国际化函数库) 
+nntp 
+添加网络新闻传输协议NNTP(Network News Transfer Protocol)支持。NNTP是一种服务器－客户机流模式(端口119)实现新闻文章的发行、查询、修复及记录等过程的协议。新闻文章只需要存储在一台服务器主机上，而位于其它网络主机上的订户通过建立到新闻主机的流连接阅读到新闻文章。NNTP为新闻组的广泛应用建立了技术基础。 
+nocd 
+安装在没有CD-ROM的情况下运行程序所需要的所有文件 
+nocxx 
+禁止C++支持(除非你自己知道自己在作什么，否则不要启用该选项) 
+nptl 
+添加Native POSIX Thread库支持 (Linux2.6以上的内核POSIX线程的新实现，大大提高了性能并增加了可缩放性)［参考文档：Linux线程库性能测试与分析；应用2.6内核超线程模式］ 
+nsplugin 
+为支持Netscape插件架构的浏览器编译插件，目前几乎所有浏览器都支持。 
+ocaml 
+添加Ocaml语言支持。Ocaml是Caml编程语言的主要实现。 
+ocamlopt 
+添加ocamlopt(ocaml本机代码编译器)支持。目的是生成运行速度更快的程序(警告:你必须在全局范围内明确的disable/enable它) 
+oci8 
+添加Oracle8支持 
+oci8-instant-client 
+使用dev-db/oracle-instantclient-basic作为Oracle服务提供者，而不是安装完整的Oracle服务器。 
+odbc 
+添加ODBC(开放数据库互连)支持 
+offensive 
+??使用程序包中可能存在的攻击的(讨厌的)项目?? 
+ofx 
+添加OFX(开放式金融交换)数据文件的导入/导出支持 
+ogg 
+添加Ogg多媒体容器格式支持(通常被Vorbis/Theora/flac使用) 
+old-linux 
+添加老版本的linux-2.4支持 
+openal 
+添加OpenAL(Open Audio Library)支持。OpenAL是跨平台音效API，用于多通道三维位置音效的特效表现，其API风格模仿自OpenGL，也主要用于游戏。 
+openexr 
+添加高动态范围/高精度色彩的OpenEXR图形文件格式支持[http://www.openexr.com/]。OpenEXR主要用于全球第一大特效制作公司ILM的电影(变形金刚,侏罗纪公园,加勒比海盗,星球大战…)中。 
+opengl 
+添加OpenGL(3D图形API)支持。 
+openmp 
+添加OpenMP支持。OpenMP是一个编译器指令和库函数的集合，主要是为共享式存储计算机上的并行程序设计使用的。要求 &amp;gt;=sys-devel/gcc-4.2 并且使用USE=”openmp”编译。 
+oracle 
+添加oracle数据库支持 
+osc 
+添加OSC(Open Sound Control)协议支持。OSC协议可以用于计算机、声音合成器、各种多媒体设备之间通过网络进行通信，让电子乐器之间也能利用网络的便利。 
+oscar 
+添加Oscar(AIM/ICQ)即时通信协议支持 
+oss 
+添加OSS支持(Open Sound System起源于Linux kernel的声卡驱动程序，已是昨日黄花，目前让位给ALSA了) 
+pam 
+添加PAM支持。切勿武断的使用它！(PAM: 可插入认证模块，是功能十分强大的系统认证模组系统，所有新式的Linux系统皆使用此认证系统，系统可藉由PAM，扩充认证机制) 
+pch 
+启用预编译头文件支持(要求 &amp;gt;=sys-devel/gcc-3.4)，这将增大内存和磁盘用量，但可以加快编译过程。 
+pcmcia 
+添加笔记本上的PCMCIA设备支持 
+pcntl 
+Adds support for process creation functions 
+pcre 
+添加PCRE(Perl兼容的正则表达式)支持 
+pda 
+添加便携式设备支持(PDA??) 
+pdf 
+添加PDF文档格式支持 
+perl 
+添加Perl语言支持 
+php 
+添加php支持 
+plasma 
+编译可选的plasma widgets支持(依赖于kde-base/libplasma) 
+plotutils 
+添加plotutils支持。plotutils是一个2D矢量图函数库。 
+png 
+添加libpng库支持(PNG图片) 
+policykit 
+使用sys-auth/policykit获取特权 
+portaudio 
+添加跨平台的portaudio音频编程接口支持 
+posix 
+添加POSIX兼容函数库支持 
+postgres 
+添加PostgreSQL数据库支持 
+ppds 
+自动生成打印驱动程序文件 
+prelude 
+启用Prelude入侵检测系统支持 
+prefix 
+Defines if a Gentoo Prefix offset installation is used 
+profile 
+在编译时添加profile支持，主要用于应用程序性能分析和调试。 
+pulseaudio 
+添加PulseAudio音频服务支持。［参考文档：Linux声音系统和PulseAudio简介］ 
+python 
+添加Python语言支持 
+qdbm 
+添加qdbm(Quick Database Manager)库支持(QDBM是一个管理数据库的函数库，它参照GDBM为了下述三点而被开发：更高的处理速度，更小的数据库文件大小，和更简单的API) 
+qmail-spp 
+添加qmail SMTP插件支持 
+qt3 
+添加Qt GUI/Application Toolkit 3.x支持(Qt 3.x是一个多平台的C++图形用户界面应用程序框架，也是KDE 3.x桌面环境的基础) 
+qt4 
+添加Qt GUI/Application Toolkit 4.x支持(Qt 4.x是一个多平台的C++图形用户界面应用程序框架，也是KDE 4.x桌面环境的基础) 
+quicktime 
+添加OpenQuickTime支持 
+radius 
+添加RADIUS认证支持(主要用于对远程拨入的用户进行授权和认证，主要针对的远程登录类型有：LDAP、SLIP、PAP、PPP、telnet和rlogin等) 
+raw 
+添加raw image格式支持 
+rdesktop 
+添加远程桌面协议支持，主要用于连接到Windows服务器。 
+readline 
+使用libreadline库支持 (readline是一个对命令行进行编辑的库，使用命令行的的人一般都需要， 除非你不使用Esc/Alt/Ctrl/Shift键，否则请加上这个参数) 
+recode 
+添加GNU recode库支持 (GNU recode库可以在不同的字符集和编码间相互转换) 
+rss 
+添加RSS feeds支持 
+ruby 
+添加Ruby语言支持 
+samba 
+添加SAMBA支持，可以实现与Windows文件共享以及打印共享 
+sapdb 
+添加SAP DB数据库支持(也就是MySQL公司的MaxDB) 
+sasl 
+添加SASL支持 (SASL: 简单认证和安全层)［参考文档：基于cyrus-sasl的认证］ 
+savedconfig 
+使用它来恢复保存在/etc/portage/savedconfig ${CATEGORY}/${PN}中的配置信息。你必须确保USE标记包含了正确的依赖关系。 
+scanner 
+添加硬件扫描支持(比如做为kdegraphics程序的前端) 
+sdl 
+添加Simple Direct Layer支持 (多媒体库) 
+seamonkey 
+添加Seamonkey浏览器支持 
+selinux 
+提供SELinux支持 !!仅功内部使用，只能由selinux的profile文件设置，其他情况下请勿使用!!［参考文档：Linux安全模块简介；SELinux是什么］ 
+semantic-desktop 
+跨KDE支持语义搜索和信息检索 
+session 
+添加持久会话支持(??啥意思??) 
+sharedext 
+为php添加创建共享扩展的支持 
+sharedmem 
+添加使用共享内存段支持 
+shorten 
+添加shorten音频压缩器支持 
+simplexml 
+添加SimpleXML支持(SimpleXML是一个处理XML的扩展模块，基于GNOME项目的libxml2库) 
+skey 
+启用S/Key认证支持。S/Key是种一次性密码系统。 
+slang 
+添加slang文本显示库支持 (很像ncurses) 
+slp 
+添加服务定位协议(Service Locator Protocol)支持 
+smartcard 
+添加智能卡支持 
+smp 
+启用多核CPU以及多CPU支持 
+sndfile 
+添加libsndfile支持 (libsndfile是一个通过标准接口来读写声音文件的C库) 
+snmp 
+添加SNMP协议支持 (SNMP: 简单网络管理协议) 
+soap 
+添加SOAP协议支持 (SOAP: 简单对象访问协议) 
+sockets 
+添加tcp/ip套接字支持 
+socks5 
+添加socks5袋裡服务器支持 
+solid 
+添加Solid数据库引擎支持 
+source 
+将源代码打成zip包并安装?? 
+sox 
+添加音频格式转换软件SoX(Sound eXchange)支持 
+speex 
+添加speex音频编码支持。Speex的特点是针对语音压缩的效果非常好，音质不次于iLBC，在丢包和窄带(5-30k)时音质依然非常出色。 
+spell 
+添加拼写检查/字典支持 
+spl 
+添加PHP标准程序库(Standard PHP Library)支持 
+sqlite 
+添加SQLite数据库支持 (一个轻量级数据库) 
+sqlite3 
+添加SQLite3数据库支持 (一个轻量级数据库) 
+sse 
+为PentiumIII级别以上的cpu启用SSE指令集优化支持 
+sse2 
+为兼容SSE2指令集的CPU启用SSE2指令集优化支持 
+ssl 
+添加SSL连接支持 (SSL: 安全套接字层) 
+startup-notification 
+开启应用程序启动事件反馈机制 
+static 
+!!在系统引导过程中切勿使用该参数!! 因为这将导致二进制可执行文件使用静态连接而不是动态连接 
+subversion 
+开启subversion(一种版本控制系统)支持 
+suid 
+允许具有潜在安全风险的程序具有setuid位 
+svg 
+添加SVG支持 (SVG: 可缩放矢量图，那些经常浏览多媒体网站的用户可能需要) 
+svga 
+添加SVGAlib库支持。SvgaLib是Linux Console下的VGA驱动函数库。 
+sybase 
+添加Sybase数据库支持 
+sybase-ct 
+添加Sybase-CT数据库支持 
+symlink 
+强制内核ebuilds自动更新/usr/src/linux符号连接 
+syslog 
+添加syslog支持 
+sysvipc 
+添加与System V兼容的进程间通信支持 
+szip 
+使用szip压缩库。Szip是一种无损压缩，对大文本压缩效果较好。 
+taglib 
+使用taglib来扩展JSP标记。 
+tcl 
+添加Tcl/Tk支持(Tcl/Tk 是一种简明、高效、可移植性好的编程语言) 
+tcpd 
+添加TCP包装支持 
+test 
+Portage-2.1.2之后此标记已经失去意义了，不要使用它。 
+theora 
+添加开源免费的Theora视频编码支持。Theora属于Ogg项目的一部分，主要用于高清影片，具有超越H.264的画质，下一代的Theora编码器将命名为Thusnelda 
+threads 
+在内核中添加线程库支持，通常是pthreads(Posix线程库)［参考文档：Linux线程库性能测试与分析；应用2.6内核超线程模式；Linux线程初探］ 
+tidy 
+添加HTML Tidy支持 (Tidy: 一个将HTML转换为XHTML的开源工具) 
+tiff 
+添加tiff图片格式支持 
+timidity 
+添加Timidity++(MIDI音序器)支持 
+tk 
+添加Tk GUI toolkit支持 
+tokenizer 
+添加PHP文件分析器(file parser)支持 
+truetype 
+添加FreeType/FreeType2字体支持 
+uclibc 
+使用uclibc进行编译和连接 (uClibc是一个针对嵌入式系统替代Glibc的C库，需要的内存比Glibc少) 
+unicode 
+添加Unicode支持 
+usb 
+添加USB支持 
+v4l 
+添加video4linux支持 (内核视频采集接口API) 
+v4l2 
+添加video4linux2支持 (新一代内核视频采集接口API) 
+vanilla 
+不添加改变默认行为的额外补丁。!!切勿在全局范围内使用此标记!! 
+vcd 
+添加VCD支持 
+vhosts 
+添加为虚拟主机环境安装基于Web的应用程序的支持?? 
+videos 
+安装一些游戏中可选的视频文件 
+vim-syntax 
+加入相关的vim语法脚本 
+vnc 
+添加VNC(remote desktop viewer)支持。VNC是一类使用RFB协议的跨平台屏幕分享及远程控制软件，比如：RealVNC, TightVNC, UltraVNC 等。 
+voodoo3 
+添加3Dfx的Voodoo3支持，不然将默认支持Voodoo4/5 
+vorbis 
+添加OggVorbis音频解码器支持。［参考文档：OggVorbis］ 
+wavpack 
+添加wavpack音频压缩工具支持。［参考文档：WavPack］ 
+wddx 
+添加WDDX支持 (WDDX是一种基于XML的Web分布式数据交换技术) 
+wifi 
+添加无线网络支持 
+win32codecs 
+使用win32编码器动态链接库来支持avi/wmv等文件的解码 
+wmf 
+添加wmf矢量图形格式支持。 
+wxwidgets 
+添加wxWidgets/wxGTK图形用户界面开发工具支持 
+wxwindows 
+反对使用此标记，即将被废除 
+x264 
+使用x264来支持h.264编码。h.264是一种高清视频编码标准，而x264是采用这种标准的一种具体实现。 
+xattr 
+添加文件系统的扩展属性支持(存储在文件系统内的元数据)。［参考文档：扩展文件属性］ 
+xcb 
+添加XCB(X protocol C-language Binding)支持。XCB是Xlib的一个替代品，具有精简、延迟隐藏(latency hiding)、直接访问协议、可扩展性、可支持多线程执行的优点。 
+xcomposite 
+添加Xorg的复合扩展(composite extension)支持。 
+xemacs 
+添加XEmacs支持 
+xface 
+添加xface支持 (通过在Email加入X-Face信头来显示一个小头像) 
+xft 
+编译XFT字体渲染引擎(x11-libs/libXft)支持。XFT给X应用程序提供了访问FreeType字体光栅化引擎和X渲染扩展的接口，也担负了配置和定制字体的功能。 
+xine 
+添加XINE电影播放库支持 (XINE是一个可播放众多流媒体文件的函数库和播放器) 
+xinerama 
+添加xinerama X11扩展支持，以支持多个显示器 
+xinetd 
+添加xinetd(超级Internet服务器)支持。［参考文档：网络服务和Xinetd］ 
+xml 
+添加XML文件支持 
+xmlrpc 
+添加xml-rpc库支持 
+xosd 
+使用X On Screen Display库发送显示信号?? 
+xpm 
+添加XPM图形格式支持 
+xprint 
+添加xprint支持，Xprint是一种高级打印系统。 
+xscreensaver 
+添加XScreenSaver扩展支持。XScreenSaver是一个执行在X Window系统下的屏幕保护程序，还能锁定屏幕。 
+xsl 
+添加XSL库(v1)支持(XSL文档也是XML文档中一种) 
+xulrunner 
+使用xulrunner(而不是firefox/seamonkey)来编译本地浏览器集成。 
+xv 
+添加可选的Xvideo扩展支持 (Xvideo是一个X窗口下的视频回放API，可以直接把图像显示在可拖拉的对象里)
+xvid 
+添加xvid.org的开源mpeg-4编码支持 
+yahoo 
+添加Yahoo Messenger即时通信协议支持 
+yaz 
+添加用于Z39.50协议支持(YAZ)。Z39.50协议是一种在客户/服务器环境下计算机之间进行信息检索的通讯协议。 
+zeroconf 
+添加DNS-SD(DNS Service Discovery)支持。DNS-SD是一个浏览网络上的DNS服务的方法。 
+zlib 
+添加zlib(解)压缩支持 
+zsh-completion 
+添加zsh-completion支持(改进了zsh的自动补全功能)
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>[&quot;please install *libnss3-tools* package&quot;]</title>
+        <link href="http://zhaoqc.github.io/linux/llibnss3-tools.html"/>
+        <updated>2015-01-06T20:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/llibnss3-tools</id>
+        <summary type="html">&lt;pre&gt;&lt;code&gt;Debian/Ubuntu: sudo apt-get install libnss3-tools
+Fedora: su -c &quot;yum install nss-tools&quot;
+Gentoo: su -c &quot;echo &#39;dev-libs/nss utils&#39; &amp;gt;&amp;gt; /etc/portage/package.use &amp;amp;&amp;amp; emerge dev-libs/nss&quot; (You need to launch all commands below with the nss prefix, e.g., nsscertutil.)
+Opensuse: sudo zypper install mozilla-nss-tools
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+        <content type="html">&lt;pre&gt;&lt;code&gt;Debian/Ubuntu: sudo apt-get install libnss3-tools
+Fedora: su -c &quot;yum install nss-tools&quot;
+Gentoo: su -c &quot;echo &#39;dev-libs/nss utils&#39; &amp;gt;&amp;gt; /etc/portage/package.use &amp;amp;&amp;amp; emerge dev-libs/nss&quot; (You need to launch all commands below with the nss prefix, e.g., nsscertutil.)
+Opensuse: sudo zypper install mozilla-nss-tools
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>Linux更新网络时间</title>
+        <link href="http://zhaoqc.github.io/java/linux%E6%9B%B4%E6%96%B0%E7%BD%91%E7%BB%9C%E6%97%B6%E9%97%B4.html"/>
+        <updated>2015-01-04T21:44:00+00:00</updated>
+        <id>http://zhaoqc.github.io//java/linux更新网络时间</id>
+        <summary type="html">&lt;h3&gt;方法一、使用命令&lt;/h3&gt;
+</summary>
+        <content type="html">&lt;h3&gt;方法一、使用命令&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ntpdate time-a.nist.gov
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;方法二、本地安装ntpdate客户端&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;在本地安装ntpdate客户端，更新时用
+
+ntpdate cn.pool.ntp.org
+
+如果你的机子不支持域名，则可以用 ping cn.pool.ntp.org 得到该域名的IP地址。
+
+然后用 ntpdate IP 就可以更新时间了
+
+更新完后要用 clock -w 或 hwclock -w 实时间写入到BIOS中，这样下次启动时，时间就会自动更新了
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>花儿为啥那样红</title>
+        <link href="http://zhaoqc.github.io/java/%E8%8A%B1%E5%84%BF%E4%B8%BA%E5%95%A5%E9%82%A3%E6%A0%B7%E7%BA%A2.html"/>
+        <updated>2015-01-04T21:42:00+00:00</updated>
+        <id>http://zhaoqc.github.io//java/花儿为啥那样红</id>
+        <summary type="html">&lt;h3&gt;1、歌曲&lt;/h3&gt;
+</summary>
+        <content type="html">&lt;h3&gt;1、歌曲&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;著名作曲家雷振邦为电影《冰山上的来客》创作的《花儿为什么这样红》，1963年影片公映后即在群众中普遍流传。
+
+《花儿为什么这样红》
+
+花儿为什么这样红为什么这样红
+哎红得好像红得好像燃烧的火
+它象征着纯洁的友谊和爱情
+
+花儿为什么这样鲜为什么这样鲜
+哎鲜得使人鲜得使人不忍离去
+它是用了青春的血液来浇灌
+
+哎鲜得使人鲜得使人不忍离去
+它是用了青春的血液来浇灌
+
+花儿为什么这样红为什么这样红
+哎红得好像红得好像燃烧的火
+它象征着纯洁的友谊和爱情
+它象征着纯洁的友谊和爱情
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2、文章&lt;/h3&gt;
+
+&lt;h4&gt;《花儿为什么这样红》&lt;/h4&gt;
+
+&lt;h5&gt;作者：贾祖璋&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;花朵的红色是热情的色彩，它强烈，奔放，激动，令人精神振奋。红紫烂漫的春天，活力充沛，生气蓬勃。花儿为什么这样红？人们一边赞叹，一边不免提出疑问，寻求科学的解释。
+
+花儿为什么这样红？首先有它的物质基础。不论是红花还是红叶，它们的细胞液里都含有由葡萄糖变成的花青素。当它是酸性的时候，呈现红色，酸性愈强，颜色愈红。当它是碱性的时候，呈现蓝色，碱性较强，成为蓝黑色，如墨菊、黑牡丹等是。而当它是中性的时候，则是紫色。万紫千红，红蓝交辉，都是花青素在不同的酸碱反应中所显示出来的。
+
+除了红花以外，还有黄色、橙色的花。橙色与柑橘，南瓜等果实的色彩相似，而最典型的是胡萝卜，所以表现这种色彩的色素，就被称为胡萝卜素。
+
+至于白花，那是因为细胞液里不含色素的缘故。有些白花，例如菊花，萎谢之前微染红色，表示它这时也含有少量的花青素了。变色的一个特殊例子是添色木芙蓉，早晨初开白色，中午淡红，下午深红，一日三变，愈开愈美丽。又如八仙花，初开白色微绿，经过几天，变成淡红，或带微蓝，它不像添色木芙蓉那样朝开暮落。至于一般的花，大都初开时浓艳，后渐淡褪。
+
+花儿为什么这样红？还需要用物理学原理来解释。太阳光经过三棱镜或水滴的折射，会分成红、橙、黄、绿、青、蓝、紫七种颜色。这七种颜色的光波长短不同，红光波长，紫光波短。酸性的花青素会把红色的长光波反射出来，送到我们的眼帘，我们便感觉到是鲜艳的红花。同样，中性的花青素反射紫色的光波，碱性的花青素反射蓝色的光波，胡萝卜素有不同的成分，便分别反射黄色光波或橙色光波。白花不含色素，但组织里面含有空气，会把光波全部反射出来。有的花瓣，表面有较多的细微而排列整齐的玻璃球似的突起，看起来好像丝绒，能够像金刚石那样强烈地反射光线，色彩就更为鲜艳，如某些月季花就是。
+
+花儿为什么这样红？还有它生理上的需要。光波长短不同，所含热量也不同：红、橙、黄光波长，含热量多；蓝、紫光波短，含热量少。花的组织，尤其是花瓣，一般都比较柔嫩。在野生状态，红、橙、黄花都生长在阳光强烈的地方，反射了含热量多的长光波，不致引起灼伤，有保护的作用。蓝花都生长在树林下、草丛间，反射短光波，吸收微弱的含热量多的长光波，对它的生理作用有利。白花也多阴性植物，有些夜间开放，反射了全部的光波，是另一种适应措施。自然界少有黑色的花，只有少数的花偶然有黑色的斑点，因为黑色吸收全部的光波，热量过多，容易受到伤害。
+花儿为什么这样红？从进化的观点来考察，它有一个发展的过程。裸子植物的花是原始的形态，都带绿色，而花药和花粉则呈黄色。在光谱里面，与绿色邻接的，长波一端是黄、橙和红，短波一端是青、蓝和紫。我们可以说，花色以绿色为起点，向长波一端发展，由黄而橙，最后出现红色；向短波一端发展，是蓝色和紫色。红色应是最晚出现的花色，在进化途程中居于项峰，最鲜艳，最耀眼。
+花儿为什么这样红？从达尔文的自然选择学说来看，昆虫起了到重要的作用。亿万年前，裸子植物在地球上出现的时候，昆虫还不多。花色素淡，传粉授精，依靠风力，全部是风媒花。后来出现了被子植物，昆虫也繁生起来。被子植物的花有了花被，更分化为萼和花冠（花被和花冠通称花瓣）。花瓣不再是绿色，而是比较显眼的黄色、白色或其他颜色。形状也大了，有的生有蜜腺，分泌蜜汁，有的散发芳香，这就成为虫媒花。“蜂争粉蕊蝶分香”，昆虫给花完成传粉授精的作用。
+昆虫采蜜传粉，有一特殊的习性，就是经常只采访同一种植物的花朵。这个习性有利于保证同一种植物间的异花传粉，繁殖后代。这样可以固定种的特征，包括花的颜色。我们可以设想，假如当初有一种植物，花色微红，由于其中红色比较显著的花朵，容易受到昆虫的注意，获得传粉的机会较多，经过无数代的选择，在悠长的岁月中，昆虫就给这种植物创造出纯一、显著、鲜艳的红色花朵。昆虫参与自然选择的作用，造成各种不同的植物，也造成各种不同的花色。
+花儿为什么这样红？最后要归功于人工选择。自然选择进程缓慢，需要很长时间才能显示它的作用。人工选择大大加快了它的进程，能够在较短时间内取得显著成果。例如牡丹，由自然选择费了亿万年造成野生原种，花是单瓣的，花色也只有粉红的一种。经过人工栽培，仅就北宋中叶（11世纪）那个时候来说吧，几十年功夫就有单瓣创造出多叶、千叶（重瓣）、楼子（花心突起）、并蒂等额中不同姿态；由粉红创造出深红、肉红、紫色、墨紫、黄色、白色等各种美丽色彩。再如大丽花，原产墨西哥，只有八个红色花瓣。人工栽培的历史仅仅二三百年，却已有千种形状、颜色不同的品种。又如虞美人，经过培养，已有红、黄、橙、白各种颜色却没有出现过蓝色。上一世纪末，美国的著名园艺育种家浦班克，发现一株花瓣上好似有一层迷雾的虞美人，特意培养，到本世纪初，便育成了各种深浅不同的蓝色虞美人，为花卉园艺添加了新的品种。   花儿这样红，是大自然的杰作，更加是人工培育的成果
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;3、教案&lt;/h3&gt;
+
+&lt;h4&gt;第一课时： 　　&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;教学目标 1． 理清说明顺序，感悟说明文中运用文学语言和方法的妙处。2． 通过查寻资料和做实验让学生理解课文知识。 　　
+教学重点 理清说明顺序，感悟说明文中运用文学语言和方法的妙处。 　　
+教学难点 如何找准说明文的语言特点 　　
+教学课类型 讲读课 教学方法 主要教具 实验材料 　　
+学法指导 探究合作式 　　
+板书设计 花儿为什么这样红 物理基础 物理学原理 生理需要 进化观点 自然选择 人工选择 　　课后反思 　　
+时间 阶段目标 教学内容 教师活动 学生活动 　　
+1．展示学生所知，引起对课文知识的兴趣。
+2、3．理清说明顺序，感悟说明文中运用文学语言和方法的妙处。
+4进一步把握课文内容，读懂课文，培养学生的概括力、表达力及动手实践能力。 
+    1． 导入：
+        （1）自然界中美丽娇艳的鲜花万紫千红，为什么会有那么多不同色彩的花朵呢？
+        （2）《花儿为什么这样红》一文像一把钥匙，为我们解开了这个奥秘。
+    2．朗读课文，说说花儿为什么这样红？明确：花红的原因有很多，课文从六个方面进行说明。即&quot;物理基础&quot;&quot;化学和物理学&quot;&quot;植物生物学&quot;&quot;进化理论&quot;&quot;自然选择&#39;&#39;及&quot;人工选择&quot;六个方面对&quot;花红&quot;的成因作了科学、生动、有趣的说明。
+    3． 发现课文的结构有什么特点？作者在课文中七次用&quot;花儿为什么这样红&quot;的句子，都以设问的形式出现，并形成七个排比段，在修辞上叫间隔反复。第一段中&quot;花儿为什么这样红&quot;第一次出现，起总提作用，后几段起提示说明角度和内容的作用，使文章层次清楚，中心突出，富有较强的节奏感和语言的美感，增强了说明文的文学色彩。
+    4．现在我们只了解了花红的因素，其中的真正奥妙谁能细致解释呢？那就看我们各小组的本事了，现在六小组分别承包一个方面，用语言、板书或实验等形式为大家解说花红原因。
+        （1） 试验一：把一朵红色的芍药花或其他的红色花泡在碱水或肥皂水中，观察颜色的变化，当红变蓝之后，再把变蓝的花朵泡在醋里，观察其由蓝变红的过程，以此验证花朵在酸碱反应中颜色的不同变化。
+        （2） 解说各种成因：
+    5．总结： 
+         1．提问
+         2．听读课文，学生回答后加以概括。
+         3．指导、提示、归纳
+         4．提出要求，对各小组进行指导，参与小组讨论。
+             (1)指导
+             (2)听评 
+                 1．回答
+                 2．朗读课文，思考回答。
+                 3．研究讨论
+                 4．读课文，讨论研究表述语言，准备实验。
+                     （1）做实验
+                     （2）解说各种成因 　　
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;第二课时： 　　&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;教学目标 1． 理清逻辑顺序。2． 学习运用巩固有关说明文的知识，进行语言积累，形成良好的语感，并注意词语表达的准确与生动。3．拓展学生的阅读视野。 　　
+教学重点 1．说明文语言的准确与生动性2．说明方法 　　
+教学难点 逻辑结构的分析 　　
+教学课类型 讲读课 教学方法 主要教具 电脑 　　
+学法指导 讨论探究式 　　
+板书设计 花儿为什么这样红 说明顺序： 花红的内部条件和因素（物质基础）--内、主 ｛ ↓ 花红的外在原因（自然选择、人工选择）--外、次 说明方法：举例子、分类别、列数字、做比较说明语言：准确 如&quot;只有、就、仅&quot; 　　
+课后反思 　　
+时间 阶段目标 教学内容 教师活动 学生活动 　　
+1．做好新旧知识的衔接。 　　
+2．理解其严谨的逻辑顺序。 　　
+3．巩固说明方法，理解课文内容及写作方法。 　　
+4．进行语言积累，形成良好的语感，并注意词语表达的准确与生动。 　　
+5．理解题目的作用。 　　
+1．导入：回忆上节课的内容 　　
+2．提问：分别从六个方面说明了花红的原因，它们能否颠倒顺序？为什么？ 　　
+明确：作者按由主到次，由内到外的顺序排列，可分为两层。 　　
+第一层（1-7段）说明花红的内部条件和因素，重要因素是&quot;物质基础&quot;。 　　
+第二层（8-10段）说明花红的外在原因。层层深入，准确严谨。 　　
+3．分析每段中的说明方法。思考：文章中都运用哪些说明方法？ 　　
+明确：
+（1）举例子、分类别：例如牡丹，又自然选择费了亿万年造成的野生原种，花是单瓣的，花色也只有粉红的一种。经过人工栽培，仅就北宋中叶那一个时期来说吧，几十年工夫，就由单瓣创造出多叶、千叶、楼子、并蒂等各种不同的姿态；由粉红创造出深红、肉红、紫色、墨紫、黄色、白色等各种不同的美丽色彩。举例子的句子还有很多…… 　　
+（2）列数字、举例子：再如大丽花，原产墨西哥，只有八个红色花瓣。人工栽培的历史仅二三百年，却已有上千种形状、颜色不同的品种。分析：运用三种说明方法，说明了人工选择大大加快了花红的进程，在较短的时间内取得了显著成果。 　　
+（3）作比较、分类别：在光谱里面，与绿色邻接的，长波一端是黄、橙、红，短波一端是青、蓝、紫。我们可以说，花色以绿色为起点，向长波一段发展，由黄而橙，由橙而红；向短波一端发展，是蓝色和紫色。红色的花最鲜艳，最耀眼，可以说在进化过程中是最成功的。分析：说明红花是进化过程中的佼佼者。 　　
+4．请体会一下其中加点词的表达准确性。明确：&quot;只有&quot;强调了仅限于粉红这个品种，&quot;就&quot;字，强调人工栽培在很短的时间内创造出了多姿多彩、争奇斗艳的不同花朵。三个程度副词&quot;最&quot;字强调了红花颜色鲜艳、耀眼和成功的程度。&quot;仅&quot;字极言时间之短，说明人工选择加快了花红的进程。
+5．课文标题借用了《冰山上的来客》中一首插曲的名字，你认为这样拟题好吗？为什么？明确：一是提示课文要说明的内容；二是引起读者的阅读兴趣和求知欲。 　　
+6．介绍有关花的知识或《十万个为什么》，请选择其中一个讲讲，让同学们分享你的快乐。
+7．作业： 1．导入2．提问总结3．提出问题，参与各小组的讨论。判断讲解。4．提示听评5．提问 1．回忆2．思考讨论后回答3．默读课文，圈点勾画，商量讨论。分析回答。4．思考回答5．思考讨论6．介绍花的或《十万个为什么》。 　　
+
+整体感知：
+1、文章题目原是一句歌词，用了什么修辞?用来做题目有哪些好处?
+明确：课文的标题“花儿为什么这样红”是个设问句，它起着三个方面的表达作用：一是抓住人们所熟知的花的特征（“红”）提出问题，有助于揭示文章的中心；二是以设疑激趣，富有吸引力；三是联系全文结构看，主体部分从六个方面说明花儿红的原因，每说明一个原因都用“花儿为什么这样红”开头，使文章脉络分明，具有明快的节奏感，增添了艺术情趣。
+具体研读课文：
+1、第2—6自然段、第7一l0自然段分别采用了什么样的说明顺序?是从哪几个方面说明花儿为什么这样红的?
+明确：第2—6自然段采用逻辑顺序。从物质基础、物理学原理、生理需要等角度说明“花儿为什么这样红”。
+第7一l0自然段采用时间顺序，从进化观点、自然选择、人工选择等角度说明“花儿为什么这样红”。
+2、文章中都运用哪些说明方法？
+明确：
+（1）举例子、分类别：例如“牡丹，……几十年工夫，就由单瓣创造出多叶、千叶、楼子、并蒂等各种不同的姿态；由粉红创造出深红、肉红、紫色、墨紫、黄色、白色等各种不同的美丽色彩。”…… 　
+（2）列数字、举例子：再如“大丽花，原产墨西哥，只有八个红色花瓣。人工栽培的历史仅二三百年，却已有上千种形状、颜色不同的品种。”
+分析：运用三种说明方法，说明了人工选择大大加快了花红的进程，在较短的时间内取得了显著成果。
+（3）作比较、分类别：“我们可以说，花色以绿色为起点，向长波一段发展，由黄而橙，由橙而红；向短波一端发展，是蓝色和紫色。红色的花最鲜艳，最耀眼，可以说在进化过程中是最成功的。”
+分析：说明红花是进化过程中的佼佼者。
+
+3、体会其中加粗词的表达准确性。
+（1）牡丹，由自然选择费了亿万年造成的野生原种，花是单瓣的，花色也只有粉红的一种。经过人工栽培，仅就北宋中叶那一个时期来说吧，几十年工夫，就由单瓣创造出多叶、千叶、楼子、并蒂等各种不同的姿态。
+明确：“只有”强调了仅限于粉红这个品种，“就”字，强调人工栽培在很短的时间内创造出了多姿多彩、争奇斗艳的不同花朵。
+（2）红色的花最鲜艳，最耀眼，可以说在进化过程中是最成功的。”
+明确：三个程度副词“最”字强调了红花颜色鲜艳、耀眼和成功的程度。“仅”字极言时间之短，说明人工选择加快了花红的进程。
+4、研读课文第十段：
+（1）本段列举牡丹、大丽花、虞美人三个典型事例，从哪几个方面将自然生成的花同人工培育的花进行比较，突出了选择的显著成就。
+明确：时间长短、形状色泽、品种优劣。
+（2）本段说明的中心是什么？
+明确：人工选择在加速花色变化过程中的作用。
+（3）本段的说明结构是怎样的？
+明确：总——分的结构。
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>SSH+autoproxy+firefox方案</title>
+        <link href="http://zhaoqc.github.io/linux/freessh.html"/>
+        <updated>2015-01-03T20:09:21+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/freessh</id>
+        <summary type="html">&lt;h3&gt;1.首先要安装SSH,&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt; 终端运行   
+01.yaourt -S openssh
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+        <content type="html">&lt;h3&gt;1.首先要安装SSH,&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt; 终端运行   
+01.yaourt -S openssh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;2.安装autoproxy&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;在firfox中搜索安装autoproxy这个扩展组件，安装完成之后，会自动打开一个设置页面，选择gfwlist 这个规则，然后在最下面选择默认代理，设置为ssh -D 这种方式，之后点完成，完成设置
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;3.注册ssh&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;本地的设置完毕之后，到http://www.cjb.n et/cgi-bin/shell.cgi?action=signup 注册一个免费的ssh的帐号，填上你的用户名, 邮箱, 设置密码就成了，邮箱最好是用gmail的邮箱，其他的邮箱我也没尝试过，然后cjb会给你发激活邮件, 收信点里边的激活链接，激活后会再发送一个邮件给你，告诉你帐号，密码，服务器之类的，有时候注册网站打不开，多尝试几次就好了
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;4.建立ssh链接&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;有了以上的准备工作后，在终端输入
+
+01.ssh -qTfnN -D 7070 user_name@216.194.70.6
+
+
+例如我自己的就是
+
+01.ssh -qTfnN -D 7070 shenhao0129@216.194.70.6
+
+
+其中@之前的user_name换成你刚才自己的申请的用户名就好了，本来@之后是主机名shell.cjb.n et的，但是据说是DNS污染，导致指向的不是正确的IP地址，所以直接用IP地址来代替
+然后第一次运行会有个小提示，你直接输入yes就好了，然后提示输入密码，输入你申请的帐号的密码就万事OK了
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;5自动运行脚本&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;如果认为每次输入这个东西比较麻烦的话，建议
+
+01.vim sshd
+
+建立一个sshd的文本文件，然后把刚才输入的内容粘贴到sshd文件中，并
+
+01.chmod 755 sshd  
+
+然后拷贝到/usr/bin目录下，以后要翻qiang的时候就执行
+
+01.sshd
+Linuxren.n et
+输入密码就好了，系统启动后，之需要输入一次就好了。
+
+以上内容来自网络。。。不代表本人意见。若有幸被和谐，请直接和谐我。。和我有关联的人通通没关系。
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>grep目录及子目录文件内容</title>
+        <link href="http://zhaoqc.github.io/linux/grep.html"/>
+        <updated>2015-01-03T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//linux/grep</id>
+        <summary type="html">&lt;p&gt;  grep搜寻文件及所有子目录下的文件里的内容:&lt;/p&gt;
+</summary>
+        <content type="html">&lt;p&gt;  grep搜寻文件及所有子目录下的文件里的内容:&lt;/p&gt;
+
+&lt;p&gt;  例如搜寻当前目录及子目录下所有PHP原代码中的&quot;echo&quot;字符 (试试取消下行的 -q 参数):&lt;/p&gt;
+
+&lt;p&gt;  find ./  -name *.php  -exec  grep -q -s echo {} \; -print&lt;/p&gt;
+
+&lt;p&gt;  查找所有文件则可以用：&lt;/p&gt;
+
+&lt;p&gt;  find . -type f -exec grep -s echo {} \; -print&lt;/p&gt;
+
+&lt;p&gt;  如果喜欢图形界面，KDE带的kfind很不错。&lt;/p&gt;
+
+&lt;p&gt;列出目录下的文件个数&lt;/p&gt;
+
+&lt;p&gt;ls -l  | grep  &quot;-&quot; | wc -l  count files&lt;/p&gt;
+
+&lt;p&gt;ls -l  | grep  &quot;d&quot; | wc -l  count diretcory&lt;/p&gt;
+
+&lt;p&gt;查找当前目录下以及下面所有子目录里包含 clip 字符的文件 并打印所在行数:&lt;/p&gt;
+
+&lt;p&gt;grep -n  &quot;clip&quot; -r --color ./&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>[&quot;jekyll 官网文档部分翻译&quot;]</title>
+        <link href="http://zhaoqc.github.io/jekyll/Jekyll.html"/>
+        <updated>2015-01-01T20:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//jekyll/Jekyll</id>
+        <summary type="html">&lt;h3&gt;什么是jekyll??&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;简单说：它是静态网页生成器。
+具体点：包含一些用markdown语法写的文件的文件夹；通过markdown和Liquid转换器
+生成一个网站。
+同时jekyll也是github静态页面引擎。意味着你可以用jekyll生成你的页面，免费托管在github服务器。
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+        <content type="html">&lt;h3&gt;什么是jekyll??&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;简单说：它是静态网页生成器。
+具体点：包含一些用markdown语法写的文件的文件夹；通过markdown和Liquid转换器
+生成一个网站。
+同时jekyll也是github静态页面引擎。意味着你可以用jekyll生成你的页面，免费托管在github服务器。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;快速开始&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install jekyll{\安装jekyll。gem执行文件可能需要其他依赖，比如ruby}
+jekyll new myblog{\生成博客目录}
+
+tip::生成博客目录到本地:jekyll new .
+启动服务器：
+jekyl serve
+然后浏览器访问：localhost:4000即可（预览）
+
+基本用法：
+通过gem安装包管理器安装好jekyll以后，就能够在windows的命令行中执行jekyll
+jekyll build{\到项目根目录，执行编译后，当前目录自动生成_site文件夹}
+
+
+tip::
+编译到指定地方
+jekyll build --destination &amp;lt;/gdestination&amp;gt;
+编译指定文件夹
+jekyll build --source &amp;lt;/gsource&amp;gt; --destination &amp;lt;destination&amp;gt;
+编译后好自动监听文件变化 自动编译
+jekyll build --watch
+
+
+提示：
+编译到的目标文件夹会被清空
+
+预览：
+jekyll serve
+访问：
+localhost:4000
+
+
+tip::
+2.4版本以后会自动检测文件的改变
+禁止该行为：
+jekyll serve --no-watch
+
+除了--no-watch等配置项，还有其他很多配置
+一般是放在根目录下面的_config.xml文件下面，前面的放在命令行也是一种方式
+
+
+调用jekyll命令的时候会自动用_config.xml里面的配置。
+比如：_config.xml里的
+source:_source
+destination:_deploy
+相当于：
+jekyll build --source _source --destination _deploy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;目录结构&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll本质上就是文本转换引擎。。
+
+
+有很多的文件，用标记语言写好，放在不同的文件夹里面，
+通过这种形式表现，你想你的网页长什么样，有哪些数据。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;   &lt;/gpre&gt;
+    &lt;em&gt;config.yml :存储配置数据。把配置写在这个文件里面，可以让你不用在命令行中写。
+    &lt;/em&gt;drafts:草稿，格式是:没有日期.md
+    &lt;em&gt;includes:包含一些模板，可以重复利用。你可以用通过{\% include file.ext %}包含&lt;/em&gt;includes/file.ext文件{\这种方式是liquid语法}
+    &lt;em&gt;layouts:里面的文件通过{{\ content }}包含&lt;/em&gt;posts里面的文章。
+    &lt;em&gt;posts:存放你要发表的文章。格式YEAR-MONTH-DAY-title.MARKUP。
+    文件名确定了发表的日期和标记语言。博客的日期格式通过&lt;/em&gt;config.yml的permalink字段设置或者通过YAML FRONT Matter设置
+    &lt;em&gt;data:保存数据的。jekyll会自动加载这里的所有
+    .jml或者.yaml结尾的文件。
+    比如你有一个members.yml。那么你可以通过site.data.members
+    访问该文件里的数据。
+    &lt;/em&gt;site：
+    jekyll生成的网站会放在该文件夹下。
+    最好把它放到.gitignore文件里面，这样git就不会管理它了。
+    index.html:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;该文件里面有一个YAML FRONT Matter。大概就长下面这样：
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;layout: index
+title: FEX&lt;/p&gt;
+
+&lt;h2&gt;page_id: index&lt;/h2&gt;
+
+&lt;p&gt;jekyll会转换它。包括所有的根目录下面的，或者不是以上提到的，目录。
+里的.html,.markdown,.md,和.textile文件。&lt;/p&gt;
+
+&lt;p&gt;除了上面提到的其他文件或者文件夹，会被自动拷贝
+到_site文件夹里面。包括
+css和图片文件夹，favicon.icon文件。&lt;/p&gt;
+
+&lt;p&gt;配置&lt;/p&gt;
+
+&lt;p&gt;有两种方式配置，一个是命令行，一个是通过&lt;em&gt;config.yml文件
+source://定义jekyll读取文件的位置 比如本地就直接用.
+destination://定义网站生成的位置，比如&lt;/em&gt;site
+safe://是否禁用自定义插件 不理解暂时不管他
+encoding://通过名字定义文件的编码 只ruby1.9以后才有效
+2.0.0以后默认的编码是utf-8，而之前的默认编码是ascii-8bit&lt;/p&gt;
+
+&lt;p&gt;Front Matter defaults
+用这个东东可以具体地配置你的页面或者发表的文章。&lt;/p&gt;
+
+&lt;p&gt;经常你会重复配置一些东西，比如作者，
+为了避免这种情况的解决方案是
+在_config.xml中配置defaults字段&lt;/p&gt;
+
+&lt;p&gt;默认配置&lt;/p&gt;
+
+&lt;p&gt;jekyll默认是用如下的配置：看官网&lt;a href=&quot;http://jekyllrb.com/docs/configuration/&quot;&gt;http://jekyllrb.com/docs/configuration/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Front Matter&lt;/p&gt;
+
+&lt;h2&gt;通过这个可以设置一些变量（甚至可以自定义变量），比如title&lt;/h2&gt;
+
+&lt;p&gt;layout: post&lt;/p&gt;
+
+&lt;h2&gt;title: Blogging Like a Hacker&lt;/h2&gt;
+
+&lt;p&gt;设置好变量以后，
+你就可以在当前页面或者你的页面依赖的&lt;em&gt;layouts或者&lt;/em&gt;includes
+里的文件通过Liquid 标记，比如{\page.title}访问了。&lt;/p&gt;
+
+&lt;p&gt;tip:::
+不允许存在BOM字符
+这个头不写也是可以的：
+比如CSS and RSS feeds!可能不需要&lt;/p&gt;
+
+&lt;p&gt;已定义的全局变量：
+layout:指定用_layouts下面的文件。&lt;/p&gt;
+
+&lt;p&gt;自定义的变量：
+在Front Matter定义的变量（不是已定义的全局变量）都会在会话期间绑定数据给Liquid模板引擎。
+比如你在定义了title，那你就可以再_layouts里面的模板使用它{{\ page.title }}&lt;/p&gt;
+
+&lt;p&gt;写文章&lt;/p&gt;
+
+&lt;p&gt;jekyll有一个最好的特性就是：你写文章并发表他们只是意味着你只要管理一些文本文件即可。
+而不需要配置和维护数据库以及良好的CMS系统。&lt;/p&gt;
+
+&lt;p&gt;发文章的文件夹：
+_posts
+里面都是些md或者testile文件。只要有yaml front matter，它们就会被转换为html格式的静态页面。&lt;/p&gt;
+
+&lt;p&gt;创建文件：
+创建一个文件YEAR-MONTH-DAY-title.md
+YEAR是4位数，month和day是两位数
+例子：
+2011-12-31-new-years-eve-is-awesome.md
+2012-09-12-how-to-write-a-blog.textile&lt;/p&gt;
+
+&lt;p&gt;tip::
+通过post_url访问其他的文章，不用担心链接（ the site permalink）的样式改变而访问不到。&lt;/p&gt;
+
+&lt;p&gt;内容的样式：
+所有的文章都必须要有yaml front matter头。&lt;/p&gt;
+
+&lt;p&gt;tip::将&lt;/gmeta charset=&quot;utf-8&quot;&gt;包含在head标签里面。&lt;/p&gt;
+
+&lt;p&gt;包含图片和资源
+在根目录下创建文件夹比如assets和downloads
+然后markdown语法访问通过这种形式：
+&lt;img src=&quot;{{%20site.url%20}}/assets/screenshot.jpg&quot; alt=&quot;截屏&quot; /&gt;
+说明：
+截屏链接的文字，（）里面的东西不会显示，是链接到的地址。
+site.url可以访问你配置的（_config.yml）的网站url。
+链接到pdf阅读器让用户下载：
+you can &lt;a href=&quot;{{%20site.url%20}}/assets/mydoc.pdf&quot;&gt;get the PDF&lt;/a&gt; directly.&lt;/p&gt;
+
+&lt;p&gt;显示一系列的文章：&lt;/p&gt;
+
+&lt;p&gt;&lt;/gul&gt;
+  {\% for post in site.posts %}
+    &lt;/gli&gt;
+      &lt;/ga href=&quot;{\{\ post.url }}&quot;&gt;{{\ post.title }}&lt;/a&gt;
+    &lt;/g/li&gt;
+  {\% endfor %}
+&lt;/g/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;显示文章的第一个段&lt;/p&gt;
+
+&lt;p&gt;&lt;/gul&gt;
+  {\% for post in site.posts %}
+    &lt;/gli&gt;
+      &lt;/ga href=&quot;{\{\ post.url }}&quot;&gt;{{\ post.title }}&lt;/a&gt;
+      {{\ post.excerpt }}
+    &lt;/g/li&gt;
+  {\% endfor %}
+&lt;/g/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;高亮代码片段&lt;/p&gt;
+
+&lt;p&gt;通过Pygments or Rouge，jekyll具有内建的语法高亮能力&lt;/p&gt;
+
+&lt;p&gt;{\% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json {\ render json: @widget }
+  end
+end
+{\% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;高亮代码同时显示行号：
+{\% highlight ruby linenos %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json {\ render json: @widget }
+  end
+end
+{\% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;_drafts文件夹工作方式&lt;/p&gt;
+
+&lt;p&gt;_drafts里面的文章是你暂时不想发表的&lt;/p&gt;
+
+&lt;p&gt;通过jekyll serve --drafts预览
+jekyll build --drafts编译&lt;/p&gt;
+
+&lt;p&gt;创建页面&lt;/p&gt;
+
+&lt;p&gt;主页&lt;/p&gt;
+
+&lt;p&gt;即使是主页也可以用&lt;em&gt;layouts和&lt;/em&gt;includes里面的东西&lt;/p&gt;
+
+&lt;p&gt;其他的增加的额外页面&lt;/p&gt;
+
+&lt;p&gt;一般方式：
+|-- &lt;em&gt;config.yml
+|-- &lt;/em&gt;includes/
+|-- &lt;em&gt;layouts/
+|-- &lt;/em&gt;posts/
+|-- _site/
+|-- about.html    # =&gt; &lt;a href=&quot;http://example.com/about.html&quot;&gt;http://example.com/about.html&lt;/a&gt;
+|-- index.html    # =&gt; &lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
+└── contact.html  # =&gt; &lt;a href=&quot;http://example.com/contact.html&quot;&gt;http://example.com/contact.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;干净的url方式（不带有文件后缀）
+├── &lt;em&gt;config.yml
+├── &lt;/em&gt;includes/
+├── &lt;em&gt;layouts/
+├── &lt;/em&gt;posts/
+├── _site/
+├── about/
+|   └── index.html  # =&gt; &lt;a href=&quot;http://example.com/about/&quot;&gt;http://example.com/about/&lt;/a&gt;
+├── contact/
+|   └── index.html  # =&gt; &lt;a href=&quot;http://example.com/contact/&quot;&gt;http://example.com/contact/&lt;/a&gt;
+└── index.html      # =&gt; &lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;变量&lt;/p&gt;
+
+&lt;p&gt;jekyll要遍历所有的文件，只要带有yaml front matter的文件
+都可以通过Liquid 模板系统访问一些变量。&lt;/p&gt;
+
+&lt;p&gt;全局变量&lt;/p&gt;
+
+&lt;p&gt;site：包含了网站信息和&lt;em&gt;config.yml里面的信息
+page:在yaml front matter的自定义的变量通过page访问
+content:&lt;/em&gt;layouts里面，不定义在&lt;em&gt;post和其他页面中。包含了post和其他页面里面的文章内容。
+paginator:paginate在&lt;/em&gt;config_yml里面配置以后，这个变量就可以用了。&lt;/p&gt;
+
+&lt;p&gt;site变量&lt;/p&gt;
+
+&lt;p&gt;site.time:当前运行jekyll的时间
+site.pages:所有的页面
+site.posts:以时间逆序排序的所有的文章
+site.data：包含从目录_data里面加载的数据列表&lt;/p&gt;
+
+&lt;p&gt;page变量&lt;/p&gt;
+
+&lt;p&gt;page.content:页面内容
+page.title:文章标题
+page.urL:页面地址：比如/2008/12/14/my-post.html
+page.date:页面的日期。可以在front matter重写：2008-12-14 10:30:00 +0900或者YYYY-MM-DD HH:MM:SS
+page.id:页面id。比如/2008/12/14/my-post 在RSS feeds里面有用。&lt;/p&gt;
+
+&lt;p&gt;tip::
+front matter里面可以自己定义变量：比如custom_css: true
+然后你可以通过page.custom_css访问&lt;/p&gt;
+
+&lt;p&gt;Paginator变量&lt;/p&gt;
+
+&lt;p&gt;paginator.per_page：每一页的文章数
+paginator.posts：那一页可用的文章
+paginator.page：当前页的值&lt;/p&gt;
+
+&lt;p&gt;tip::
+Paginator只在index.html(或者/blog/index.html)中有效&lt;/p&gt;
+
+&lt;p&gt;Data文件夹&lt;/p&gt;
+
+&lt;p&gt;通过Liquid模板系统可以自定义数据&lt;/p&gt;
+
+&lt;p&gt;jekyll支持从位于_data的yaml,json,csv文件中加载数据，（csv必须包含一个header row）&lt;/p&gt;
+
+&lt;p&gt;通过site.data访问里面的数据&lt;/p&gt;
+
+&lt;p&gt;例子：
+比如定义一个文件_data/members.yml
+- name: Tom Preston-Werner
+  github: mojombo&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;name: Parker Moore
+github: parkr&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;name: Liu Fengyun
+github: liufengyun&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;然后可以通过site.data.members访问该文件（文件名决定了字段名）
+&lt;/gul&gt;
+{\% for member in site.data.members %}
+  &lt;/gli&gt;
+    &lt;/ga href=&quot;https://github.com/{\{\ member.github }}&quot;&gt;
+      {{\ member.name }}
+    &lt;/g/a&gt;
+  &lt;/g/li&gt;
+{\% endfor %}
+&lt;/g/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;定义组织（包含子文件）&lt;/p&gt;
+
+&lt;p&gt;_data/orgs/jekyll.yml中：&lt;/p&gt;
+
+&lt;p&gt;username: jekyll
+name: Jekyll
+members:
+  - name: Tom Preston-Werner
+    github: mojombo&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;name: Parker Moore
+github: parkr&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;_data/orgs/doeorg.yml中：
+username: doeorg
+name: Doe Org
+members:
+  - name: John Doe
+    github: jdoe&lt;/p&gt;
+
+&lt;p&gt;使用：
+&lt;/gul&gt;
+{\% for org_hash in site.data.orgs %}
+{\% assign org = org_hash[1] %}
+  &lt;/gli&gt;
+    &lt;/ga href=&quot;https://github.com/{\{\ org.username }}&quot;&gt;
+      {{\ org.name }}
+    &lt;/g/a&gt;
+    ({{\ org.members | size }} members)
+  &lt;/g/li&gt;
+{\% endfor %}
+&lt;/g/ul&gt;&lt;/p&gt;
+</content>
+    </entry>
+    
+    <entry>
+        <title>[&quot;HelloWorld&quot;]</title>
+        <link href="http://zhaoqc.github.io/helloworld/HelloWorld.html"/>
+        <updated>2015-01-01T00:00:00+00:00</updated>
+        <id>http://zhaoqc.github.io//helloworld/HelloWorld</id>
+        <summary type="html">&lt;h3&gt;HelloWorld&lt;/h3&gt;
+</summary>
+        <content type="html">&lt;h3&gt;HelloWorld&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/* hello world demo */&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hello, World!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</content>
+    </entry>
+    
+
+</feed>

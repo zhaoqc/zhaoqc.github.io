@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -31,6 +32,15 @@
     <link rel="stylesheet" href="/css/min/font-awesome-ie7.min.css">
     <![endif]-->
     <script src="/js/min/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+    
+      _st('install','fQWv9yiBAFy_ae3zcWKA','2.0.0');
+    </script>
+
 
 </head>
 
@@ -62,12 +72,18 @@
 
                 </ul>
             </nav>
-            <div class="search" >
+            <!--<div class="search" >
                 <form action="/search">
-                    <input type="text" id="st-search-input" style="width:90px" class="search-query" placeholder="Search Blog" name="q" title="全站搜索-google">
+                    <input type="text" class="st-default-search-input" id="st-search-input" style="width:90px" class="search-query" placeholder="Search Blog" name="q" title="全站搜索-google">
                 </form>
-            </div>
+            </div>-->
+            {% if page.google != true %}
+                {% include swiftype.html %}
+            {% else %}
+                {% include google.html %}
+            {% endif %}
             <div id="toc"></div>
+            
             
             <nav id="nav">
                 <ul class="nav-list">
