@@ -1,19 +1,24 @@
 var sum ;
 var total ;
 var current = 1;
+var yy = 0//获得滚动条top值
+var xx = 0;
 $(function () {
-    $(".article a").attr("target", "_blank");
+      $(".article a").attr("target", "_blank");
     $(".brand-title,.brand-tagline,nav").remove();
     $(".headerpic img").css("width", "140px");
     $(".headerpic").append('<div class="grcode"><i class="fa fa-qrcode"></i></div>');
     $('#toc').toc({'container': '.article', 'selectors': 'h1,h2,h3', prefix: 'top'}); 
-        sum = $("ul li").length;
-        if (sum > 10) {
-            $("#toc").css("height","400px") 
-            .append('<div id="pageTurning"><a id="prev" >Prev</a> <a id="next" href="javascript:;" onclick="mnext()">Next</a></div>');
-            $("ul li:gt(9)").hide();
-            total = Math.ceil(sum / 10);
-        }
+    sum = $("ul li").length;
+    if (sum > 10) {
+        $("#toc").css("height","400px") 
+     //   .append('<div id="pageTurning"><a id="prev" >Prev</a> <a id="next" href="javascript:;" onclick="mnext()">Next</a></div>');
+        $("ul li:gt(9)").hide();
+        total = Math.ceil(sum / 10);
+    }
+    if ($('.top-active').css('display') == 'none') {
+        alert('sb');
+    }
 
     $('.article').each(function (i) {
         $(this).find('img').each(function () {
@@ -97,6 +102,24 @@ function mnext(){
         
 }
 
-window.onload = function () {
+
+$(window).scroll(function () {
+     yy = $(this).scrollTop();
     
-}
+    if ($('.top-active').css('display') == 'none') {
+      
+      
+        if (yy > xx) {
+            if (current != total ) {
+                mnext();
+                xx = yy;
+            }
+        } else if (yy < xx){
+            if (total != 1) {
+              mprev();
+              xx = yy;
+            }
+                
+        }
+    }
+});
